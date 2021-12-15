@@ -1,0 +1,14 @@
+D:\pragmateck\task1\task7(OOP)\bin\Debug\netcoreapp3.1\task7(OOP).exe
+D:\pragmateck\task1\task7(OOP)\bin\Debug\netcoreapp3.1\task7(OOP).deps.json
+D:\pragmateck\task1\task7(OOP)\bin\Debug\netcoreapp3.1\task7(OOP).runtimeconfig.json
+D:\pragmateck\task1\task7(OOP)\bin\Debug\netcoreapp3.1\task7(OOP).runtimeconfig.dev.json
+D:\pragmateck\task1\task7(OOP)\bin\Debug\netcoreapp3.1\task7(OOP).dll
+D:\pragmateck\task1\task7(OOP)\bin\Debug\netcoreapp3.1\task7(OOP).pdb
+D:\pragmateck\task1\task7(OOP)\obj\Debug\netcoreapp3.1\task7(OOP).csproj.AssemblyReference.cache
+D:\pragmateck\task1\task7(OOP)\obj\Debug\netcoreapp3.1\task7(OOP).GeneratedMSBuildEditorConfig.editorconfig
+D:\pragmateck\task1\task7(OOP)\obj\Debug\netcoreapp3.1\task7(OOP).AssemblyInfoInputs.cache
+D:\pragmateck\task1\task7(OOP)\obj\Debug\netcoreapp3.1\task7(OOP).AssemblyInfo.cs
+D:\pragmateck\task1\task7(OOP)\obj\Debug\netcoreapp3.1\task7(OOP).csproj.CoreCompileInputs.cache
+D:\pragmateck\task1\task7(OOP)\obj\Debug\netcoreapp3.1\task7(OOP).dll
+D:\pragmateck\task1\task7(OOP)\obj\Debug\netcoreapp3.1\task7(OOP).pdb
+D:\pragmateck\task1\task7(OOP)\obj\Debug\netcoreapp3.1\task7(OOP).genruntimeconfig.cache

@@ -1,0 +1,14 @@
+D:\pragmateck\task1\taskquiz\bin\Debug\netcoreapp3.1\taskquiz.exe
+D:\pragmateck\task1\taskquiz\bin\Debug\netcoreapp3.1\taskquiz.deps.json
+D:\pragmateck\task1\taskquiz\bin\Debug\netcoreapp3.1\taskquiz.runtimeconfig.json
+D:\pragmateck\task1\taskquiz\bin\Debug\netcoreapp3.1\taskquiz.runtimeconfig.dev.json
+D:\pragmateck\task1\taskquiz\bin\Debug\netcoreapp3.1\taskquiz.dll
+D:\pragmateck\task1\taskquiz\bin\Debug\netcoreapp3.1\taskquiz.pdb
+D:\pragmateck\task1\taskquiz\obj\Debug\netcoreapp3.1\taskquiz.csproj.AssemblyReference.cache
+D:\pragmateck\task1\taskquiz\obj\Debug\netcoreapp3.1\taskquiz.GeneratedMSBuildEditorConfig.editorconfig
+D:\pragmateck\task1\taskquiz\obj\Debug\netcoreapp3.1\taskquiz.AssemblyInfoInputs.cache
+D:\pragmateck\task1\taskquiz\obj\Debug\netcoreapp3.1\taskquiz.AssemblyInfo.cs
+D:\pragmateck\task1\taskquiz\obj\Debug\netcoreapp3.1\taskquiz.csproj.CoreCompileInputs.cache
+D:\pragmateck\task1\taskquiz\obj\Debug\netcoreapp3.1\taskquiz.dll
+D:\pragmateck\task1\taskquiz\obj\Debug\netcoreapp3.1\taskquiz.pdb
+D:\pragmateck\task1\taskquiz\obj\Debug\netcoreapp3.1\taskquiz.genruntimeconfig.cache

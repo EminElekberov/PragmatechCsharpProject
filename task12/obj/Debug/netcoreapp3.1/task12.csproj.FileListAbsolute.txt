@@ -1,0 +1,14 @@
+D:\pragmateck\task1\task12\bin\Debug\netcoreapp3.1\task12.exe
+D:\pragmateck\task1\task12\bin\Debug\netcoreapp3.1\task12.deps.json
+D:\pragmateck\task1\task12\bin\Debug\netcoreapp3.1\task12.runtimeconfig.json
+D:\pragmateck\task1\task12\bin\Debug\netcoreapp3.1\task12.runtimeconfig.dev.json
+D:\pragmateck\task1\task12\bin\Debug\netcoreapp3.1\task12.dll
+D:\pragmateck\task1\task12\bin\Debug\netcoreapp3.1\task12.pdb
+D:\pragmateck\task1\task12\obj\Debug\netcoreapp3.1\task12.GeneratedMSBuildEditorConfig.editorconfig
+D:\pragmateck\task1\task12\obj\Debug\netcoreapp3.1\task12.AssemblyInfoInputs.cache
+D:\pragmateck\task1\task12\obj\Debug\netcoreapp3.1\task12.AssemblyInfo.cs
+D:\pragmateck\task1\task12\obj\Debug\netcoreapp3.1\task12.csproj.CoreCompileInputs.cache
+D:\pragmateck\task1\task12\obj\Debug\netcoreapp3.1\task12.dll
+D:\pragmateck\task1\task12\obj\Debug\netcoreapp3.1\task12.pdb
+D:\pragmateck\task1\task12\obj\Debug\netcoreapp3.1\task12.genruntimeconfig.cache
+D:\pragmateck\task1\task12\obj\Debug\netcoreapp3.1\task12.csproj.AssemblyReference.cache

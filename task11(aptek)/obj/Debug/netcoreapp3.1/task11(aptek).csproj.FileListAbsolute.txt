@@ -1,0 +1,14 @@
+D:\pragmateck\task1\task11(aptek)\bin\Debug\netcoreapp3.1\task11(aptek).exe
+D:\pragmateck\task1\task11(aptek)\bin\Debug\netcoreapp3.1\task11(aptek).deps.json
+D:\pragmateck\task1\task11(aptek)\bin\Debug\netcoreapp3.1\task11(aptek).runtimeconfig.json
+D:\pragmateck\task1\task11(aptek)\bin\Debug\netcoreapp3.1\task11(aptek).runtimeconfig.dev.json
+D:\pragmateck\task1\task11(aptek)\bin\Debug\netcoreapp3.1\task11(aptek).dll
+D:\pragmateck\task1\task11(aptek)\bin\Debug\netcoreapp3.1\task11(aptek).pdb
+D:\pragmateck\task1\task11(aptek)\obj\Debug\netcoreapp3.1\task11(aptek).csproj.AssemblyReference.cache
+D:\pragmateck\task1\task11(aptek)\obj\Debug\netcoreapp3.1\task11(aptek).GeneratedMSBuildEditorConfig.editorconfig
+D:\pragmateck\task1\task11(aptek)\obj\Debug\netcoreapp3.1\task11(aptek).AssemblyInfoInputs.cache
+D:\pragmateck\task1\task11(aptek)\obj\Debug\netcoreapp3.1\task11(aptek).AssemblyInfo.cs
+D:\pragmateck\task1\task11(aptek)\obj\Debug\netcoreapp3.1\task11(aptek).csproj.CoreCompileInputs.cache
+D:\pragmateck\task1\task11(aptek)\obj\Debug\netcoreapp3.1\task11(aptek).dll
+D:\pragmateck\task1\task11(aptek)\obj\Debug\netcoreapp3.1\task11(aptek).pdb
+D:\pragmateck\task1\task11(aptek)\obj\Debug\netcoreapp3.1\task11(aptek).genruntimeconfig.cache

@@ -1,0 +1,16 @@
+D:\pragmateck\task1\winformders15\bin\Debug\netcoreapp3.1\winformders15.exe
+D:\pragmateck\task1\winformders15\bin\Debug\netcoreapp3.1\winformders15.deps.json
+D:\pragmateck\task1\winformders15\bin\Debug\netcoreapp3.1\winformders15.runtimeconfig.json
+D:\pragmateck\task1\winformders15\bin\Debug\netcoreapp3.1\winformders15.runtimeconfig.dev.json
+D:\pragmateck\task1\winformders15\bin\Debug\netcoreapp3.1\winformders15.dll
+D:\pragmateck\task1\winformders15\bin\Debug\netcoreapp3.1\winformders15.pdb
+D:\pragmateck\task1\winformders15\obj\Debug\netcoreapp3.1\winformders15.csproj.AssemblyReference.cache
+D:\pragmateck\task1\winformders15\obj\Debug\netcoreapp3.1\winformders15.Form1.resources
+D:\pragmateck\task1\winformders15\obj\Debug\netcoreapp3.1\winformders15.csproj.GenerateResource.cache
+D:\pragmateck\task1\winformders15\obj\Debug\netcoreapp3.1\winformders15.GeneratedMSBuildEditorConfig.editorconfig
+D:\pragmateck\task1\winformders15\obj\Debug\netcoreapp3.1\winformders15.AssemblyInfoInputs.cache
+D:\pragmateck\task1\winformders15\obj\Debug\netcoreapp3.1\winformders15.AssemblyInfo.cs
+D:\pragmateck\task1\winformders15\obj\Debug\netcoreapp3.1\winformders15.csproj.CoreCompileInputs.cache
+D:\pragmateck\task1\winformders15\obj\Debug\netcoreapp3.1\winformders15.dll
+D:\pragmateck\task1\winformders15\obj\Debug\netcoreapp3.1\winformders15.pdb
+D:\pragmateck\task1\winformders15\obj\Debug\netcoreapp3.1\winformders15.genruntimeconfig.cache

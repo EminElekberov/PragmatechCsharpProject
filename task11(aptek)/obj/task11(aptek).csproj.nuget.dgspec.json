@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\pragmateck\\task1\\task11(aptek)\\task11(aptek).csproj": {}
+    "C:\\Users\\EMIN\\Desktop\\task1\\task11(aptek)\\task11(aptek).csproj": {}
   },
   "projects": {
-    "D:\\pragmateck\\task1\\task11(aptek)\\task11(aptek).csproj": {
+    "C:\\Users\\EMIN\\Desktop\\task1\\task11(aptek)\\task11(aptek).csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\pragmateck\\task1\\task11(aptek)\\task11(aptek).csproj",
+        "projectUniqueName": "C:\\Users\\EMIN\\Desktop\\task1\\task11(aptek)\\task11(aptek).csproj",
         "projectName": "task11(aptek)",
-        "projectPath": "D:\\pragmateck\\task1\\task11(aptek)\\task11(aptek).csproj",
+        "projectPath": "C:\\Users\\EMIN\\Desktop\\task1\\task11(aptek)\\task11(aptek).csproj",
         "packagesPath": "C:\\Users\\EMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\pragmateck\\task1\\task11(aptek)\\obj\\",
+        "outputPath": "C:\\Users\\EMIN\\Desktop\\task1\\task11(aptek)\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\EMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",

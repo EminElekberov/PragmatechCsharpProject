@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\pragmateck\\task1\\task7(OOP)\\task7(OOP).csproj": {}
+    "C:\\Users\\EMIN\\Desktop\\task1\\task7(OOP)\\task7(OOP).csproj": {}
   },
   "projects": {
-    "D:\\pragmateck\\task1\\task7(OOP)\\task7(OOP).csproj": {
+    "C:\\Users\\EMIN\\Desktop\\task1\\task7(OOP)\\task7(OOP).csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\pragmateck\\task1\\task7(OOP)\\task7(OOP).csproj",
+        "projectUniqueName": "C:\\Users\\EMIN\\Desktop\\task1\\task7(OOP)\\task7(OOP).csproj",
         "projectName": "task7(OOP)",
-        "projectPath": "D:\\pragmateck\\task1\\task7(OOP)\\task7(OOP).csproj",
+        "projectPath": "C:\\Users\\EMIN\\Desktop\\task1\\task7(OOP)\\task7(OOP).csproj",
         "packagesPath": "C:\\Users\\EMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\pragmateck\\task1\\task7(OOP)\\obj\\",
+        "outputPath": "C:\\Users\\EMIN\\Desktop\\task1\\task7(OOP)\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\EMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",

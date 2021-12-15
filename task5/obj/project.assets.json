@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\pragmateck\\task1\\task5\\task5.csproj",
+      "projectUniqueName": "C:\\Users\\EMIN\\Desktop\\task1\\task5\\task5.csproj",
       "projectName": "task5",
-      "projectPath": "D:\\pragmateck\\task1\\task5\\task5.csproj",
+      "projectPath": "C:\\Users\\EMIN\\Desktop\\task1\\task5\\task5.csproj",
       "packagesPath": "C:\\Users\\EMIN\\.nuget\\packages\\",
-      "outputPath": "D:\\pragmateck\\task1\\task5\\obj\\",
+      "outputPath": "C:\\Users\\EMIN\\Desktop\\task1\\task5\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\EMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",

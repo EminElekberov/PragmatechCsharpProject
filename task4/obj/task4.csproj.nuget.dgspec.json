@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\pragmateck\\task1\\task4\\task4.csproj": {}
+    "C:\\Users\\EMIN\\Desktop\\task1\\task4\\task4.csproj": {}
   },
   "projects": {
-    "D:\\pragmateck\\task1\\task4\\task4.csproj": {
+    "C:\\Users\\EMIN\\Desktop\\task1\\task4\\task4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\pragmateck\\task1\\task4\\task4.csproj",
+        "projectUniqueName": "C:\\Users\\EMIN\\Desktop\\task1\\task4\\task4.csproj",
         "projectName": "task4",
-        "projectPath": "D:\\pragmateck\\task1\\task4\\task4.csproj",
+        "projectPath": "C:\\Users\\EMIN\\Desktop\\task1\\task4\\task4.csproj",
         "packagesPath": "C:\\Users\\EMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\pragmateck\\task1\\task4\\obj\\",
+        "outputPath": "C:\\Users\\EMIN\\Desktop\\task1\\task4\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\EMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",

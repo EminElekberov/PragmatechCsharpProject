@@ -118,5 +118,25 @@ namespace winformders15
                 }
             }
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBookIsbn_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBook_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

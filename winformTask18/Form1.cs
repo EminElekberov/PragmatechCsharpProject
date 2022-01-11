@@ -12,9 +12,11 @@ namespace winformTask18
 {
     public partial class Form1 : Form
     {
-       public  List<Student> students;
+        public List<Student> students;
+        public List<String> img;
         public Form1()
         {
+            img = new List<string>();
             students = new List<Student>();
             InitializeComponent();
         }
@@ -29,15 +31,20 @@ namespace winformTask18
             string fname = txtName.Text.Trim();
             string fsurname = txtSurname.Text.Trim();
             string femail = txtEmail.Text.Trim();
+            string file_location;
+
             try
             {
+                file_location = img[0];
                 Student st = new Student
                 {
                     Name = fname,
                     Surname = fsurname,
-                    Email = femail
+                    Email = femail,
+                    Img_Location=file_location
                 };
                 students.Add(st);
+                pictureBox1.Image = null;
                 MessageBox.Show("Tebrikler elave olundunuz ", "Success", MessageBoxButtons.OK);
 
             }
@@ -69,10 +76,11 @@ namespace winformTask18
         private void BtnLoad_Click(object sender, EventArgs e)
         {
             DialogResult dialog = openFileDialog1.ShowDialog();
-            if (dialog==DialogResult.OK)
+            if (dialog == DialogResult.OK)
             {
                 pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                 pictureBox1.Load(openFileDialog1.FileName);
+                img.Add(openFileDialog1.FileName);
             }
         }
 
@@ -80,6 +88,16 @@ namespace winformTask18
         {
             StudentMenu studentMenu = new StudentMenu(students);
             studentMenu.ShowDialog();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

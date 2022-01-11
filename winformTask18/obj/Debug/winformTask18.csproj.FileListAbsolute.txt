@@ -9,3 +9,14 @@ D:\pragmateck\task1\winformTask18\obj\Debug\winformTask18.csproj.CoreCompileInpu
 D:\pragmateck\task1\winformTask18\obj\Debug\winformTask18.exe
 D:\pragmateck\task1\winformTask18\obj\Debug\winformTask18.pdb
 D:\pragmateck\task1\winformTask18\obj\Debug\winformTask18.StudentMenu.resources
+C:\Users\EMIN\Desktop\task1\winformTask18\bin\Debug\winformTask18.exe.config
+C:\Users\EMIN\Desktop\task1\winformTask18\bin\Debug\winformTask18.exe
+C:\Users\EMIN\Desktop\task1\winformTask18\bin\Debug\winformTask18.pdb
+C:\Users\EMIN\Desktop\task1\winformTask18\obj\Debug\winformTask18.csproj.AssemblyReference.cache
+C:\Users\EMIN\Desktop\task1\winformTask18\obj\Debug\winformTask18.Form1.resources
+C:\Users\EMIN\Desktop\task1\winformTask18\obj\Debug\winformTask18.Properties.Resources.resources
+C:\Users\EMIN\Desktop\task1\winformTask18\obj\Debug\winformTask18.StudentMenu.resources
+C:\Users\EMIN\Desktop\task1\winformTask18\obj\Debug\winformTask18.csproj.GenerateResource.cache
+C:\Users\EMIN\Desktop\task1\winformTask18\obj\Debug\winformTask18.csproj.CoreCompileInputs.cache
+C:\Users\EMIN\Desktop\task1\winformTask18\obj\Debug\winformTask18.exe
+C:\Users\EMIN\Desktop\task1\winformTask18\obj\Debug\winformTask18.pdb

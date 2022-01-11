@@ -1,0 +1,11 @@
+C:\Users\EMIN\Desktop\task1\tests\bin\Debug\tests.exe.config
+C:\Users\EMIN\Desktop\task1\tests\bin\Debug\tests.exe
+C:\Users\EMIN\Desktop\task1\tests\bin\Debug\tests.pdb
+C:\Users\EMIN\Desktop\task1\tests\obj\Debug\tests.csproj.AssemblyReference.cache
+C:\Users\EMIN\Desktop\task1\tests\obj\Debug\tests.Form1.resources
+C:\Users\EMIN\Desktop\task1\tests\obj\Debug\tests.Properties.Resources.resources
+C:\Users\EMIN\Desktop\task1\tests\obj\Debug\tests.csproj.GenerateResource.cache
+C:\Users\EMIN\Desktop\task1\tests\obj\Debug\tests.csproj.CoreCompileInputs.cache
+C:\Users\EMIN\Desktop\task1\tests\obj\Debug\tests.exe
+C:\Users\EMIN\Desktop\task1\tests\obj\Debug\tests.pdb
+C:\Users\EMIN\Desktop\task1\tests\obj\Debug\tests.Delete.resources

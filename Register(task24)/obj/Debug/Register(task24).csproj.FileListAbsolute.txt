@@ -1,0 +1,12 @@
+C:\Users\EMIN\Desktop\task1\Register(task24)\bin\Debug\Register(task24).exe.config
+C:\Users\EMIN\Desktop\task1\Register(task24)\bin\Debug\Register(task24).exe
+C:\Users\EMIN\Desktop\task1\Register(task24)\bin\Debug\Register(task24).pdb
+C:\Users\EMIN\Desktop\task1\Register(task24)\obj\Debug\Register(task24).csproj.AssemblyReference.cache
+C:\Users\EMIN\Desktop\task1\Register(task24)\obj\Debug\Register_task24_.Form1.resources
+C:\Users\EMIN\Desktop\task1\Register(task24)\obj\Debug\Register_task24_.Properties.Resources.resources
+C:\Users\EMIN\Desktop\task1\Register(task24)\obj\Debug\Register(task24).csproj.GenerateResource.cache
+C:\Users\EMIN\Desktop\task1\Register(task24)\obj\Debug\Register(task24).csproj.CoreCompileInputs.cache
+C:\Users\EMIN\Desktop\task1\Register(task24)\obj\Debug\Register(task24).exe
+C:\Users\EMIN\Desktop\task1\Register(task24)\obj\Debug\Register(task24).pdb
+C:\Users\EMIN\Desktop\task1\Register(task24)\obj\Debug\Register_task24_.frmMain.resources
+C:\Users\EMIN\Desktop\task1\Register(task24)\obj\Debug\Register_task24_.AccountCreate.resources

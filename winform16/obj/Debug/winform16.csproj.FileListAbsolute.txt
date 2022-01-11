@@ -1,0 +1,12 @@
+C:\Users\EMIN\Desktop\task1\winform16\bin\Debug\winform16.exe.config
+C:\Users\EMIN\Desktop\task1\winform16\bin\Debug\winform16.exe
+C:\Users\EMIN\Desktop\task1\winform16\bin\Debug\winform16.pdb
+C:\Users\EMIN\Desktop\task1\winform16\obj\Debug\winform16.csproj.AssemblyReference.cache
+C:\Users\EMIN\Desktop\task1\winform16\obj\Debug\winform16.Delete.resources
+C:\Users\EMIN\Desktop\task1\winform16\obj\Debug\winform16.Form1.resources
+C:\Users\EMIN\Desktop\task1\winform16\obj\Debug\winform16.Properties.Resources.resources
+C:\Users\EMIN\Desktop\task1\winform16\obj\Debug\winform16.Update.resources
+C:\Users\EMIN\Desktop\task1\winform16\obj\Debug\winform16.csproj.GenerateResource.cache
+C:\Users\EMIN\Desktop\task1\winform16\obj\Debug\winform16.csproj.CoreCompileInputs.cache
+C:\Users\EMIN\Desktop\task1\winform16\obj\Debug\winform16.exe
+C:\Users\EMIN\Desktop\task1\winform16\obj\Debug\winform16.pdb

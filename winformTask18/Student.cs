@@ -10,6 +10,7 @@ namespace winformTask18
     public class Student
     {
         private string _name;
+        public string Img_Location;
         public string Name
         {
             get { return _name; }

@@ -30,7 +30,9 @@ namespace winformTask18
             txtName.Text = selected_group.Name;
             txtSurname.Text = selected_group.Surname;
             txtEmail.Text = selected_group.Email;
-            
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.Load(selected_group.Img_Location);
+
         }
         private void StudentMenu_Load(object sender, EventArgs e)
         {

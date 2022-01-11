@@ -1,4 +1,4 @@
-﻿namespace P121021
+﻿namespace winform16
 {
     partial class Form1
     {
@@ -99,6 +99,7 @@
             this.dgv.Name = "dgv";
             this.dgv.Size = new System.Drawing.Size(800, 111);
             this.dgv.TabIndex = 11;
+            this.dgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellContentClick);
             // 
             // label1
             // 
@@ -160,6 +161,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

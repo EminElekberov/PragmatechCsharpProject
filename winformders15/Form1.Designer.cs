@@ -79,6 +79,7 @@ namespace winformders15
             this.tabPage1.Size = new System.Drawing.Size(777, 351);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Main Page";
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // listBook
             // 
@@ -88,6 +89,7 @@ namespace winformders15
             this.listBook.Name = "listBook";
             this.listBook.Size = new System.Drawing.Size(770, 139);
             this.listBook.TabIndex = 7;
+            this.listBook.SelectedIndexChanged += new System.EventHandler(this.listBook_SelectedIndexChanged);
             // 
             // btnAdd
             // 
@@ -106,6 +108,7 @@ namespace winformders15
             this.txtBookIsbn.Name = "txtBookIsbn";
             this.txtBookIsbn.Size = new System.Drawing.Size(155, 23);
             this.txtBookIsbn.TabIndex = 5;
+            this.txtBookIsbn.TextChanged += new System.EventHandler(this.txtBookIsbn_TextChanged);
             // 
             // label4
             // 
@@ -240,6 +243,7 @@ namespace winformders15
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabControl1.ResumeLayout(false);

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace P121021
+namespace winform16
 {
     public partial class Form1 : Form
     {
@@ -56,6 +56,16 @@ namespace P121021
         {
             Update update = new Update(groups, cmbGroup, dgv);
             update.ShowDialog();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -1,0 +1,15 @@
+C:\Users\EMIN\Desktop\task1\StudenRegister(task25)\bin\Debug\StudenRegister(task25).exe.config
+C:\Users\EMIN\Desktop\task1\StudenRegister(task25)\bin\Debug\StudenRegister(task25).exe
+C:\Users\EMIN\Desktop\task1\StudenRegister(task25)\bin\Debug\StudenRegister(task25).pdb
+C:\Users\EMIN\Desktop\task1\StudenRegister(task25)\bin\Debug\EntityFramework.dll
+C:\Users\EMIN\Desktop\task1\StudenRegister(task25)\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\EMIN\Desktop\task1\StudenRegister(task25)\bin\Debug\EntityFramework.xml
+C:\Users\EMIN\Desktop\task1\StudenRegister(task25)\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\EMIN\Desktop\task1\StudenRegister(task25)\obj\Debug\StudenRegister(task25).csproj.AssemblyReference.cache
+C:\Users\EMIN\Desktop\task1\StudenRegister(task25)\obj\Debug\StudenRegister_task25_.Form1.resources
+C:\Users\EMIN\Desktop\task1\StudenRegister(task25)\obj\Debug\StudenRegister_task25_.Properties.Resources.resources
+C:\Users\EMIN\Desktop\task1\StudenRegister(task25)\obj\Debug\StudenRegister(task25).csproj.GenerateResource.cache
+C:\Users\EMIN\Desktop\task1\StudenRegister(task25)\obj\Debug\StudenRegister(task25).csproj.CoreCompileInputs.cache
+C:\Users\EMIN\Desktop\task1\StudenRegister(task25)\obj\Debug\StudenRegister(task25).csproj.CopyComplete
+C:\Users\EMIN\Desktop\task1\StudenRegister(task25)\obj\Debug\StudenRegister(task25).exe
+C:\Users\EMIN\Desktop\task1\StudenRegister(task25)\obj\Debug\StudenRegister(task25).pdb

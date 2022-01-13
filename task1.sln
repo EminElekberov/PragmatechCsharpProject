@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp2", "ConsoleApp2\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Register(task24)", "Register(task24)\Register(task24).csproj", "{9B6BBE91-1012-498F-902C-D226ADB3B6AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudenRegister(task25)", "StudenRegister(task25)\StudenRegister(task25).csproj", "{76B96AA7-82D4-46B7-896A-D055A5DBB26B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{9B6BBE91-1012-498F-902C-D226ADB3B6AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B6BBE91-1012-498F-902C-D226ADB3B6AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B6BBE91-1012-498F-902C-D226ADB3B6AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76B96AA7-82D4-46B7-896A-D055A5DBB26B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76B96AA7-82D4-46B7-896A-D055A5DBB26B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76B96AA7-82D4-46B7-896A-D055A5DBB26B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76B96AA7-82D4-46B7-896A-D055A5DBB26B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

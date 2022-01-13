@@ -1,0 +1,23 @@
+CREATE TABLE [Cinema] (
+	Id integer NOT NULL,
+	Name string(255) NOT NULL,
+  CONSTRAINT [PK_CINEMA] PRIMARY KEY CLUSTERED
+  (
+  [Id] ASC
+  ) WITH (IGNORE_DUP_KEY = OFF)
+
+)
+GO
+CREATE TABLE [Filial] (
+	Id integer NOT NULL,
+	Name integer NOT NULL,
+	Contact integer NOT NULL,
+  CONSTRAINT [PK_FILIAL] PRIMARY KEY CLUSTERED
+  (
+  [Id] ASC
+  ) WITH (IGNORE_DUP_KEY = OFF)
+
+)
+GO
+
+

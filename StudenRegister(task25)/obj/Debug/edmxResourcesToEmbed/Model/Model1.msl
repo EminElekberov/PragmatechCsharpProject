@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LoginDbModelStoreContainer" CdmEntityContainer="LoginDbEntities">
+    <EntitySetMapping Name="StudentsRegisters">
+      <EntityTypeMapping TypeName="LoginDbModel.StudentsRegister">
+        <MappingFragment StoreEntitySet="StudentsRegister">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Rol_Number" ColumnName="Rol_Number" />
+          <ScalarProperty Name="Names" ColumnName="Names" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Course" ColumnName="Course" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_login">
+      <EntityTypeMapping TypeName="LoginDbModel.tbl_login">
+        <MappingFragment StoreEntitySet="tbl_login">
+          <ScalarProperty Name="loginId" ColumnName="loginId" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

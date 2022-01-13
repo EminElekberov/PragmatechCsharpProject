@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LoginDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'LoginDb.dbo.ForTrigger' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="ForTrigger">
+          <Property Name="loginn" Type="int" />
+          <Property Name="Fullname" Type="nvarchar" MaxLength="20" />
+          <Property Name="Passwordd" Type="nvarchar" MaxLength="20" />
+          <Property Name="AddedDate" Type="datetime" />
+        </EntityType>-->
+  <EntityType Name="StudentsRegister">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Rol_Number" Type="int" />
+    <Property Name="Names" Type="nvarchar" MaxLength="20" />
+    <Property Name="Age" Type="int" />
+    <Property Name="Course" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="tbl_login">
+    <Key>
+      <PropertyRef Name="loginId" />
+    </Key>
+    <Property Name="loginId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Username" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="60" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="LoginDbModelStoreContainer">
+    <EntitySet Name="StudentsRegister" EntityType="Self.StudentsRegister" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_login" EntityType="Self.tbl_login" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

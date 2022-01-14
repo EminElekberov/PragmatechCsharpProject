@@ -28,6 +28,7 @@ namespace task12
             //    Console.WriteLine(item);
             //}
             // }
+            //
             #region IsOdd delegate
             //public delegate bool Check(int n);
             //public static bool IsOdd(int n)

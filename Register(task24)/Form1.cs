@@ -35,6 +35,7 @@ namespace Register_task24_
             #endregion
         }
 
+        //Access Method
         private void btnAccess_Click(object sender, EventArgs e)
         {
             string conn = ConfigurationManager.ConnectionStrings["FirstRegisterApi"].ConnectionString;
@@ -64,7 +65,7 @@ namespace Register_task24_
             catch (Exception)
             {
 
-                throw;
+                throw new Exception();
             }
         }
 

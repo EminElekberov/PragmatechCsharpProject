@@ -23,7 +23,7 @@ namespace task11_aptek_
             Medicine med = Books.Find(n => n.Name.Trim().ToLower().Equals(find));
             if (med != null)
             {
-                Console.WriteLine($"name {med.Name} \n Count{med.Count} \n " +
+                Console.WriteLine($"name {med.Name} \n Count  {med.Count} \n " +
                     $"price {med.Price}");
             }
             else

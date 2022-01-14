@@ -10,7 +10,7 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < 100; i+=2)
             {
                 Console.WriteLine(i);
                 Console.ReadKey();

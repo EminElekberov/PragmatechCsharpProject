@@ -7,6 +7,10 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            for (int i = 550; i < 600; i+=2)
+            {
+                Console.WriteLine(i);
+            }
             #region
             //Dictionary<int, string> dictionary = new Dictionary<int, string>();
             //Console.WriteLine("reqem daxil edin");

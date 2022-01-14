@@ -72,6 +72,7 @@ namespace task10
     }
     interface Ifugure
     {
+        //
         void CalculatePerimeter(int a, int b);
         void CalculateArea(int a, int b);
         void CalculatePerimeter(int a);

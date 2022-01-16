@@ -36,6 +36,8 @@ namespace Register_task24_
                     Form1 f1 = new Form1();
                     f1.ShowDialog();
                 }
+
+                //
                 this.Close();
                 MessageBox.Show("Success");
             }

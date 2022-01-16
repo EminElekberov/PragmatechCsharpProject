@@ -21,6 +21,7 @@ namespace StudenRegister_task25_
         string connstring = ConfigurationManager.ConnectionStrings["FirstRegisterApiStudent"].ConnectionString;
         private void Form1_Load(object sender, EventArgs e)
         {
+            //
             Refresh();
             studentsRegisterBindingSource.DataSource = lb.StudentsRegisters.ToList();
         }

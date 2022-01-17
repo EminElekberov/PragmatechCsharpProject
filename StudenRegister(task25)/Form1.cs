@@ -88,6 +88,7 @@ namespace StudenRegister_task25_
         }
         public void UpdateDtGridView()
         {
+            //
             studentsRegisterDataGridView.AutoGenerateColumns = false;
             studentsRegisterDataGridView.DataSource = lb.StudentsRegisters.ToList();
         }

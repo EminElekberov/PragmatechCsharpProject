@@ -44,6 +44,8 @@ namespace Register_task24_
             SqlDataReader sqlDataReader = null;
             try
             {
+
+                //
                 sqlConnection = new SqlConnection(conn);
                 sqlConnection.Open();
                 string query = "select * from tbl_login where Username='" + txtFullName.Text.Trim() + "'and Password='" + txtPassword.Text.Trim() + "'";

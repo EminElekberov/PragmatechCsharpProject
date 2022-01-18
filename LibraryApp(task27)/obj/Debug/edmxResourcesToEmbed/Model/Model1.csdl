@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LibraryDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Book">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Price" Type="Double" />
+    <Property Name="TypesId" Type="Int32" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <Property Name="Buybook" Type="DateTime" Precision="3" />
+    <Property Name="SendBook" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Typess" Relationship="Self.FK_Books_Typess" FromRole="Books" ToRole="Typess" />
+    <NavigationProperty Name="SalestoBooks" Relationship="Self.FK_SalestoBooks_Books" FromRole="Books" ToRole="SalestoBooks" />
+  </EntityType>
+  <EntityType Name="Login_Admin">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Pasword" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Login_Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Pasword" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="IsAdmin" Type="Boolean" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <NavigationProperty Name="SaleBooks" Relationship="Self.FK_SaleBook_Login_Users" FromRole="Login_Users" ToRole="SaleBook" />
+  </EntityType>
+  <EntityType Name="SaleBook">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Total" Type="Double" Nullable="false" />
+    <Property Name="Timee" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Login_Users" Relationship="Self.FK_SaleBook_Login_Users" FromRole="SaleBook" ToRole="Login_Users" />
+    <NavigationProperty Name="User" Relationship="Self.FK_SaleBook_Users" FromRole="SaleBook" ToRole="Users" />
+    <NavigationProperty Name="SalestoBooks" Relationship="Self.FK_SalestoBooks_SaleBook" FromRole="SaleBook" ToRole="SalestoBooks" />
+  </EntityType>
+  <EntityType Name="SalestoBook">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="BooksId" Type="Int32" Nullable="false" />
+    <Property Name="SaleBookID" Type="Int32" Nullable="false" />
+    <Property Name="Amount" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Book" Relationship="Self.FK_SalestoBooks_Books" FromRole="SalestoBooks" ToRole="Books" />
+    <NavigationProperty Name="SaleBook" Relationship="Self.FK_SalestoBooks_SaleBook" FromRole="SalestoBooks" ToRole="SaleBook" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Typess">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Deleted" Type="Boolean" />
+    <NavigationProperty Name="Books" Relationship="Self.FK_Books_Typess" FromRole="Typess" ToRole="Books" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fullname" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="Pasword" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="IsAdmin" Type="Boolean" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="SaleBooks" Relationship="Self.FK_SaleBook_Users" FromRole="Users" ToRole="SaleBook" />
+  </EntityType>
+  <Association Name="FK_Books_Typess">
+    <End Role="Typess" Type="Self.Typess" Multiplicity="0..1" />
+    <End Role="Books" Type="Self.Book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Typess">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Books">
+        <PropertyRef Name="TypesId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalestoBooks_Books">
+    <End Role="Books" Type="Self.Book" Multiplicity="1" />
+    <End Role="SalestoBooks" Type="Self.SalestoBook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Books">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SalestoBooks">
+        <PropertyRef Name="BooksId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SaleBook_Login_Users">
+    <End Role="Login_Users" Type="Self.Login_Users" Multiplicity="1" />
+    <End Role="SaleBook" Type="Self.SaleBook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Login_Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SaleBook">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SaleBook_Users">
+    <End Role="Users" Type="Self.User" Multiplicity="1" />
+    <End Role="SaleBook" Type="Self.SaleBook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="SaleBook">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalestoBooks_SaleBook">
+    <End Role="SaleBook" Type="Self.SaleBook" Multiplicity="1" />
+    <End Role="SalestoBooks" Type="Self.SalestoBook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SaleBook">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SalestoBooks">
+        <PropertyRef Name="SaleBookID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="LibraryDbEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Books" EntityType="Self.Book" />
+    <EntitySet Name="Login_Admin" EntityType="Self.Login_Admin" />
+    <EntitySet Name="Login_Users" EntityType="Self.Login_Users" />
+    <EntitySet Name="SaleBooks" EntityType="Self.SaleBook" />
+    <EntitySet Name="SalestoBooks" EntityType="Self.SalestoBook" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Typesses" EntityType="Self.Typess" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <AssociationSet Name="FK_Books_Typess" Association="Self.FK_Books_Typess">
+      <End Role="Typess" EntitySet="Typesses" />
+      <End Role="Books" EntitySet="Books" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalestoBooks_Books" Association="Self.FK_SalestoBooks_Books">
+      <End Role="Books" EntitySet="Books" />
+      <End Role="SalestoBooks" EntitySet="SalestoBooks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SaleBook_Login_Users" Association="Self.FK_SaleBook_Login_Users">
+      <End Role="Login_Users" EntitySet="Login_Users" />
+      <End Role="SaleBook" EntitySet="SaleBooks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SaleBook_Users" Association="Self.FK_SaleBook_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="SaleBook" EntitySet="SaleBooks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalestoBooks_SaleBook" Association="Self.FK_SalestoBooks_SaleBook">
+      <End Role="SaleBook" EntitySet="SaleBooks" />
+      <End Role="SalestoBooks" EntitySet="SalestoBooks" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Register(task24)", "Registe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudenRegister(task25)", "StudenRegister(task25)\StudenRegister(task25).csproj", "{76B96AA7-82D4-46B7-896A-D055A5DBB26B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryApp(task27)", "LibraryApp(task27)\LibraryApp(task27).csproj", "{D1109A57-F4AD-4554-AB16-A6E669FF25BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{76B96AA7-82D4-46B7-896A-D055A5DBB26B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76B96AA7-82D4-46B7-896A-D055A5DBB26B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76B96AA7-82D4-46B7-896A-D055A5DBB26B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1109A57-F4AD-4554-AB16-A6E669FF25BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1109A57-F4AD-4554-AB16-A6E669FF25BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1109A57-F4AD-4554-AB16-A6E669FF25BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1109A57-F4AD-4554-AB16-A6E669FF25BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

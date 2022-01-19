@@ -74,6 +74,7 @@ namespace LibraryApp_task27_
             int id = ((Cb_Type)cmbType.SelectedItem).Id;
             DateTime buy = buyBookTime.Value;
             DateTime give = sendBookTime.Value;
+            //int bookId = ((Cb_book)cmbName.SelectedItem).Id;
             //int typeID = ((Cb_Type)cmbName.SelectedItem).Id;
             bookListdgv.DataSource = _db.Books.Where(m => m.IsDeleted == false && m.TypesId == id).Select(m => new
             {
@@ -82,7 +83,53 @@ namespace LibraryApp_task27_
                 buy=buy,
                 give=give
             }).ToList();
+            LibraryApp_task27_.Model.Book book = _db.Books.FirstOrDefault(x => x.Id == id);
+            LibraryApp_task27_.Model.Book bookSaveDb = new LibraryApp_task27_.Model.Book
+            {
+               // FullName = bookId.ToString(),
+                TypesId = id,
+                Buybook = buy,
+                SendBook = give
+            };
+            _db.Books.Add(book);
+            _db.SaveChanges();
             //Refreshdgv2();
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buyBookTime_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sendBookTime_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

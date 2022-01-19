@@ -28,5 +28,11 @@ namespace LibraryApp_task27_
             TYpeDelete typeDelete = new TYpeDelete();
             typeDelete.ShowDialog();
         }
+
+        private void bookLibraryAndTypeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BookLibrary bookLibrary = new BookLibrary();
+            bookLibrary.ShowDialog();
+        }
     }
 }

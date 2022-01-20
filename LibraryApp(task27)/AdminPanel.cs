@@ -16,5 +16,10 @@ namespace LibraryApp_task27_
         {
             InitializeComponent();
         }
+
+        private void AdminPanel_Load(object sender, EventArgs e)
+        {
+            //
+        }
     }
 }

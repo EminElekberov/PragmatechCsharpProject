@@ -86,7 +86,9 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper\Cb_book.cs" />
+    <Compile Include="Helper\Cb_boooks.cs" />
     <Compile Include="Helper\Cb_Type.cs" />
+    <Compile Include="Helper\Cb_Users.cs" />
     <Compile Include="Model\Book.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -134,6 +136,12 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="Spash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spash.Designer.cs">
+      <DependentUpon>Spash.cs</DependentUpon>
+    </Compile>
     <Compile Include="Type.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,6 +187,9 @@
     </Compile>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spash.resx">
+      <DependentUpon>Spash.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Type.resx">
       <DependentUpon>Type.cs</DependentUpon>

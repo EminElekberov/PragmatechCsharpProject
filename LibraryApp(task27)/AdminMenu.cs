@@ -34,5 +34,22 @@ namespace LibraryApp_task27_
             BookLibrary bookLibrary = new BookLibrary();
             bookLibrary.ShowDialog();
         }
+
+        private void AdminMenu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void reportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AdminPanel adminPanel = new AdminPanel();
+            adminPanel.ShowDialog();
+        }
+
+        private void updateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UpdateAndAddBook updateAndAddBook = new UpdateAndAddBook();
+            updateAndAddBook.ShowDialog();
+        }
     }
 }

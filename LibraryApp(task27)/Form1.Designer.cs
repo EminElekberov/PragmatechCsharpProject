@@ -32,20 +32,20 @@ namespace LibraryApp_task27_
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.BtnRegister = new System.Windows.Forms.Button();
+            this.BtnLogin = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtPassLogin = new System.Windows.Forms.TextBox();
             this.txtEmailLogin = new System.Windows.Forms.TextBox();
-            this.BtnRegister = new System.Windows.Forms.Button();
-            this.BtnLogin = new System.Windows.Forms.Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtAdminPassLogin = new System.Windows.Forms.TextBox();
             this.txtAdminEmailLogin = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -81,42 +81,25 @@ namespace LibraryApp_task27_
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "User Login";
             // 
-            // tabPage2
+            // BtnRegister
             // 
-            this.tabPage2.Controls.Add(this.button1);
-            this.tabPage2.Controls.Add(this.label4);
-            this.tabPage2.Controls.Add(this.label5);
-            this.tabPage2.Controls.Add(this.txtAdminPassLogin);
-            this.tabPage2.Controls.Add(this.txtAdminEmailLogin);
-            this.tabPage2.Controls.Add(this.pictureBox1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(787, 319);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Admin Login";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.BtnRegister.Location = new System.Drawing.Point(468, 265);
+            this.BtnRegister.Name = "BtnRegister";
+            this.BtnRegister.Size = new System.Drawing.Size(189, 36);
+            this.BtnRegister.TabIndex = 12;
+            this.BtnRegister.Text = "Register";
+            this.BtnRegister.UseVisualStyleBackColor = true;
+            this.BtnRegister.Click += new System.EventHandler(this.BtnRegister_Click);
             // 
-            // pictureBox1
+            // BtnLogin
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(784, 319);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Location = new System.Drawing.Point(313, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 25);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Login Page";
+            this.BtnLogin.Location = new System.Drawing.Point(175, 265);
+            this.BtnLogin.Name = "BtnLogin";
+            this.BtnLogin.Size = new System.Drawing.Size(189, 36);
+            this.BtnLogin.TabIndex = 11;
+            this.BtnLogin.Text = "login";
+            this.BtnLogin.UseVisualStyleBackColor = true;
+            this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
             // label3
             // 
@@ -157,25 +140,21 @@ namespace LibraryApp_task27_
             this.txtEmailLogin.Size = new System.Drawing.Size(189, 25);
             this.txtEmailLogin.TabIndex = 7;
             // 
-            // BtnRegister
+            // tabPage2
             // 
-            this.BtnRegister.Location = new System.Drawing.Point(468, 265);
-            this.BtnRegister.Name = "BtnRegister";
-            this.BtnRegister.Size = new System.Drawing.Size(189, 36);
-            this.BtnRegister.TabIndex = 12;
-            this.BtnRegister.Text = "Register";
-            this.BtnRegister.UseVisualStyleBackColor = true;
-            this.BtnRegister.Click += new System.EventHandler(this.BtnRegister_Click);
-            // 
-            // BtnLogin
-            // 
-            this.BtnLogin.Location = new System.Drawing.Point(175, 265);
-            this.BtnLogin.Name = "BtnLogin";
-            this.BtnLogin.Size = new System.Drawing.Size(189, 36);
-            this.BtnLogin.TabIndex = 11;
-            this.BtnLogin.Text = "login";
-            this.BtnLogin.UseVisualStyleBackColor = true;
-            this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
+            this.tabPage2.Controls.Add(this.button1);
+            this.tabPage2.Controls.Add(this.label4);
+            this.tabPage2.Controls.Add(this.label5);
+            this.tabPage2.Controls.Add(this.txtAdminPassLogin);
+            this.tabPage2.Controls.Add(this.txtAdminEmailLogin);
+            this.tabPage2.Controls.Add(this.pictureBox1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(787, 319);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Admin Login";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -225,6 +204,27 @@ namespace LibraryApp_task27_
             this.txtAdminEmailLogin.Size = new System.Drawing.Size(189, 20);
             this.txtAdminEmailLogin.TabIndex = 12;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(784, 319);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label1.Location = new System.Drawing.Point(313, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(131, 25);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Login Page";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -234,6 +234,7 @@ namespace LibraryApp_task27_
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

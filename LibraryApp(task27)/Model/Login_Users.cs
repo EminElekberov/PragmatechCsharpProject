@@ -17,6 +17,7 @@ namespace LibraryApp_task27_.Model
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Login_Users()
         {
+            this.Books = new HashSet<Book>();
             this.SaleBooks = new HashSet<SaleBook>();
         }
     
@@ -28,6 +29,8 @@ namespace LibraryApp_task27_.Model
         public Nullable<bool> IsActive { get; set; }
         public Nullable<bool> IsDeleted { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Book> Books { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<SaleBook> SaleBooks { get; set; }
     }

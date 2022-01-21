@@ -11,6 +11,7 @@
     <Property Name="IsDeleted" Type="bit" />
     <Property Name="Buybook" Type="datetime" />
     <Property Name="SendBook" Type="datetime" />
+    <Property Name="UserID" Type="int" />
   </EntityType>
   <EntityType Name="Login_Admin">
     <Key>
@@ -80,6 +81,18 @@
     <Property Name="IsDeleted" Type="bit" />
     <Property Name="Email" Type="nvarchar" MaxLength="50" />
   </EntityType>
+  <Association Name="FK_Books_Login_Users">
+    <End Role="Login_Users" Type="Self.Login_Users" Multiplicity="0..1" />
+    <End Role="Books" Type="Self.Books" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Login_Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Books">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_Books_Typess">
     <End Role="Typess" Type="Self.Typess" Multiplicity="0..1" />
     <End Role="Books" Type="Self.Books" Multiplicity="*" />
@@ -149,6 +162,10 @@
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Typess" EntityType="Self.Typess" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Books_Login_Users" Association="Self.FK_Books_Login_Users">
+      <End Role="Login_Users" EntitySet="Login_Users" />
+      <End Role="Books" EntitySet="Books" />
+    </AssociationSet>
     <AssociationSet Name="FK_Books_Typess" Association="Self.FK_Books_Typess">
       <End Role="Typess" EntitySet="Typess" />
       <End Role="Books" EntitySet="Books" />

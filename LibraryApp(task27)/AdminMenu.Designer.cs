@@ -35,6 +35,7 @@ namespace LibraryApp_task27_
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bookLibraryAndTypeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,7 +44,8 @@ namespace LibraryApp_task27_
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.booksTypeToolStripMenuItem,
             this.bookLibraryAndTypeToolStripMenuItem,
-            this.reportToolStripMenuItem});
+            this.reportToolStripMenuItem,
+            this.updateToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -85,6 +87,14 @@ namespace LibraryApp_task27_
             this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
             this.reportToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.reportToolStripMenuItem.Text = "Report";
+            this.reportToolStripMenuItem.Click += new System.EventHandler(this.reportToolStripMenuItem_Click);
+            // 
+            // updateToolStripMenuItem
+            // 
+            this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
+            this.updateToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.updateToolStripMenuItem.Text = "Update";
+            this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
             // 
             // AdminMenu
             // 
@@ -95,6 +105,7 @@ namespace LibraryApp_task27_
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "AdminMenu";
             this.Text = "AdminMenu";
+            this.Load += new System.EventHandler(this.AdminMenu_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -110,5 +121,6 @@ namespace LibraryApp_task27_
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bookLibraryAndTypeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem updateToolStripMenuItem;
     }
 }

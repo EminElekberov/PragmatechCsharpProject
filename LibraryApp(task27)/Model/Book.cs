@@ -27,7 +27,9 @@ namespace LibraryApp_task27_.Model
         public Nullable<bool> IsDeleted { get; set; }
         public Nullable<System.DateTime> Buybook { get; set; }
         public Nullable<System.DateTime> SendBook { get; set; }
+        public Nullable<int> UserID { get; set; }
     
+        public virtual Login_Users Login_Users { get; set; }
         public virtual Typess Typess { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<SalestoBook> SalestoBooks { get; set; }

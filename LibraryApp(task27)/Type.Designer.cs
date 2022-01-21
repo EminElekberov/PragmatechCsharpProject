@@ -70,6 +70,7 @@ namespace LibraryApp_task27_
             this.Controls.Add(this.txtType);
             this.Name = "Type";
             this.Text = "Type";
+            this.Load += new System.EventHandler(this.Type_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -13,10 +13,10 @@ namespace LibraryApp_task27_.Model
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class LibraryDbEntities1 : DbContext
+    public partial class LibraryDbEntities2 : DbContext
     {
-        public LibraryDbEntities1()
-            : base("name=LibraryDbEntities1")
+        public LibraryDbEntities2()
+            : base("name=LibraryDbEntities2")
         {
         }
     

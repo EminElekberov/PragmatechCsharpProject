@@ -9,11 +9,11 @@ namespace LibraryApp_task27_
 {
     public partial class UpdateAndAddBook : Form
     {
-        private readonly LibraryDbEntities1 _db;
+        private readonly LibraryDbEntities2 _db;
         public UpdateAndAddBook()
         {
             InitializeComponent();
-            _db = new LibraryDbEntities1();
+            _db = new LibraryDbEntities2();
         }
 
         private void UpdateAndAddBook_Load(object sender, EventArgs e)
@@ -54,6 +54,7 @@ namespace LibraryApp_task27_
             }
             _db.SaveChanges();
             MessageBox.Show("Success", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Refreshdgv();
         }
 
         private void btndelete_Click(object sender, EventArgs e)
@@ -73,7 +74,9 @@ namespace LibraryApp_task27_
                 MessageBox.Show("This is not exists", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
+            Refreshdgv();
         }
+
         public void Refreshdgv()
         {
             dtvUpdate.DataSource = _db.Books.Where(m => m.IsDeleted == false).Select(x => new

@@ -13,12 +13,12 @@ namespace LibraryApp_task27_
 {
     public partial class BookLibrary : Form
     {
-        private readonly LibraryDbEntities1 _db;
+        private readonly LibraryDbEntities2 _db;
 
         public BookLibrary()
         {
             InitializeComponent();
-            _db = new LibraryDbEntities1();
+            _db = new LibraryDbEntities2();
         }
 
         private void BookLibrary_Load(object sender, EventArgs e)

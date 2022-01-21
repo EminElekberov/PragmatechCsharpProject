@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="LibraryDbModelStoreContainer" CdmEntityContainer="LibraryDbEntities1">
+  <EntityContainerMapping StorageEntityContainer="LibraryDbModelStoreContainer" CdmEntityContainer="LibraryDbEntities2">
     <EntitySetMapping Name="Books">
       <EntityTypeMapping TypeName="LibraryDbModel.Book">
         <MappingFragment StoreEntitySet="Books">
@@ -11,6 +11,7 @@
           <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
           <ScalarProperty Name="Buybook" ColumnName="Buybook" />
           <ScalarProperty Name="SendBook" ColumnName="SendBook" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

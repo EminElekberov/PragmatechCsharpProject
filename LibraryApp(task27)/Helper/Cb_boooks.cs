@@ -6,17 +6,14 @@ using System.Threading.Tasks;
 
 namespace LibraryApp_task27_.Helper
 {
-    public class Cb_Type
+   public class Cb_boooks
     {
-        public int Id { get; set; }
-
-        public int UserId;
-
-        public float Price { get; set; }
-        public string Name { get; set; }
+        public int Id;
+        public string FullName;
+        public double Price { get; set; }
         public override string ToString()
         {
-            return Name;
+            return FullName;
         }
     }
 }

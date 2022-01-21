@@ -11,6 +11,8 @@
     <Property Name="IsDeleted" Type="Boolean" />
     <Property Name="Buybook" Type="DateTime" Precision="3" />
     <Property Name="SendBook" Type="DateTime" Precision="3" />
+    <Property Name="UserID" Type="Int32" />
+    <NavigationProperty Name="Login_Users" Relationship="Self.FK_Books_Login_Users" FromRole="Books" ToRole="Login_Users" />
     <NavigationProperty Name="Typess" Relationship="Self.FK_Books_Typess" FromRole="Books" ToRole="Typess" />
     <NavigationProperty Name="SalestoBooks" Relationship="Self.FK_SalestoBooks_Books" FromRole="Books" ToRole="SalestoBooks" />
   </EntityType>
@@ -33,6 +35,7 @@
     <Property Name="IsAdmin" Type="Boolean" />
     <Property Name="IsActive" Type="Boolean" />
     <Property Name="IsDeleted" Type="Boolean" />
+    <NavigationProperty Name="Books" Relationship="Self.FK_Books_Login_Users" FromRole="Login_Users" ToRole="Books" />
     <NavigationProperty Name="SaleBooks" Relationship="Self.FK_SaleBook_Login_Users" FromRole="Login_Users" ToRole="SaleBook" />
   </EntityType>
   <EntityType Name="SaleBook">
@@ -90,6 +93,18 @@
     <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="SaleBooks" Relationship="Self.FK_SaleBook_Users" FromRole="Users" ToRole="SaleBook" />
   </EntityType>
+  <Association Name="FK_Books_Login_Users">
+    <End Role="Login_Users" Type="Self.Login_Users" Multiplicity="0..1" />
+    <End Role="Books" Type="Self.Book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Login_Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Books">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_Books_Typess">
     <End Role="Typess" Type="Self.Typess" Multiplicity="0..1" />
     <End Role="Books" Type="Self.Book" Multiplicity="*" />
@@ -150,7 +165,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="LibraryDbEntities1" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="LibraryDbEntities2" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Books" EntityType="Self.Book" />
     <EntitySet Name="Login_Admin" EntityType="Self.Login_Admin" />
     <EntitySet Name="Login_Users" EntityType="Self.Login_Users" />
@@ -159,6 +174,10 @@
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
     <EntitySet Name="Typesses" EntityType="Self.Typess" />
     <EntitySet Name="Users" EntityType="Self.User" />
+    <AssociationSet Name="FK_Books_Login_Users" Association="Self.FK_Books_Login_Users">
+      <End Role="Login_Users" EntitySet="Login_Users" />
+      <End Role="Books" EntitySet="Books" />
+    </AssociationSet>
     <AssociationSet Name="FK_Books_Typess" Association="Self.FK_Books_Typess">
       <End Role="Typess" EntitySet="Typesses" />
       <End Role="Books" EntitySet="Books" />

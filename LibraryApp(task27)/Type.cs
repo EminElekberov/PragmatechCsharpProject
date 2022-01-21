@@ -13,12 +13,12 @@ namespace LibraryApp_task27_
 {
     public partial class Type : Form
     {
-        private readonly LibraryDbEntities1 _db;
+        private readonly LibraryDbEntities2 _db;
 
         public Type()
         {
             InitializeComponent();
-            _db = new LibraryDbEntities1();
+            _db = new LibraryDbEntities2();
         }
 
         private void btnAddType_Click(object sender, EventArgs e)
@@ -42,6 +42,11 @@ namespace LibraryApp_task27_
             _db.SaveChanges();
             MessageBox.Show("Successfully added", "Success", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             this.Close();
+        }
+
+        private void Type_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

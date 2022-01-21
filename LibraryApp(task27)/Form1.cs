@@ -13,11 +13,11 @@ namespace LibraryApp_task27_
 {
     public partial class Form1 : Form
     {
-        private readonly LibraryDbEntities1 _db;
+        private readonly LibraryDbEntities2 _db;
         public Form1()
         {
             InitializeComponent();
-            _db = new LibraryDbEntities1();
+            _db = new LibraryDbEntities2();
         }
 
         private void BtnLogin_Click(object sender, EventArgs e)
@@ -64,6 +64,11 @@ namespace LibraryApp_task27_
                 AdminMenu adminMenu = new AdminMenu();
                 adminMenu.ShowDialog();
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

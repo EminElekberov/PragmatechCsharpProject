@@ -14,11 +14,11 @@ namespace LibraryApp_task27_
 {
     public partial class Books : Form
     {
-        private readonly LibraryDbEntities1 _db;
+        private readonly LibraryDbEntities2 _db;
         public Books()
         {
             InitializeComponent();
-            _db = new LibraryDbEntities1();
+            _db = new LibraryDbEntities2();
         }
 
         private void bookListdgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -29,13 +29,17 @@ namespace LibraryApp_task27_
         private void Books_Load(object sender, EventArgs e)
         {
             cmbType.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox1.DataSource = _db.Login_Users.Where(n => n.IsDeleted == false).Select(n => new Cb_Type
+            {
+                Id = n.Id,
+                Name = n.FullName
+            }).ToArray();
             cmbName.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbType.DataSource = _db.Typesses.Where(x => x.Deleted == false).Select(x => new Cb_Type
             {
                 Id = x.Id,
                 Name = x.FullName
             }).ToList();
-
         }
         public void Refreshdgv()
         {
@@ -62,38 +66,46 @@ namespace LibraryApp_task27_
         private void cmbType_SelectedIndexChanged(object sender, EventArgs e)
         {
             int id = ((Cb_Type)cmbType.SelectedItem).Id;
-            cmbName.DataSource = _db.Books.Where(m => m.IsDeleted == false && m.TypesId == id).Select(m => new
+            cmbName.DataSource = _db.Books.Where(m => m.IsDeleted == false && m.TypesId == id).Select(m => new Cb_boooks
             {
-                m.FullName
+                FullName=m.FullName,
+                Id=m.Id,
+                Price=(double)m.Price
             }).ToArray();
 
         }
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
+            int UserId = ((Cb_Type)comboBox1.SelectedItem).Id;
             int id = ((Cb_Type)cmbType.SelectedItem).Id;
             DateTime buy = buyBookTime.Value;
             DateTime give = sendBookTime.Value;
-            //int bookId = ((Cb_book)cmbName.SelectedItem).Id;
-            //int typeID = ((Cb_Type)cmbName.SelectedItem).Id;
+            string name = cmbName.Text;
+            //Books books1 = _db.Books.FirstOrDefault(x => x.UserID = UserId);
             bookListdgv.DataSource = _db.Books.Where(m => m.IsDeleted == false && m.TypesId == id).Select(m => new
             {
+               // Name=m.UserID,
                 m.FullName,
                 Type = m.Typess.FullName,
+                Price=m.Price,
                 buy=buy,
                 give=give
             }).ToList();
-            LibraryApp_task27_.Model.Book book = _db.Books.FirstOrDefault(x => x.Id == id);
-            LibraryApp_task27_.Model.Book bookSaveDb = new LibraryApp_task27_.Model.Book
+            Model.Book book = _db.Books.FirstOrDefault(x => x.Id == id);
+            Model.Book bookSaveDb = new Model.Book
             {
-               // FullName = bookId.ToString(),
+                FullName = name,
+                UserID=UserId,
                 TypesId = id,
+                Price=double.Parse(textBox1.Text),
+                //Price=
+                //Price=_db.Books.FirstOrDefault(x=>Convert.ToInt32(x.Price)==id),
                 Buybook = buy,
                 SendBook = give
             };
-            _db.Books.Add(book);
+            _db.Books.Add(bookSaveDb);
             _db.SaveChanges();
-            //Refreshdgv2();
 
         }
 
@@ -104,7 +116,11 @@ namespace LibraryApp_task27_
 
         private void cmbName_SelectedIndexChanged(object sender, EventArgs e)
         {
+            double price = ((Cb_boooks)cmbName.SelectedItem).Price;
 
+            textBox1.Text = price.ToString();
+           // textBox1.Text=_db.Books.Select(n=>n.)
+            //  cmbName.DataSource=bk.Price.Select(c=>c.) 
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -130,6 +146,12 @@ namespace LibraryApp_task27_
         private void sendBookTime_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void updateAndAddBookToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UpdateAndAddBook updateAndAddBook = new UpdateAndAddBook();
+            updateAndAddBook.ShowDialog();
         }
     }
 }

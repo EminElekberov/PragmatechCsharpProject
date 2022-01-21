@@ -20,3 +20,5 @@ C:\Users\EMIN\Desktop\task1\LibraryApp(task27)\obj\Debug\LibraryApp_task27_.Admi
 C:\Users\EMIN\Desktop\task1\LibraryApp(task27)\obj\Debug\LibraryApp_task27_.BookLibrary.resources
 C:\Users\EMIN\Desktop\task1\LibraryApp(task27)\obj\Debug\LibraryApp_task27_.TYpeDelete.resources
 C:\Users\EMIN\Desktop\task1\LibraryApp(task27)\obj\Debug\LibraryApp_task27_.UpdateAndAddBook.resources
+C:\Users\EMIN\Desktop\task1\LibraryApp(task27)\obj\Debug\LibraryApp_task27_.AdminPanel.resources
+C:\Users\EMIN\Desktop\task1\LibraryApp(task27)\obj\Debug\LibraryApp_task27_.Spash.resources

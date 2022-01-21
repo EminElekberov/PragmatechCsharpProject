@@ -13,13 +13,13 @@ namespace LibraryApp_task27_
 {
     public partial class Register : Form
     {
-        private readonly LibraryDbEntities1 _db;
+        private readonly LibraryDbEntities2 _db;
         private readonly Form _login;
 
         public Register(Form login)
         {
             InitializeComponent();
-            _db = new LibraryDbEntities1();
+            _db = new LibraryDbEntities2();
             _login = login;
         }
 
@@ -85,6 +85,11 @@ namespace LibraryApp_task27_
         private void Register_FormClosing(object sender, FormClosingEventArgs e)
         {
             _login.ShowDialog();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

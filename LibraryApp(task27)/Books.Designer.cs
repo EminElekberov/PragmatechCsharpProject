@@ -41,6 +41,9 @@ namespace LibraryApp_task27_
             this.BtnAdd = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.updateAndAddBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.bookListdgv)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -48,7 +51,7 @@ namespace LibraryApp_task27_
             // cmbType
             // 
             this.cmbType.FormattingEnabled = true;
-            this.cmbType.Location = new System.Drawing.Point(10, 60);
+            this.cmbType.Location = new System.Drawing.Point(3, 117);
             this.cmbType.Name = "cmbType";
             this.cmbType.Size = new System.Drawing.Size(131, 21);
             this.cmbType.TabIndex = 13;
@@ -57,7 +60,7 @@ namespace LibraryApp_task27_
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 44);
+            this.label1.Location = new System.Drawing.Point(0, 101);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 13);
             this.label1.TabIndex = 12;
@@ -67,7 +70,7 @@ namespace LibraryApp_task27_
             // cmbName
             // 
             this.cmbName.FormattingEnabled = true;
-            this.cmbName.Location = new System.Drawing.Point(205, 60);
+            this.cmbName.Location = new System.Drawing.Point(193, 117);
             this.cmbName.Name = "cmbName";
             this.cmbName.Size = new System.Drawing.Size(131, 21);
             this.cmbName.TabIndex = 14;
@@ -76,7 +79,7 @@ namespace LibraryApp_task27_
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(202, 44);
+            this.label2.Location = new System.Drawing.Point(195, 101);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 13);
             this.label2.TabIndex = 15;
@@ -86,7 +89,7 @@ namespace LibraryApp_task27_
             // buyBookTime
             // 
             this.buyBookTime.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.buyBookTime.Location = new System.Drawing.Point(405, 60);
+            this.buyBookTime.Location = new System.Drawing.Point(482, 120);
             this.buyBookTime.Name = "buyBookTime";
             this.buyBookTime.Size = new System.Drawing.Size(103, 20);
             this.buyBookTime.TabIndex = 16;
@@ -95,7 +98,7 @@ namespace LibraryApp_task27_
             // sendBookTime
             // 
             this.sendBookTime.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.sendBookTime.Location = new System.Drawing.Point(599, 57);
+            this.sendBookTime.Location = new System.Drawing.Point(676, 117);
             this.sendBookTime.Name = "sendBookTime";
             this.sendBookTime.Size = new System.Drawing.Size(112, 20);
             this.sendBookTime.TabIndex = 17;
@@ -107,16 +110,16 @@ namespace LibraryApp_task27_
             this.bookListdgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.bookListdgv.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bookListdgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bookListdgv.Location = new System.Drawing.Point(2, 206);
+            this.bookListdgv.Location = new System.Drawing.Point(2, 231);
             this.bookListdgv.Name = "bookListdgv";
-            this.bookListdgv.Size = new System.Drawing.Size(794, 240);
+            this.bookListdgv.Size = new System.Drawing.Size(794, 215);
             this.bookListdgv.TabIndex = 18;
             this.bookListdgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bookListdgv_CellContentClick);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(402, 44);
+            this.label3.Location = new System.Drawing.Point(479, 104);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 13);
             this.label3.TabIndex = 19;
@@ -126,7 +129,7 @@ namespace LibraryApp_task27_
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(596, 41);
+            this.label4.Location = new System.Drawing.Point(673, 101);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(57, 13);
             this.label4.TabIndex = 20;
@@ -135,7 +138,7 @@ namespace LibraryApp_task27_
             // 
             // BtnAdd
             // 
-            this.BtnAdd.Location = new System.Drawing.Point(259, 120);
+            this.BtnAdd.Location = new System.Drawing.Point(252, 177);
             this.BtnAdd.Name = "BtnAdd";
             this.BtnAdd.Size = new System.Drawing.Size(271, 48);
             this.BtnAdd.TabIndex = 21;
@@ -158,12 +161,40 @@ namespace LibraryApp_task27_
             this.updateAndAddBookToolStripMenuItem.Name = "updateAndAddBookToolStripMenuItem";
             this.updateAndAddBookToolStripMenuItem.Size = new System.Drawing.Size(135, 20);
             this.updateAndAddBookToolStripMenuItem.Text = "Update and Add Book";
+            this.updateAndAddBookToolStripMenuItem.Click += new System.EventHandler(this.updateAndAddBookToolStripMenuItem_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(3, 54);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(131, 21);
+            this.comboBox1.TabIndex = 23;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(0, 38);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(62, 13);
+            this.label5.TabIndex = 24;
+            this.label5.Text = "Select User";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(344, 117);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 25;
             // 
             // Books
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.BtnAdd);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -201,5 +232,8 @@ namespace LibraryApp_task27_
         private System.Windows.Forms.Button BtnAdd;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem updateAndAddBookToolStripMenuItem;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

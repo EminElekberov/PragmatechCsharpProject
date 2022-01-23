@@ -16,7 +16,7 @@ namespace LibraryApp_task27_
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Books());
+            Application.Run(new AdminPanel());
         }
     }
 }

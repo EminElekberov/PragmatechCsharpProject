@@ -10,7 +10,7 @@ namespace LibraryApp_task27_.Helper
     {
         public int Id { get; set; }
 
-        public int UserId;
+        public int UserId { get; set; }
 
         public float Price { get; set; }
         public string Name { get; set; }

@@ -83,15 +83,7 @@ namespace LibraryApp_task27_
             DateTime give = sendBookTime.Value;
             string name = cmbName.Text;
             //Books books1 = _db.Books.FirstOrDefault(x => x.UserID = UserId);
-            bookListdgv.DataSource = _db.Books.Where(m => m.IsDeleted == false && m.TypesId == id).Select(m => new
-            {
-               // Name=m.UserID,
-                m.FullName,
-                Type = m.Typess.FullName,
-                Price=m.Price,
-                buy=buy,
-                give=give
-            }).ToList();
+           
             Model.Book book = _db.Books.FirstOrDefault(x => x.Id == id);
             Model.Book bookSaveDb = new Model.Book
             {
@@ -102,8 +94,19 @@ namespace LibraryApp_task27_
                 //Price=
                 //Price=_db.Books.FirstOrDefault(x=>Convert.ToInt32(x.Price)==id),
                 Buybook = buy,
-                SendBook = give
+                SendBook = give,
+                IsDeleted=true
             };
+            bookListdgv.DataSource = _db.Books.Where(m => m.IsDeleted == false && m.TypesId == id).Select(m => new
+            {
+                // Name=m.UserID,
+                m.Id,
+                m.FullName,
+                Type = m.Typess.FullName,
+                Price = m.Price,
+                buy = buy,
+                give = give
+            }).ToList();
             _db.Books.Add(bookSaveDb);
             _db.SaveChanges();
 

@@ -27,8 +27,7 @@ namespace LibraryApp_task27_
             {
                 x.FullName,
                 Type = x.Typess.FullName,
-                x.Buybook,
-                x.SendBook
+               
             }).ToList();
         }
     }

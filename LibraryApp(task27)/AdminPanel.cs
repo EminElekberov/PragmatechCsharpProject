@@ -32,14 +32,25 @@ namespace LibraryApp_task27_
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int id = ((Cb_Type)comboBox1.SelectedItem).Id;
-          // string name = ((Cb_Type)comboBox1.SelectedItem).Name;
-            dataGridView1.DataSource = _db.Books.Where(m => m.IsDeleted == false && m.UserID==id).Select(m => new
+            try
             {
-                UserId = (int)m.UserID,
-                Price = (float)m.Price,
-                Name = m.FullName
-            }).ToArray();
+                int id = ((Cb_Type)comboBox1.SelectedItem).Id;
+                dataGridView1.DataSource = _db.Books.Where(m => m.IsDeleted == true && m.UserID == id).Select(m => new
+                {
+                    UserId = m.UserID,
+                    Price = m.Price,
+                    Name = m.FullName,
+                    SendBook = m.SendBook
+                }).ToArray();
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            // string name = ((Cb_Type)comboBox1.SelectedItem).Name;
+
         }
         public void Check()
         {
@@ -49,7 +60,7 @@ namespace LibraryApp_task27_
             //label2.Text = dtS;
             //int dtI = Convert.ToInt32(dtS);
             #endregion
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -57,13 +68,12 @@ namespace LibraryApp_task27_
             double price = double.Parse(numericUpDown1.Value.ToString());
             DateTime toDay = dateTimePicker1.Value.Date;
             DateTime endDate = dateTimePicker2.Value.Date;
-            TimeSpan sp = endDate - toDay;
+            TimeSpan sp = toDay - endDate;
             int days = sp.Days;
-            if (days>0)
+            if (toDay > endDate)
             {
-                double otherMany = (price * 0.3) * days + price;
-                CheckLabel.Text = "Bu kitab " + days.ToString()+" gecikib ve elave odenis "+ otherMany.ToString();
-
+                double otherMany = (price * 0.3) * days;
+                CheckLabel.Text = "Bu kitab " + days.ToString() + " gecikib ve elave odenis " + otherMany.ToString();
             }
             else
             {
@@ -71,11 +81,21 @@ namespace LibraryApp_task27_
                 numericUpDown1.Value = 0;
                 dateTimePicker1.Value = DateTime.Now;
             }
+            //CheckLabel.Text="";
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string name = dataGridView1.Rows[e.RowIndex].Cells["Name"].Value.ToString();
+            Model.Book bk = _db.Books.FirstOrDefault(m => m.FullName == name);
+            dateTimePicker2.Value = DateTime.Parse(bk.SendBook.ToString());
+            numericUpDown1.Value = decimal.Parse(bk.Price.ToString());
+            comboBox1.SelectedIndex = comboBox1.FindString(bk.Typess.FullName);
         }
     }
 }

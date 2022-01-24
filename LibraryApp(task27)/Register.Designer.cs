@@ -71,6 +71,7 @@ namespace LibraryApp_task27_
             this.label4.Size = new System.Drawing.Size(91, 13);
             this.label4.TabIndex = 16;
             this.label4.Text = "Repeat Password";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txtRepPass
             // 
@@ -78,6 +79,7 @@ namespace LibraryApp_task27_
             this.txtRepPass.Name = "txtRepPass";
             this.txtRepPass.Size = new System.Drawing.Size(189, 20);
             this.txtRepPass.TabIndex = 15;
+            this.txtRepPass.TextChanged += new System.EventHandler(this.txtRepPass_TextChanged);
             // 
             // label3
             // 
@@ -87,6 +89,7 @@ namespace LibraryApp_task27_
             this.label3.Size = new System.Drawing.Size(53, 13);
             this.label3.TabIndex = 14;
             this.label3.Text = "Password";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtPass
             // 
@@ -94,6 +97,7 @@ namespace LibraryApp_task27_
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(189, 20);
             this.txtPass.TabIndex = 13;
+            this.txtPass.TextChanged += new System.EventHandler(this.txtPass_TextChanged);
             // 
             // label2
             // 
@@ -103,6 +107,7 @@ namespace LibraryApp_task27_
             this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 12;
             this.label2.Text = "Fullaname";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtName
             // 
@@ -110,6 +115,7 @@ namespace LibraryApp_task27_
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(189, 20);
             this.txtName.TabIndex = 11;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // label1
             // 
@@ -120,6 +126,7 @@ namespace LibraryApp_task27_
             this.label1.Size = new System.Drawing.Size(32, 13);
             this.label1.TabIndex = 10;
             this.label1.Text = "Email";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtEmail
             // 
@@ -127,6 +134,7 @@ namespace LibraryApp_task27_
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(189, 20);
             this.txtEmail.TabIndex = 9;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // Register
             // 

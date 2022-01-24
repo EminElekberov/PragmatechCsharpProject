@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\EMIN\\Desktop\\task1\\task11(aptek)\\task11(aptek).csproj",
-      "projectName": "task11(aptek)",
-      "projectPath": "C:\\Users\\EMIN\\Desktop\\task1\\task11(aptek)\\task11(aptek).csproj",
+      "projectUniqueName": "C:\\Users\\EMIN\\Desktop\\task1\\task11(aptek)\\Medicine(ConsoleApp).csproj",
+      "projectName": "Medicine(ConsoleApp)",
+      "projectPath": "C:\\Users\\EMIN\\Desktop\\task1\\task11(aptek)\\Medicine(ConsoleApp).csproj",
       "packagesPath": "C:\\Users\\EMIN\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\EMIN\\Desktop\\task1\\task11(aptek)\\obj\\",
       "projectStyle": "PackageReference",

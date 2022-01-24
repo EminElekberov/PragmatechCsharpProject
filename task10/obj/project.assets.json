@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\EMIN\\Desktop\\task1\\task10\\task10.csproj",
-      "projectName": "task10",
-      "projectPath": "C:\\Users\\EMIN\\Desktop\\task1\\task10\\task10.csproj",
+      "projectUniqueName": "C:\\Users\\EMIN\\Desktop\\task1\\task10\\area calculation(interface).csproj",
+      "projectName": "area calculation(interface)",
+      "projectPath": "C:\\Users\\EMIN\\Desktop\\task1\\task10\\area calculation(interface).csproj",
       "packagesPath": "C:\\Users\\EMIN\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\EMIN\\Desktop\\task1\\task10\\obj\\",
       "projectStyle": "PackageReference",

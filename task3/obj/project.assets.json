@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\EMIN\\Desktop\\task1\\task3\\task3.csproj",
-      "projectName": "task3",
-      "projectPath": "C:\\Users\\EMIN\\Desktop\\task1\\task3\\task3.csproj",
+      "projectUniqueName": "C:\\Users\\EMIN\\Desktop\\task1\\task3\\StudentClassRegister(ConsoleApp).csproj",
+      "projectName": "StudentClassRegister(ConsoleApp)",
+      "projectPath": "C:\\Users\\EMIN\\Desktop\\task1\\task3\\StudentClassRegister(ConsoleApp).csproj",
       "packagesPath": "C:\\Users\\EMIN\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\EMIN\\Desktop\\task1\\task3\\obj\\",
       "projectStyle": "PackageReference",

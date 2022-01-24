@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\EMIN\\Desktop\\task1\\task7(OOP)\\task7(OOP).csproj",
-      "projectName": "task7(OOP)",
-      "projectPath": "C:\\Users\\EMIN\\Desktop\\task1\\task7(OOP)\\task7(OOP).csproj",
+      "projectUniqueName": "C:\\Users\\EMIN\\Desktop\\task1\\task7(OOP)\\OOPexamle.csproj",
+      "projectName": "OOPexamle",
+      "projectPath": "C:\\Users\\EMIN\\Desktop\\task1\\task7(OOP)\\OOPexamle.csproj",
       "packagesPath": "C:\\Users\\EMIN\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\EMIN\\Desktop\\task1\\task7(OOP)\\obj\\",
       "projectStyle": "PackageReference",

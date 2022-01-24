@@ -12,3 +12,17 @@ D:\pragmateck\task1\task6\bin\Debug\netcoreapp3.1\task6.pdb
 D:\pragmateck\task1\task6\obj\Debug\netcoreapp3.1\task6.dll
 D:\pragmateck\task1\task6\obj\Debug\netcoreapp3.1\task6.pdb
 D:\pragmateck\task1\task6\obj\Debug\netcoreapp3.1\task6.genruntimeconfig.cache
+C:\Users\EMIN\Desktop\task1\task6\bin\Debug\netcoreapp3.1\task6.exe
+C:\Users\EMIN\Desktop\task1\task6\bin\Debug\netcoreapp3.1\task6.deps.json
+C:\Users\EMIN\Desktop\task1\task6\bin\Debug\netcoreapp3.1\task6.runtimeconfig.json
+C:\Users\EMIN\Desktop\task1\task6\bin\Debug\netcoreapp3.1\task6.runtimeconfig.dev.json
+C:\Users\EMIN\Desktop\task1\task6\bin\Debug\netcoreapp3.1\task6.dll
+C:\Users\EMIN\Desktop\task1\task6\bin\Debug\netcoreapp3.1\task6.pdb
+C:\Users\EMIN\Desktop\task1\task6\obj\Debug\netcoreapp3.1\task6.csproj.AssemblyReference.cache
+C:\Users\EMIN\Desktop\task1\task6\obj\Debug\netcoreapp3.1\task6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EMIN\Desktop\task1\task6\obj\Debug\netcoreapp3.1\task6.AssemblyInfoInputs.cache
+C:\Users\EMIN\Desktop\task1\task6\obj\Debug\netcoreapp3.1\task6.AssemblyInfo.cs
+C:\Users\EMIN\Desktop\task1\task6\obj\Debug\netcoreapp3.1\task6.csproj.CoreCompileInputs.cache
+C:\Users\EMIN\Desktop\task1\task6\obj\Debug\netcoreapp3.1\task6.dll
+C:\Users\EMIN\Desktop\task1\task6\obj\Debug\netcoreapp3.1\task6.pdb
+C:\Users\EMIN\Desktop\task1\task6\obj\Debug\netcoreapp3.1\task6.genruntimeconfig.cache

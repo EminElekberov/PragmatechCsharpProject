@@ -29,8 +29,6 @@ namespace task4
         }
         public bool IsPasswordValid(string password)
         {
-            bool Uppercase = password.Any(char.IsUpper);
-            bool Lowercase = password.Any(char.IsLower);
             byte score = 0;
             string st = Console.ReadLine();
             if (password.Length >= 8 && password.Length <= 25)
@@ -40,21 +38,10 @@ namespace task4
                     return true;
                 }
             }
-            if (Uppercase)
-            {
-                score++;
-                Console.WriteLine("Uppercase test passed.");
-            }
-            else
-            {
-                Console.WriteLine("Uppercase test failed.");
-            }
+            
+           
 
-            if (Lowercase)
-            {
-                score++;
-                Console.WriteLine("Lowercase test passed.");
-            }
+            
             else
             {
                 Console.WriteLine("Lowercase test failed.");

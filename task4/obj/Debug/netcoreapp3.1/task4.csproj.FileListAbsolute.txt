@@ -12,3 +12,17 @@ D:\pragmateck\task1\task4\obj\Debug\netcoreapp3.1\task4.csproj.CoreCompileInputs
 D:\pragmateck\task1\task4\obj\Debug\netcoreapp3.1\task4.dll
 D:\pragmateck\task1\task4\obj\Debug\netcoreapp3.1\task4.pdb
 D:\pragmateck\task1\task4\obj\Debug\netcoreapp3.1\task4.genruntimeconfig.cache
+C:\Users\EMIN\Desktop\task1\task4\obj\Debug\netcoreapp3.1\task4.csproj.AssemblyReference.cache
+C:\Users\EMIN\Desktop\task1\task4\obj\Debug\netcoreapp3.1\task4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EMIN\Desktop\task1\task4\obj\Debug\netcoreapp3.1\task4.AssemblyInfoInputs.cache
+C:\Users\EMIN\Desktop\task1\task4\obj\Debug\netcoreapp3.1\task4.AssemblyInfo.cs
+C:\Users\EMIN\Desktop\task1\task4\obj\Debug\netcoreapp3.1\task4.csproj.CoreCompileInputs.cache
+C:\Users\EMIN\Desktop\task1\task4\obj\Debug\netcoreapp3.1\task4.dll
+C:\Users\EMIN\Desktop\task1\task4\obj\Debug\netcoreapp3.1\task4.pdb
+C:\Users\EMIN\Desktop\task1\task4\bin\Debug\netcoreapp3.1\task4.exe
+C:\Users\EMIN\Desktop\task1\task4\bin\Debug\netcoreapp3.1\task4.deps.json
+C:\Users\EMIN\Desktop\task1\task4\bin\Debug\netcoreapp3.1\task4.runtimeconfig.json
+C:\Users\EMIN\Desktop\task1\task4\bin\Debug\netcoreapp3.1\task4.runtimeconfig.dev.json
+C:\Users\EMIN\Desktop\task1\task4\bin\Debug\netcoreapp3.1\task4.dll
+C:\Users\EMIN\Desktop\task1\task4\bin\Debug\netcoreapp3.1\task4.pdb
+C:\Users\EMIN\Desktop\task1\task4\obj\Debug\netcoreapp3.1\task4.genruntimeconfig.cache

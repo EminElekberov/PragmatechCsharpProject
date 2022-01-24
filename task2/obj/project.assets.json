@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\EMIN\\Desktop\\task1\\task2\\task2.csproj",
-      "projectName": "task2",
-      "projectPath": "C:\\Users\\EMIN\\Desktop\\task1\\task2\\task2.csproj",
+      "projectUniqueName": "C:\\Users\\EMIN\\Desktop\\task1\\task2\\String methods.csproj",
+      "projectName": "String methods",
+      "projectPath": "C:\\Users\\EMIN\\Desktop\\task1\\task2\\String methods.csproj",
       "packagesPath": "C:\\Users\\EMIN\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\EMIN\\Desktop\\task1\\task2\\obj\\",
       "projectStyle": "PackageReference",

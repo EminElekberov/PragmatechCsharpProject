@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\EMIN\\Desktop\\task1\\task6\\task6.csproj",
-      "projectName": "task6",
-      "projectPath": "C:\\Users\\EMIN\\Desktop\\task1\\task6\\task6.csproj",
+      "projectUniqueName": "C:\\Users\\EMIN\\Desktop\\task1\\task6\\CreateClassAndRegisterStudent.csproj",
+      "projectName": "CreateClassAndRegisterStudent",
+      "projectPath": "C:\\Users\\EMIN\\Desktop\\task1\\task6\\CreateClassAndRegisterStudent.csproj",
       "packagesPath": "C:\\Users\\EMIN\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\EMIN\\Desktop\\task1\\task6\\obj\\",
       "projectStyle": "PackageReference",

@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\EMIN\\Desktop\\task1\\winformders15\\winformders15.csproj",
-      "projectName": "winformders15",
-      "projectPath": "C:\\Users\\EMIN\\Desktop\\task1\\winformders15\\winformders15.csproj",
+      "projectUniqueName": "C:\\Users\\EMIN\\Desktop\\task1\\winformders15\\RandomName(winform).csproj",
+      "projectName": "RandomName(winform)",
+      "projectPath": "C:\\Users\\EMIN\\Desktop\\task1\\winformders15\\RandomName(winform).csproj",
       "packagesPath": "C:\\Users\\EMIN\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\EMIN\\Desktop\\task1\\winformders15\\obj\\",
       "projectStyle": "PackageReference",

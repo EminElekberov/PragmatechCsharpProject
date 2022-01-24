@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\EMIN\\Desktop\\task1\\task12\\task12.csproj",
-      "projectName": "task12",
-      "projectPath": "C:\\Users\\EMIN\\Desktop\\task1\\task12\\task12.csproj",
+      "projectUniqueName": "C:\\Users\\EMIN\\Desktop\\task1\\task12\\Delegate.csproj",
+      "projectName": "Delegate",
+      "projectPath": "C:\\Users\\EMIN\\Desktop\\task1\\task12\\Delegate.csproj",
       "packagesPath": "C:\\Users\\EMIN\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\EMIN\\Desktop\\task1\\task12\\obj\\",
       "projectStyle": "PackageReference",

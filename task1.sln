@@ -5,41 +5,41 @@ VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{3AFBFED3-CE19-4B98-A5A5-2655A92A2EB4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task2", "task2\task2.csproj", "{C4308967-FF18-4F70-BD01-67AA18AAF082}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "String methods", "task2\String methods.csproj", "{C4308967-FF18-4F70-BD01-67AA18AAF082}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task3", "task3\task3.csproj", "{A2AF8C95-E0A4-43F4-80F6-24550F59D5CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentClassRegister(ConsoleApp)", "task3\StudentClassRegister(ConsoleApp).csproj", "{A2AF8C95-E0A4-43F4-80F6-24550F59D5CD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task4", "task4\task4.csproj", "{2A96E6F1-504C-4251-959F-CDD32F3FFAD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountCreate(ConsoleApp)", "task4\AccountCreate(ConsoleApp).csproj", "{2A96E6F1-504C-4251-959F-CDD32F3FFAD6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task5", "task5\task5.csproj", "{D1E77D91-A759-4E79-BBB6-6F231DCF52ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegisterCountry(ConsoleApp)", "task5\RegisterCountry(ConsoleApp).csproj", "{D1E77D91-A759-4E79-BBB6-6F231DCF52ED}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "example", "example\example.csproj", "{98345CBC-D706-48DE-BA4D-4D211F94785D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task6", "task6\task6.csproj", "{D1BD3159-02A2-490B-9442-1547AAD0FB08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreateClassAndRegisterStudent", "task6\CreateClassAndRegisterStudent.csproj", "{D1BD3159-02A2-490B-9442-1547AAD0FB08}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task7(OOP)", "task7(OOP)\task7(OOP).csproj", "{F4B9D2AB-A954-4CC6-B1D2-D6B5AE04803F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOPexamle", "task7(OOP)\OOPexamle.csproj", "{F4B9D2AB-A954-4CC6-B1D2-D6B5AE04803F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "taskquiz", "taskquiz\taskquiz.csproj", "{2730996E-4178-40AC-BD29-57D55500782A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task10", "task10\task10.csproj", "{59F603DF-2F1A-44CF-A0D4-01D7FA61A669}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "area calculation(interface)", "task10\area calculation(interface).csproj", "{59F603DF-2F1A-44CF-A0D4-01D7FA61A669}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task11(aptek)", "task11(aptek)\task11(aptek).csproj", "{D91CBE5A-A5F9-4553-B755-67E29A6E548C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Medicine(ConsoleApp)", "task11(aptek)\Medicine(ConsoleApp).csproj", "{D91CBE5A-A5F9-4553-B755-67E29A6E548C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task12", "task12\task12.csproj", "{9055B09E-8857-4F35-B5B0-419879E3207C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegate", "task12\Delegate.csproj", "{9055B09E-8857-4F35-B5B0-419879E3207C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task13", "task13\task13.csproj", "{5FFB6C5D-6C2E-438E-9992-DDB40B8F3965}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValuateExchange", "task13\ValuateExchange.csproj", "{5FFB6C5D-6C2E-438E-9992-DDB40B8F3965}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "winformders15", "winformders15\winformders15.csproj", "{DB6D78FC-3F2B-46EE-9031-2593FBE4C2DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RandomName(winform)", "winformders15\RandomName(winform).csproj", "{DB6D78FC-3F2B-46EE-9031-2593FBE4C2DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "winformTask18", "winformTask18\winformTask18.csproj", "{B5F7083A-524F-4BCF-B7AE-6AA6B2253EB0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuStudent(WinformApi)", "winformTask18\MenuStudent(WinformApi).csproj", "{B5F7083A-524F-4BCF-B7AE-6AA6B2253EB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "winform16", "winform16\winform16.csproj", "{13E3E770-0802-411E-9781-4CBCDCE11FBF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Student(winformAPi)", "winform16\Student(winformAPi).csproj", "{13E3E770-0802-411E-9781-4CBCDCE11FBF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{FF7AE08B-5318-440D-BFAE-4F0F97830D7B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Register(task24)", "Register(task24)\Register(task24).csproj", "{9B6BBE91-1012-498F-902C-D226ADB3B6AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudenRegister(task25)", "StudenRegister(task25)\StudenRegister(task25).csproj", "{76B96AA7-82D4-46B7-896A-D055A5DBB26B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudenRegister(WinformApp)", "StudenRegister(task25)\StudenRegister(WinformApp).csproj", "{76B96AA7-82D4-46B7-896A-D055A5DBB26B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryApp(task27)", "LibraryApp(task27)\LibraryApp(task27).csproj", "{D1109A57-F4AD-4554-AB16-A6E669FF25BA}"
 EndProject

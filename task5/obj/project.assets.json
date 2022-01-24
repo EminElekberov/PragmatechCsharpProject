@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\EMIN\\Desktop\\task1\\task5\\task5.csproj",
-      "projectName": "task5",
-      "projectPath": "C:\\Users\\EMIN\\Desktop\\task1\\task5\\task5.csproj",
+      "projectUniqueName": "C:\\Users\\EMIN\\Desktop\\task1\\task5\\RegisterCountry(ConsoleApp).csproj",
+      "projectName": "RegisterCountry(ConsoleApp)",
+      "projectPath": "C:\\Users\\EMIN\\Desktop\\task1\\task5\\RegisterCountry(ConsoleApp).csproj",
       "packagesPath": "C:\\Users\\EMIN\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\EMIN\\Desktop\\task1\\task5\\obj\\",
       "projectStyle": "PackageReference",

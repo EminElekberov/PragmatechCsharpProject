@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\EMIN\\Desktop\\task1\\task4\\task4.csproj",
-      "projectName": "task4",
-      "projectPath": "C:\\Users\\EMIN\\Desktop\\task1\\task4\\task4.csproj",
+      "projectUniqueName": "C:\\Users\\EMIN\\Desktop\\task1\\task4\\AccountCreate(ConsoleApp).csproj",
+      "projectName": "AccountCreate(ConsoleApp)",
+      "projectPath": "C:\\Users\\EMIN\\Desktop\\task1\\task4\\AccountCreate(ConsoleApp).csproj",
       "packagesPath": "C:\\Users\\EMIN\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\EMIN\\Desktop\\task1\\task4\\obj\\",
       "projectStyle": "PackageReference",

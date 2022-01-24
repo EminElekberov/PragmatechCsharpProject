@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\EMIN\\Desktop\\task1\\task13\\task13.csproj",
-      "projectName": "task13",
-      "projectPath": "C:\\Users\\EMIN\\Desktop\\task1\\task13\\task13.csproj",
+      "projectUniqueName": "C:\\Users\\EMIN\\Desktop\\task1\\task13\\ValuateExchange.csproj",
+      "projectName": "ValuateExchange",
+      "projectPath": "C:\\Users\\EMIN\\Desktop\\task1\\task13\\ValuateExchange.csproj",
       "packagesPath": "C:\\Users\\EMIN\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\EMIN\\Desktop\\task1\\task13\\obj\\",
       "projectStyle": "PackageReference",

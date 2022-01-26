@@ -60,6 +60,7 @@ namespace task12
 
             //}
             #endregion
+            //
 
             #region IsContainsDigit
             //public delegate bool Check1(string n);

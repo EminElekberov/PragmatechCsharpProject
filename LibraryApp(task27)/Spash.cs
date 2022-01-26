@@ -17,7 +17,7 @@ namespace LibraryApp_task27_
             InitializeComponent();
         }
         int startpoint = 0;
-
+        //
         private void Spash_Load(object sender, EventArgs e)
         {
             timer1.Start();

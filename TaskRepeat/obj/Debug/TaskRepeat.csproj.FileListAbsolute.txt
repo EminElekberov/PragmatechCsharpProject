@@ -1,0 +1,7 @@
+C:\Users\EMIN\Desktop\task1\TaskRepeat\bin\Debug\TaskRepeat.exe.config
+C:\Users\EMIN\Desktop\task1\TaskRepeat\bin\Debug\TaskRepeat.exe
+C:\Users\EMIN\Desktop\task1\TaskRepeat\bin\Debug\TaskRepeat.pdb
+C:\Users\EMIN\Desktop\task1\TaskRepeat\obj\Debug\TaskRepeat.csproj.AssemblyReference.cache
+C:\Users\EMIN\Desktop\task1\TaskRepeat\obj\Debug\TaskRepeat.csproj.CoreCompileInputs.cache
+C:\Users\EMIN\Desktop\task1\TaskRepeat\obj\Debug\TaskRepeat.exe
+C:\Users\EMIN\Desktop\task1\TaskRepeat\obj\Debug\TaskRepeat.pdb

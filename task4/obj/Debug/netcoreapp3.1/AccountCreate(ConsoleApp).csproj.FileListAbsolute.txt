@@ -1,0 +1,14 @@
+C:\Users\EMIN\Desktop\task1\task4\bin\Debug\netcoreapp3.1\AccountCreate(ConsoleApp).exe
+C:\Users\EMIN\Desktop\task1\task4\bin\Debug\netcoreapp3.1\AccountCreate(ConsoleApp).deps.json
+C:\Users\EMIN\Desktop\task1\task4\bin\Debug\netcoreapp3.1\AccountCreate(ConsoleApp).runtimeconfig.json
+C:\Users\EMIN\Desktop\task1\task4\bin\Debug\netcoreapp3.1\AccountCreate(ConsoleApp).runtimeconfig.dev.json
+C:\Users\EMIN\Desktop\task1\task4\bin\Debug\netcoreapp3.1\AccountCreate(ConsoleApp).dll
+C:\Users\EMIN\Desktop\task1\task4\bin\Debug\netcoreapp3.1\AccountCreate(ConsoleApp).pdb
+C:\Users\EMIN\Desktop\task1\task4\obj\Debug\netcoreapp3.1\AccountCreate(ConsoleApp).csproj.AssemblyReference.cache
+C:\Users\EMIN\Desktop\task1\task4\obj\Debug\netcoreapp3.1\AccountCreate(ConsoleApp).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EMIN\Desktop\task1\task4\obj\Debug\netcoreapp3.1\AccountCreate(ConsoleApp).AssemblyInfoInputs.cache
+C:\Users\EMIN\Desktop\task1\task4\obj\Debug\netcoreapp3.1\AccountCreate(ConsoleApp).AssemblyInfo.cs
+C:\Users\EMIN\Desktop\task1\task4\obj\Debug\netcoreapp3.1\AccountCreate(ConsoleApp).csproj.CoreCompileInputs.cache
+C:\Users\EMIN\Desktop\task1\task4\obj\Debug\netcoreapp3.1\AccountCreate(ConsoleApp).dll
+C:\Users\EMIN\Desktop\task1\task4\obj\Debug\netcoreapp3.1\AccountCreate(ConsoleApp).pdb
+C:\Users\EMIN\Desktop\task1\task4\obj\Debug\netcoreapp3.1\AccountCreate(ConsoleApp).genruntimeconfig.cache

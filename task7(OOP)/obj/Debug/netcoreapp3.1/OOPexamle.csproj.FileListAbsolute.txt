@@ -1,0 +1,14 @@
+C:\Users\EMIN\Desktop\task1\task7(OOP)\bin\Debug\netcoreapp3.1\OOPexamle.exe
+C:\Users\EMIN\Desktop\task1\task7(OOP)\bin\Debug\netcoreapp3.1\OOPexamle.deps.json
+C:\Users\EMIN\Desktop\task1\task7(OOP)\bin\Debug\netcoreapp3.1\OOPexamle.runtimeconfig.json
+C:\Users\EMIN\Desktop\task1\task7(OOP)\bin\Debug\netcoreapp3.1\OOPexamle.runtimeconfig.dev.json
+C:\Users\EMIN\Desktop\task1\task7(OOP)\bin\Debug\netcoreapp3.1\OOPexamle.dll
+C:\Users\EMIN\Desktop\task1\task7(OOP)\bin\Debug\netcoreapp3.1\OOPexamle.pdb
+C:\Users\EMIN\Desktop\task1\task7(OOP)\obj\Debug\netcoreapp3.1\OOPexamle.csproj.AssemblyReference.cache
+C:\Users\EMIN\Desktop\task1\task7(OOP)\obj\Debug\netcoreapp3.1\OOPexamle.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EMIN\Desktop\task1\task7(OOP)\obj\Debug\netcoreapp3.1\OOPexamle.AssemblyInfoInputs.cache
+C:\Users\EMIN\Desktop\task1\task7(OOP)\obj\Debug\netcoreapp3.1\OOPexamle.AssemblyInfo.cs
+C:\Users\EMIN\Desktop\task1\task7(OOP)\obj\Debug\netcoreapp3.1\OOPexamle.csproj.CoreCompileInputs.cache
+C:\Users\EMIN\Desktop\task1\task7(OOP)\obj\Debug\netcoreapp3.1\OOPexamle.dll
+C:\Users\EMIN\Desktop\task1\task7(OOP)\obj\Debug\netcoreapp3.1\OOPexamle.pdb
+C:\Users\EMIN\Desktop\task1\task7(OOP)\obj\Debug\netcoreapp3.1\OOPexamle.genruntimeconfig.cache

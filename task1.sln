@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudenRegister(WinformApp)"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryApp(task27)", "LibraryApp(task27)\LibraryApp(task27).csproj", "{D1109A57-F4AD-4554-AB16-A6E669FF25BA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskRepeat", "TaskRepeat\TaskRepeat.csproj", "{A3937F55-0D16-40E1-A507-6842CEEA69CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{D1109A57-F4AD-4554-AB16-A6E669FF25BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1109A57-F4AD-4554-AB16-A6E669FF25BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1109A57-F4AD-4554-AB16-A6E669FF25BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3937F55-0D16-40E1-A507-6842CEEA69CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3937F55-0D16-40E1-A507-6842CEEA69CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3937F55-0D16-40E1-A507-6842CEEA69CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3937F55-0D16-40E1-A507-6842CEEA69CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

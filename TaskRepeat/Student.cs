@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TaskRepeat
 {
-   public abstract class Student
+   public  class Student
     {
         #region 1
         //public string FullName { get; set; }
@@ -75,10 +75,26 @@ namespace TaskRepeat
         //}
         #endregion
 
-        public abstract bool PasswordChecker(string pass);
-        public virtual void Show()
+        //public abstract bool PasswordChecker(string pass);
+        //public virtual void Show()
+        //{
+        //    Console.WriteLine("abstarct method");
+        //}
+
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public int age { get; set; }
+        public static int Number;
+        public Student(string name,string surname,int age)
         {
-            Console.WriteLine("abstarct method");
+            Name = name;
+            Surname = surname;
+            this.age = age;
+            Number++;
+        }
+        public void Counter()
+        {
+            Console.WriteLine($" {this.Number} defe instance edildi.");
         }
     }
 }

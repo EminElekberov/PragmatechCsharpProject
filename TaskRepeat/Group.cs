@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TaskRepeat
 {
-    public class Group : Student
+    public class Group 
     {
         #region
         // public string GroupName { get; set; }
@@ -41,41 +41,41 @@ namespace TaskRepeat
         //     }
         // }
         #endregion
-        public string FUllname { get; set; }
-        public string Email { get; set; }
-        public string Pass { get; set; }
+        //public string FUllname { get; set; }
+        //public string Email { get; set; }
+        //public string Pass { get; set; }
 
-        public override bool PasswordChecker(string pass)
-        {
-            bool a = false;
-            char[] ch = pass.ToCharArray();
-            if (pass.Length>=8)
-            {
-                foreach (var item in ch)
-                {
-                    if (item>=65 && item<=90)
-                    {
-                        a = true;
-                    }
-                    else
-                    {
-                        a=false;
-                    }
-                }
-                if (a)
-                {
-                    Console.WriteLine("Sifre Dogrudur");
-                }
-                else
-                {
-                    Console.WriteLine("sifer yanlisdir");
-                }
-            }
-            else
-            {
-                Console.WriteLine("Sifre duzgun deyil");
-            }
-            return false;
-        }
+        //public override bool PasswordChecker(string pass)
+        //{
+        //    bool a = false;
+        //    char[] ch = pass.ToCharArray();
+        //    if (pass.Length>=8)
+        //    {
+        //        foreach (var item in ch)
+        //        {
+        //            if (item>=65 && item<=90)
+        //            {
+        //                a = true;
+        //            }
+        //            else
+        //            {
+        //                a=false;
+        //            }
+        //        }
+        //        if (a)
+        //        {
+        //            Console.WriteLine("Sifre Dogrudur");
+        //        }
+        //        else
+        //        {
+        //            Console.WriteLine("sifer yanlisdir");
+        //        }
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("Sifre duzgun deyil");
+        //    }
+        //    return false;
+        //}
     }
 }

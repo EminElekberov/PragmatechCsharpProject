@@ -109,10 +109,15 @@ namespace TaskRepeat
             //    }
             //}
             #endregion
-            Group group = new Group();
-            string s = Console.ReadLine();
-            group.PasswordChecker(s);
-            Console.ReadKey();
+            //Group group = new Group();
+            //string s = Console.ReadLine();
+            //group.PasswordChecker(s);
+            //Console.ReadKey();
+            Student st = new Student("Domation", "Road", 25);
+            Student st2 = new Student("Nofel", "Salahov", 22);
+            st.Counter();
+            Console.WriteLine("-----------------");
+            st2.Counter();
         }
         #region
         //List<Student> students = new List<Student>();
@@ -172,5 +177,7 @@ namespace TaskRepeat
         //    }
         //}
         #endregion
+
     }
+    
 }

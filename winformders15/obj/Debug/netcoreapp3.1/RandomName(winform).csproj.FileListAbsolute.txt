@@ -1,0 +1,17 @@
+C:\Users\EMIN\Desktop\task1\winformders15\bin\Debug\netcoreapp3.1\RandomName(winform).exe
+C:\Users\EMIN\Desktop\task1\winformders15\bin\Debug\netcoreapp3.1\RandomName(winform).deps.json
+C:\Users\EMIN\Desktop\task1\winformders15\bin\Debug\netcoreapp3.1\RandomName(winform).runtimeconfig.json
+C:\Users\EMIN\Desktop\task1\winformders15\bin\Debug\netcoreapp3.1\RandomName(winform).runtimeconfig.dev.json
+C:\Users\EMIN\Desktop\task1\winformders15\bin\Debug\netcoreapp3.1\RandomName(winform).dll
+C:\Users\EMIN\Desktop\task1\winformders15\bin\Debug\netcoreapp3.1\RandomName(winform).pdb
+C:\Users\EMIN\Desktop\task1\winformders15\obj\Debug\netcoreapp3.1\RandomName(winform).csproj.AssemblyReference.cache
+C:\Users\EMIN\Desktop\task1\winformders15\obj\Debug\netcoreapp3.1\winformders15.Form1.resources
+C:\Users\EMIN\Desktop\task1\winformders15\obj\Debug\netcoreapp3.1\winformders15.random.resources
+C:\Users\EMIN\Desktop\task1\winformders15\obj\Debug\netcoreapp3.1\RandomName(winform).csproj.GenerateResource.cache
+C:\Users\EMIN\Desktop\task1\winformders15\obj\Debug\netcoreapp3.1\RandomName(winform).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EMIN\Desktop\task1\winformders15\obj\Debug\netcoreapp3.1\RandomName(winform).AssemblyInfoInputs.cache
+C:\Users\EMIN\Desktop\task1\winformders15\obj\Debug\netcoreapp3.1\RandomName(winform).AssemblyInfo.cs
+C:\Users\EMIN\Desktop\task1\winformders15\obj\Debug\netcoreapp3.1\RandomName(winform).csproj.CoreCompileInputs.cache
+C:\Users\EMIN\Desktop\task1\winformders15\obj\Debug\netcoreapp3.1\RandomName(winform).dll
+C:\Users\EMIN\Desktop\task1\winformders15\obj\Debug\netcoreapp3.1\RandomName(winform).pdb
+C:\Users\EMIN\Desktop\task1\winformders15\obj\Debug\netcoreapp3.1\RandomName(winform).genruntimeconfig.cache

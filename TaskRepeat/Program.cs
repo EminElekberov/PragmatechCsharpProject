@@ -113,11 +113,28 @@ namespace TaskRepeat
             //string s = Console.ReadLine();
             //group.PasswordChecker(s);
             //Console.ReadKey();
-            Student st = new Student("Domation", "Road", 25);
-            Student st2 = new Student("Nofel", "Salahov", 22);
-            st.Counter();
-            Console.WriteLine("-----------------");
-            st2.Counter();
+            //Student st = new Student("Domation", "Road", 25);
+            //Student st2 = new Student("Nofel", "Salahov", 22);
+            //st.Counter();
+            //Console.WriteLine("-----------------");
+            //st2.Counter();
+            //int n = 20;
+            //n.IssOdd();
+
+
+            //int[] sm = { 1, 5, 4, 8, 9, 6, 890 };
+            //sm.Getvalue(8);
+            //Check check = new Check(isodd);
+            //check.Invoke(20);
+            CashRegister cashRegister = new CashRegister();
+            //Console.WriteLine("daxil edeceyiniz valyutalar \n " +
+            //    "USD \n" +
+            //    "EUR \n" +
+            //    "TL");
+            //string valuate = Console.ReadLine();
+            //Console.WriteLine("meblegi girin ");
+            //double salary = Convert.ToDouble(Console.ReadLine());
+            //CashRegister.Exchange(valuate,salary);
         }
         #region
         //List<Student> students = new List<Student>();
@@ -177,7 +194,23 @@ namespace TaskRepeat
         //    }
         //}
         #endregion
-
+        public struct voi asdf()
+        #region
+        //public delegate bool Check(int n);
+        //public static bool isodd(int n)
+        //{
+        //    if (n%2==0)
+        //    {
+        //        Console.WriteLine($"{n} ededin cutdur");
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine($"{n} ededi tekdir");
+        //        return false;
+        //    }
+        //    return true;
+        //}
+        #endregion
     }
-    
+
 }

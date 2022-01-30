@@ -121,8 +121,8 @@ namespace task12
             #endregion
 
             #region Extension clasla yazilanlar
-            //int r = 6;
-            //r.IsOdd();
+            int r = 6;
+            r.IsOdd();
 
             //int num = 5;
             //num.ISeven();

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TaskRepeat
 {
-    public class Group 
+    public static class Group 
     {
         #region
         // public string GroupName { get; set; }
@@ -77,5 +77,30 @@ namespace TaskRepeat
         //    }
         //    return false;
         //}
+        public static bool IssOdd(this int n)
+        {
+            if (n%2==0)
+            {
+                Console.WriteLine($"{n} ededi cutdur");
+            }
+            else
+            {
+                Console.WriteLine($"{n} ededi tekdri");
+                return false;
+            }
+            return true;
+        }
+        public static List<int> Getvalue(this int[] m, int x)
+        {
+            List<int> n = new List<int>();
+            for (int i = 0; i < m.Length; i++)
+            {
+                if (m[i]==x)
+                {
+                    n.Add(i);
+                }
+            }
+            return n;
+        }
     }
 }

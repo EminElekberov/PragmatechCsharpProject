@@ -159,6 +159,7 @@ namespace winformders15
             this.cmbType.Name = "cmbType";
             this.cmbType.Size = new System.Drawing.Size(121, 23);
             this.cmbType.TabIndex = 0;
+            this.cmbType.SelectedIndexChanged += new System.EventHandler(this.cmbType_SelectedIndexChanged);
             // 
             // tabControl1
             // 

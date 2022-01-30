@@ -138,5 +138,10 @@ namespace winformders15
         {
 
         }
+
+        private void cmbType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

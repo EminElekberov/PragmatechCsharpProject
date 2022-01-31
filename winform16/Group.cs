@@ -18,6 +18,7 @@ namespace winform16
             Id = _id;
             _id++;
             students = new List<Student>();
+            //
         }
 
         public void DeleteStudent(Student student)

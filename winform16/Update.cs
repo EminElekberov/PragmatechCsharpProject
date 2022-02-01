@@ -34,12 +34,14 @@ namespace winform16
                 selectStudent.name = txtNameUpdate.Text;
                 selectStudent.Surname = txtSurnameUpdate.Text;
                 MessageBox.Show("Name and surname was updated ", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //diger formda deyisik;ik  etmek
                 if (selectgroup == (Group)_cmb.SelectedItem)
                 {
                     _dgv.DataSource = null;
                     _dgv.DataSource = selectgroup.GetAlLStudent();
                 }
             }
+            //
             else
             {
                 MessageBox.Show("fill name and surname ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

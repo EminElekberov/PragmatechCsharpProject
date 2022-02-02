@@ -23,6 +23,10 @@ namespace task29.Controllers
             return View();
         }
 
+        public IActionResult Contact()
+        {
+            return View();
+        }
         public IActionResult Books()
         {
             ViewBag.Books = Book.GetBooks();

@@ -1,10 +1,38 @@
 ﻿<h1>Hello</h1>
+<link rel="stylesheet" href="~/css/Books.css" />
 <style>
-    .container img{
+    .zoom img {
+        width: 100%;
+        height: auto;
+        transition: all .5s ease;
+    }
+    .card-body {
+        background-color: yellow;
+    }
+    .card img{
         height:400px;
     }
-    .card-body{
-        background-color:yellow;
+    .card .card-body {
+        text-align: center;
+        border: 1px solid #500D16;
+    }
+    .card:hover .card-body {
+        background: #500d16;
+        color: #fff;
+        transition: all .5 ease;
+    }
+    .zoom {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+    }
+    .hreff {
+        color: white;
+    }
+    .card:hover .zoom img {
+        transform: scale(1.25);
     }
 </style>
 <div class="container">
@@ -12,11 +40,14 @@
         @foreach (var item in ViewBag.Books)
         {
             <div class="col-md-4">
-                <div class="card" style="width: 18rem;" style="margin-bottom:100px;">
-                    <img src="~/@item.Link" class="card-img-top" alt="...">
+                <div class="card" style="width: 18rem; margin-bottom:50px;">
+                    <div class="zoom">
+                        <img src="~/@item.Link" alt="...">
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">@item.Title</h5>
                     </div>
+                    <button type="button" class="btn btn-primary"><a href="https://thegreatestbooks.org/" class="hreff">Read More</a></button>
                 </div>
             </div>
         }

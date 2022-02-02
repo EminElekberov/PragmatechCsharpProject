@@ -1,0 +1,24 @@
+﻿<h1>Hello</h1>
+<style>
+    .container img{
+        height:400px;
+    }
+    .card-body{
+        background-color:yellow;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        @foreach (var item in ViewBag.Books)
+        {
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;" style="margin-bottom:100px;">
+                    <img src="~/@item.Link" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Title</h5>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>  

@@ -13,7 +13,7 @@ namespace winformTask18
     public partial class Form1 : Form
     {
         public List<Student> students;
-        public List<String> img;
+        public List<string> img;
         public Form1()
         {
             img = new List<string>();

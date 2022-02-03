@@ -10,6 +10,7 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("-----------------");
             for (int i = 0; i < 100; i+=2)
             {
                 Console.WriteLine(i);

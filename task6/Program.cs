@@ -7,6 +7,8 @@ namespace task6
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("-----------------");
+
             while (true)
             {
                 Console.WriteLine("emeliyyati daxil edin " +

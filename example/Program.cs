@@ -72,6 +72,8 @@ namespace example
             //    }
             //}
             #endregion
+            Console.WriteLine("-----------------");
+
             Medicine med = new Medicine("Adalzit", 20, 30);
             Medicine med2 = new Medicine("nospa", 20, 30);
             Pharmacy ph = new Pharmacy();

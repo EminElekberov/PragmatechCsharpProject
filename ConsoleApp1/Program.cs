@@ -7,6 +7,8 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("-----------------");
+
             for (int i = 550; i < 600; i+=2)
             {
                 Console.WriteLine(i);

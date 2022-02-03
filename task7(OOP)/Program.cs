@@ -15,6 +15,8 @@ namespace task7_OOP_
             user.ShowInfo();
             user.PasswordChecker(pass);
             Console.WriteLine("bitdi");
+            Console.WriteLine("-----------------");
+
         }
     }
 }

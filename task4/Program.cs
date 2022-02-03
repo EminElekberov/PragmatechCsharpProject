@@ -6,7 +6,9 @@ namespace task4
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("-----------------");
             Console.WriteLine("adinizi girin: Yalniz soz gire bilersiniz");
+
             string username = Console.ReadLine();
             Console.WriteLine("Please enter your password");
             string password = Console.ReadLine();

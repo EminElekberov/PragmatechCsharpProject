@@ -59,6 +59,8 @@ namespace TaskRepeat
             //{
             //    Console.WriteLine(ch[i]);
             //}
+            Console.WriteLine("-----------------");
+
 
             #region 2
             //Console.WriteLine("adinizi girin: Yalniz soz gire bilersiniz");

@@ -10,6 +10,7 @@ namespace task2
             Console.Write("sozu daxil edin ");
             string name = Console.ReadLine();
             string reverse = string.Empty;
+            Console.WriteLine("-----------------");
 
             for (int i = name.Length - 1; i >= 0; i--)
             {
@@ -108,5 +109,5 @@ namespace task2
             */
 
         }
-        }
+    }
     }

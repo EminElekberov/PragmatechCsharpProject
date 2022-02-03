@@ -13,6 +13,8 @@ namespace taskquiz
             st.Greet();
             Teacher tc = new Teacher();
             tc.Explaain();
+            Console.WriteLine("-----------------");
+
         }
     }
 }

@@ -24,6 +24,8 @@ namespace task11_aptek_
             ph.Sell("Adalzit", 10);
             //ph.Sell("adalzit", 10);
             ph.Sell("nospa", 15);
+            Console.WriteLine("-----------------");
+
             //ph.FindMedicineByName("buhbuhb");
             //ph.AddMedicine(new Medicine("nospa", 80, 20));
         }

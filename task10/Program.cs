@@ -16,6 +16,7 @@ namespace task10
 
             #endregion
 
+            Console.WriteLine("-----------------");
 
             #region task2 
             Rectangle rc = new Rectangle();

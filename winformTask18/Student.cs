@@ -11,6 +11,7 @@ namespace winformTask18
     {
         private string _name;
         public string Img_Location;
+
         public string Name
         {
             get { return _name; }

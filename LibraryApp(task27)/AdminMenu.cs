@@ -37,7 +37,7 @@ namespace LibraryApp_task27_
 
         private void AdminMenu_Load(object sender, EventArgs e)
         {
-
+            //
         }
 
         private void reportToolStripMenuItem_Click(object sender, EventArgs e)

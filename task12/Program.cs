@@ -7,6 +7,8 @@ namespace task12
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("-----------------");
+
             #region Delegate ile yazilanlar 
             #region IsOdd IsEven
             //Check ch = new Check(IsOdd);

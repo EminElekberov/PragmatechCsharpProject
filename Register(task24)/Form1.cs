@@ -69,6 +69,10 @@ namespace Register_task24_
 
                 throw new Exception();
             }
+            finally
+            {
+                sqlConnection.Close();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

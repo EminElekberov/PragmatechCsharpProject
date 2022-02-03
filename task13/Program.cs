@@ -15,6 +15,8 @@ namespace task13
             Console.WriteLine("meblegi girin ");
             double salary = Convert.ToDouble(Console.ReadLine());
             ValutaExchanger.Exchange(valuate, salary);
+            Console.WriteLine("-----------------");
+
             #endregion
             //Console.WriteLine("daxil edeceyiniz valyutalar \n " +
             //    "USD \n" +

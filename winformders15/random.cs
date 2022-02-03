@@ -17,6 +17,7 @@ namespace winformders15
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //
             Random select = new Random();
             int i = listBox1.Items.Count;
             int chooseItem = select.Next(0, i);

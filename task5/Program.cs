@@ -84,6 +84,8 @@ namespace task5
             //else
             //{
             //    queue.Dequeue();
+            //Console.WriteLine("-----------------");
+            //
             //}
             #endregion
 

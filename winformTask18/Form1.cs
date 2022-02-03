@@ -78,6 +78,10 @@ namespace winformTask18
             DialogResult dialog = openFileDialog1.ShowDialog();
             if (dialog == DialogResult.OK)
             {
+                if (img.Count != 0)
+                {
+                    img.Clear();
+                }
                 pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                 pictureBox1.Load(openFileDialog1.FileName);
                 img.Add(openFileDialog1.FileName);

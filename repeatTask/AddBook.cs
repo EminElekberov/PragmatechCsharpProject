@@ -101,7 +101,17 @@ namespace repeatTask
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            int TypeId = ((Cb_genre)cmbGenre.SelectedItem).Id;
+            string name = txtAddName.Text.Trim();
+            string writer = txtwriter.Text.Trim();
+            double price = double.Parse(txtprice.Value.ToString());
+            int amount = int.Parse(txtamount.Value.ToString());
+            Model.Book delBook = _db.Books.FirstOrDefault(x => x.Id == bookid);
+            if (delBook!=null)
+            {
+                _db.Books.Remove(delBook);
+            }
+            _db.SaveChanges();
         }
 
         private void addToolStripMenuItem_Click(object sender, EventArgs e)

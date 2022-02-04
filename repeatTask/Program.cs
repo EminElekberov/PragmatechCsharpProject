@@ -16,7 +16,7 @@ namespace repeatTask
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AddBook());
+            Application.Run(new BookList());
         }
     }
 }

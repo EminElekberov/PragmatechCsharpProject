@@ -1,0 +1,16 @@
+C:\Users\EMIN\Desktop\task1\repeatTask\bin\Debug\repeatTask.exe.config
+C:\Users\EMIN\Desktop\task1\repeatTask\bin\Debug\repeatTask.exe
+C:\Users\EMIN\Desktop\task1\repeatTask\bin\Debug\repeatTask.pdb
+C:\Users\EMIN\Desktop\task1\repeatTask\bin\Debug\EntityFramework.dll
+C:\Users\EMIN\Desktop\task1\repeatTask\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\EMIN\Desktop\task1\repeatTask\bin\Debug\EntityFramework.xml
+C:\Users\EMIN\Desktop\task1\repeatTask\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\EMIN\Desktop\task1\repeatTask\obj\Debug\repeatTask.csproj.AssemblyReference.cache
+C:\Users\EMIN\Desktop\task1\repeatTask\obj\Debug\repeatTask.AddBook.resources
+C:\Users\EMIN\Desktop\task1\repeatTask\obj\Debug\repeatTask.Form1.resources
+C:\Users\EMIN\Desktop\task1\repeatTask\obj\Debug\repeatTask.Properties.Resources.resources
+C:\Users\EMIN\Desktop\task1\repeatTask\obj\Debug\repeatTask.csproj.GenerateResource.cache
+C:\Users\EMIN\Desktop\task1\repeatTask\obj\Debug\repeatTask.csproj.CoreCompileInputs.cache
+C:\Users\EMIN\Desktop\task1\repeatTask\obj\Debug\repeatTask.csproj.CopyComplete
+C:\Users\EMIN\Desktop\task1\repeatTask\obj\Debug\repeatTask.exe
+C:\Users\EMIN\Desktop\task1\repeatTask\obj\Debug\repeatTask.pdb

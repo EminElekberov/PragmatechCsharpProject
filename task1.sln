@@ -45,7 +45,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryApp(task27)", "Libra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskRepeat", "TaskRepeat\TaskRepeat.csproj", "{A3937F55-0D16-40E1-A507-6842CEEA69CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task29", "task29\task29.csproj", "{F736A3FD-CF38-4626-873B-47A872752519}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task29", "task29\task29.csproj", "{F736A3FD-CF38-4626-873B-47A872752519}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "repeatTask", "repeatTask\repeatTask.csproj", "{019DA0C2-D363-491A-9F53-087E9EBD9A36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +143,10 @@ Global
 		{F736A3FD-CF38-4626-873B-47A872752519}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F736A3FD-CF38-4626-873B-47A872752519}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F736A3FD-CF38-4626-873B-47A872752519}.Release|Any CPU.Build.0 = Release|Any CPU
+		{019DA0C2-D363-491A-9F53-087E9EBD9A36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{019DA0C2-D363-491A-9F53-087E9EBD9A36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{019DA0C2-D363-491A-9F53-087E9EBD9A36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{019DA0C2-D363-491A-9F53-087E9EBD9A36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

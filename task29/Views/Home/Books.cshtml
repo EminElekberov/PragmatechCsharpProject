@@ -1,20 +1,16 @@
-﻿<form >
-    <div class="form-group">
+﻿@{ 
+    string[] name = new string[]
+    {
+        "In Search of Lost Time",
+        "Ulysses",
+        "Don Quixote",
+        "One Hundred Years of Solitude",
+        "The Great Gatsby",
+        "Moby Dick"
+    };
+}
 
-        <label>Kitablar</label>
 
-        <select name="book" class="form-control">
-            <option></option>
-            <option>In Search of Lost Time</option>
-            <option>Ulysses</option>
-            <option>Don Quixote</option>
-            <option>One Hundred Years of Solitude</option>
-            <option>The Great Gatsby</option>
-            <option>Moby Dick</option>
-        </select>
-        </div>
-</form>
-//
 <style>
     .row {
         padding-top: 50px;
@@ -53,6 +49,18 @@
         transform: scale(1.25);
     }
 </style>
+
+<form>
+    <div class="form-group">
+        <label>Kitablar</label>
+        <select class="form-control">
+            @foreach (var item in name)
+            {
+                <option>@item</option>
+            }
+        </select>
+    </div>
+</form>
 <div class="container">
     <div class="row">
         @foreach (var item in ViewBag.Books)

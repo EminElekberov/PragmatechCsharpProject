@@ -22,6 +22,10 @@ namespace Porto_ecommerce_30_.Controllers
         {
             return View();
         }
+        public IActionResult About()
+        {
+            return View();
+        }
 
         public IActionResult Privacy()
         {

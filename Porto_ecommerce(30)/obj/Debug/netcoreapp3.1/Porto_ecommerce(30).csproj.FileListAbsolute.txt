@@ -36,3 +36,4 @@ C:\Users\EMIN\Desktop\task1\Porto_ecommerce(30)\obj\Debug\netcoreapp3.1\Porto_ec
 C:\Users\EMIN\Desktop\task1\Porto_ecommerce(30)\obj\Debug\netcoreapp3.1\Porto_ecommerce(30).genruntimeconfig.cache
 C:\Users\EMIN\Desktop\task1\Porto_ecommerce(30)\obj\Debug\netcoreapp3.1\Porto_ecommerce(30).csproj.CopyComplete
 C:\Users\EMIN\Desktop\task1\Porto_ecommerce(30)\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\EMIN\Desktop\task1\Porto_ecommerce(30)\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs

@@ -5,4 +5,12 @@
     <RootNamespace>Porto_ecommerce_30_</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\about\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
+  </ItemGroup>
+
 </Project>

@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LibraryApi
+    sen bunu cixar solutiondan ayrica yerde yaz
+    muellime bu ayri proyekdi tekrar edende yazirdim bilirem e ama burda error kimi fgoruur
 {
     public partial class Login : Form
     {

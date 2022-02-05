@@ -1,0 +1,14 @@
+C:\Users\EMIN\Desktop\task1\task2\bin\Debug\netcoreapp3.1\String methods.exe
+C:\Users\EMIN\Desktop\task1\task2\bin\Debug\netcoreapp3.1\String methods.deps.json
+C:\Users\EMIN\Desktop\task1\task2\bin\Debug\netcoreapp3.1\String methods.runtimeconfig.json
+C:\Users\EMIN\Desktop\task1\task2\bin\Debug\netcoreapp3.1\String methods.runtimeconfig.dev.json
+C:\Users\EMIN\Desktop\task1\task2\bin\Debug\netcoreapp3.1\String methods.dll
+C:\Users\EMIN\Desktop\task1\task2\bin\Debug\netcoreapp3.1\String methods.pdb
+C:\Users\EMIN\Desktop\task1\task2\obj\Debug\netcoreapp3.1\String methods.csproj.AssemblyReference.cache
+C:\Users\EMIN\Desktop\task1\task2\obj\Debug\netcoreapp3.1\String methods.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EMIN\Desktop\task1\task2\obj\Debug\netcoreapp3.1\String methods.AssemblyInfoInputs.cache
+C:\Users\EMIN\Desktop\task1\task2\obj\Debug\netcoreapp3.1\String methods.AssemblyInfo.cs
+C:\Users\EMIN\Desktop\task1\task2\obj\Debug\netcoreapp3.1\String methods.csproj.CoreCompileInputs.cache
+C:\Users\EMIN\Desktop\task1\task2\obj\Debug\netcoreapp3.1\String methods.dll
+C:\Users\EMIN\Desktop\task1\task2\obj\Debug\netcoreapp3.1\String methods.pdb
+C:\Users\EMIN\Desktop\task1\task2\obj\Debug\netcoreapp3.1\String methods.genruntimeconfig.cache

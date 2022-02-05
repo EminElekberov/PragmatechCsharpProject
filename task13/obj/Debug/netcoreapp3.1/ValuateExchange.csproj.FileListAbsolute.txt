@@ -1,0 +1,13 @@
+C:\Users\EMIN\Desktop\task1\task13\bin\Debug\netcoreapp3.1\ValuateExchange.exe
+C:\Users\EMIN\Desktop\task1\task13\bin\Debug\netcoreapp3.1\ValuateExchange.deps.json
+C:\Users\EMIN\Desktop\task1\task13\bin\Debug\netcoreapp3.1\ValuateExchange.runtimeconfig.json
+C:\Users\EMIN\Desktop\task1\task13\bin\Debug\netcoreapp3.1\ValuateExchange.runtimeconfig.dev.json
+C:\Users\EMIN\Desktop\task1\task13\bin\Debug\netcoreapp3.1\ValuateExchange.dll
+C:\Users\EMIN\Desktop\task1\task13\bin\Debug\netcoreapp3.1\ValuateExchange.pdb
+C:\Users\EMIN\Desktop\task1\task13\obj\Debug\netcoreapp3.1\ValuateExchange.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EMIN\Desktop\task1\task13\obj\Debug\netcoreapp3.1\ValuateExchange.AssemblyInfoInputs.cache
+C:\Users\EMIN\Desktop\task1\task13\obj\Debug\netcoreapp3.1\ValuateExchange.AssemblyInfo.cs
+C:\Users\EMIN\Desktop\task1\task13\obj\Debug\netcoreapp3.1\ValuateExchange.csproj.CoreCompileInputs.cache
+C:\Users\EMIN\Desktop\task1\task13\obj\Debug\netcoreapp3.1\ValuateExchange.dll
+C:\Users\EMIN\Desktop\task1\task13\obj\Debug\netcoreapp3.1\ValuateExchange.pdb
+C:\Users\EMIN\Desktop\task1\task13\obj\Debug\netcoreapp3.1\ValuateExchange.genruntimeconfig.cache

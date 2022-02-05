@@ -1,0 +1,14 @@
+C:\Users\EMIN\Desktop\task1\task6\bin\Debug\netcoreapp3.1\CreateClassAndRegisterStudent.exe
+C:\Users\EMIN\Desktop\task1\task6\bin\Debug\netcoreapp3.1\CreateClassAndRegisterStudent.deps.json
+C:\Users\EMIN\Desktop\task1\task6\bin\Debug\netcoreapp3.1\CreateClassAndRegisterStudent.runtimeconfig.json
+C:\Users\EMIN\Desktop\task1\task6\bin\Debug\netcoreapp3.1\CreateClassAndRegisterStudent.runtimeconfig.dev.json
+C:\Users\EMIN\Desktop\task1\task6\bin\Debug\netcoreapp3.1\CreateClassAndRegisterStudent.dll
+C:\Users\EMIN\Desktop\task1\task6\bin\Debug\netcoreapp3.1\CreateClassAndRegisterStudent.pdb
+C:\Users\EMIN\Desktop\task1\task6\obj\Debug\netcoreapp3.1\CreateClassAndRegisterStudent.csproj.AssemblyReference.cache
+C:\Users\EMIN\Desktop\task1\task6\obj\Debug\netcoreapp3.1\CreateClassAndRegisterStudent.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EMIN\Desktop\task1\task6\obj\Debug\netcoreapp3.1\CreateClassAndRegisterStudent.AssemblyInfoInputs.cache
+C:\Users\EMIN\Desktop\task1\task6\obj\Debug\netcoreapp3.1\CreateClassAndRegisterStudent.AssemblyInfo.cs
+C:\Users\EMIN\Desktop\task1\task6\obj\Debug\netcoreapp3.1\CreateClassAndRegisterStudent.csproj.CoreCompileInputs.cache
+C:\Users\EMIN\Desktop\task1\task6\obj\Debug\netcoreapp3.1\CreateClassAndRegisterStudent.dll
+C:\Users\EMIN\Desktop\task1\task6\obj\Debug\netcoreapp3.1\CreateClassAndRegisterStudent.pdb
+C:\Users\EMIN\Desktop\task1\task6\obj\Debug\netcoreapp3.1\CreateClassAndRegisterStudent.genruntimeconfig.cache

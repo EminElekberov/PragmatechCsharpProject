@@ -1,0 +1,13 @@
+C:\Users\EMIN\Desktop\task1\task11(aptek)\bin\Debug\netcoreapp3.1\Medicine(ConsoleApp).exe
+C:\Users\EMIN\Desktop\task1\task11(aptek)\bin\Debug\netcoreapp3.1\Medicine(ConsoleApp).deps.json
+C:\Users\EMIN\Desktop\task1\task11(aptek)\bin\Debug\netcoreapp3.1\Medicine(ConsoleApp).runtimeconfig.json
+C:\Users\EMIN\Desktop\task1\task11(aptek)\bin\Debug\netcoreapp3.1\Medicine(ConsoleApp).runtimeconfig.dev.json
+C:\Users\EMIN\Desktop\task1\task11(aptek)\bin\Debug\netcoreapp3.1\Medicine(ConsoleApp).dll
+C:\Users\EMIN\Desktop\task1\task11(aptek)\bin\Debug\netcoreapp3.1\Medicine(ConsoleApp).pdb
+C:\Users\EMIN\Desktop\task1\task11(aptek)\obj\Debug\netcoreapp3.1\Medicine(ConsoleApp).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EMIN\Desktop\task1\task11(aptek)\obj\Debug\netcoreapp3.1\Medicine(ConsoleApp).AssemblyInfoInputs.cache
+C:\Users\EMIN\Desktop\task1\task11(aptek)\obj\Debug\netcoreapp3.1\Medicine(ConsoleApp).AssemblyInfo.cs
+C:\Users\EMIN\Desktop\task1\task11(aptek)\obj\Debug\netcoreapp3.1\Medicine(ConsoleApp).csproj.CoreCompileInputs.cache
+C:\Users\EMIN\Desktop\task1\task11(aptek)\obj\Debug\netcoreapp3.1\Medicine(ConsoleApp).dll
+C:\Users\EMIN\Desktop\task1\task11(aptek)\obj\Debug\netcoreapp3.1\Medicine(ConsoleApp).pdb
+C:\Users\EMIN\Desktop\task1\task11(aptek)\obj\Debug\netcoreapp3.1\Medicine(ConsoleApp).genruntimeconfig.cache

@@ -1,0 +1,14 @@
+C:\Users\EMIN\Desktop\task1\task5\bin\Debug\netcoreapp3.1\RegisterCountry(ConsoleApp).exe
+C:\Users\EMIN\Desktop\task1\task5\bin\Debug\netcoreapp3.1\RegisterCountry(ConsoleApp).deps.json
+C:\Users\EMIN\Desktop\task1\task5\bin\Debug\netcoreapp3.1\RegisterCountry(ConsoleApp).runtimeconfig.json
+C:\Users\EMIN\Desktop\task1\task5\bin\Debug\netcoreapp3.1\RegisterCountry(ConsoleApp).runtimeconfig.dev.json
+C:\Users\EMIN\Desktop\task1\task5\bin\Debug\netcoreapp3.1\RegisterCountry(ConsoleApp).dll
+C:\Users\EMIN\Desktop\task1\task5\bin\Debug\netcoreapp3.1\RegisterCountry(ConsoleApp).pdb
+C:\Users\EMIN\Desktop\task1\task5\obj\Debug\netcoreapp3.1\RegisterCountry(ConsoleApp).csproj.AssemblyReference.cache
+C:\Users\EMIN\Desktop\task1\task5\obj\Debug\netcoreapp3.1\RegisterCountry(ConsoleApp).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EMIN\Desktop\task1\task5\obj\Debug\netcoreapp3.1\RegisterCountry(ConsoleApp).AssemblyInfoInputs.cache
+C:\Users\EMIN\Desktop\task1\task5\obj\Debug\netcoreapp3.1\RegisterCountry(ConsoleApp).AssemblyInfo.cs
+C:\Users\EMIN\Desktop\task1\task5\obj\Debug\netcoreapp3.1\RegisterCountry(ConsoleApp).csproj.CoreCompileInputs.cache
+C:\Users\EMIN\Desktop\task1\task5\obj\Debug\netcoreapp3.1\RegisterCountry(ConsoleApp).dll
+C:\Users\EMIN\Desktop\task1\task5\obj\Debug\netcoreapp3.1\RegisterCountry(ConsoleApp).pdb
+C:\Users\EMIN\Desktop\task1\task5\obj\Debug\netcoreapp3.1\RegisterCountry(ConsoleApp).genruntimeconfig.cache

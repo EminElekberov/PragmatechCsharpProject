@@ -9,7 +9,7 @@ namespace task11_aptek_
             Medicine med = new Medicine("Adalzit", 20, 30);
             
             Medicine med2 = new Medicine("nospa", 20, 30);
-
+            //
             //Medicine med2 = new Medicine("Adalzit2", 40)
             //{
             //    Name = "Adalzit2",

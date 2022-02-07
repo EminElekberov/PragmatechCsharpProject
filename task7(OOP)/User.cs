@@ -26,6 +26,8 @@ namespace task7_OOP_
             Console.WriteLine("----------------------");
             string name = Console.ReadLine();
             Console.WriteLine("adi " + name);
+            Console.WriteLine("----------------------");
+
             Console.WriteLine("emaili " + Email);
         }
 

@@ -6,6 +6,7 @@ namespace task11_aptek_
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("---------------");
             Medicine med = new Medicine("Adalzit", 20, 30);
             
             Medicine med2 = new Medicine("nospa", 20, 30);

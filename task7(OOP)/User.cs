@@ -23,8 +23,8 @@ namespace task7_OOP_
         public override void ShowInfo()
         {
             Console.WriteLine("adi girin");
-            string name = Console.ReadLine();
             Console.WriteLine("----------------------");
+            string name = Console.ReadLine();
             Console.WriteLine("adi " + name);
             Console.WriteLine("emaili " + Email);
         }

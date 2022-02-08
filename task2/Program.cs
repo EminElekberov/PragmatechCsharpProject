@@ -25,7 +25,6 @@ namespace task2
             {
                 Console.WriteLine($"{name} is not Palindrome");
             }
-            cs
         //    */
             //    string s = Console.ReadLine();
             //    int beginPoint = Convert.ToInt32(Console.ReadLine()), stringLength;
@@ -75,6 +74,8 @@ namespace task2
                 {
                     str2 += str[i];
                 }
+
+            cs
             }
             Console.WriteLine(str2);
             */
@@ -93,7 +94,7 @@ namespace task2
             return count;
         }
         */
-
+            cs
             /*
             Console.WriteLine(SubString(2,"salam"));
         }

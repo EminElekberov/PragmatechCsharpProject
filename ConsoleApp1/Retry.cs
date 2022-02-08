@@ -8,6 +8,7 @@ namespace ConsoleApp1
     {
         public string name { get; set; }
         public int age { get; set; }
+        public string Email { get; set; }
         public Retry()
         {
 

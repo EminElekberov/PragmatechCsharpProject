@@ -15,7 +15,9 @@ namespace task10
 
             #endregion
 
-            Console.WriteLine("");
+            Console.WriteLine("------------");
+            Console.WriteLine("------------");
+            Console.WriteLine("------------------");
             #region task2 
             Rectangle rc = new Rectangle();
             Circle cr = new Circle();

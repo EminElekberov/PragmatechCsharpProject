@@ -10,14 +10,12 @@ namespace task10
             //Student st = new Student("Domation", "Road", 25);
             //Student st2 = new Student("Nofel", "Salahov", 22);
             //st.Counter();
-            //Console.WriteLine("-----------------");
             //st2.Counter();
 
 
             #endregion
 
-            Console.WriteLine("-----------------");
-
+            Console.WriteLine("");
             #region task2 
             Rectangle rc = new Rectangle();
             Circle cr = new Circle();

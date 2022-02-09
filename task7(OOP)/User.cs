@@ -9,6 +9,7 @@ namespace task7_OOP_
         public string FullName { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
+        public int Id { get; set; }
 
         public User(string email,string password)
         {

@@ -57,7 +57,7 @@ namespace winform16
             Update update = new Update(groups, cmbGroup, dgv);
             update.ShowDialog();
         }
-
+        //
         private void Form1_Load(object sender, EventArgs e)
         {
 

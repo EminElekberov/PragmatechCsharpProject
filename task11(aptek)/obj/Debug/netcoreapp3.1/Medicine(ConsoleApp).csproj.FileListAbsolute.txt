@@ -11,3 +11,4 @@ C:\Users\EMIN\Desktop\task1\task11(aptek)\obj\Debug\netcoreapp3.1\Medicine(Conso
 C:\Users\EMIN\Desktop\task1\task11(aptek)\obj\Debug\netcoreapp3.1\Medicine(ConsoleApp).dll
 C:\Users\EMIN\Desktop\task1\task11(aptek)\obj\Debug\netcoreapp3.1\Medicine(ConsoleApp).pdb
 C:\Users\EMIN\Desktop\task1\task11(aptek)\obj\Debug\netcoreapp3.1\Medicine(ConsoleApp).genruntimeconfig.cache
+C:\Users\EMIN\Desktop\task1\task11(aptek)\obj\Debug\netcoreapp3.1\Medicine(ConsoleApp).csproj.AssemblyReference.cache

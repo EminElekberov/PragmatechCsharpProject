@@ -11,3 +11,4 @@ C:\Users\EMIN\Desktop\task1\task10\obj\Debug\netcoreapp3.1\area calculation(inte
 C:\Users\EMIN\Desktop\task1\task10\obj\Debug\netcoreapp3.1\area calculation(interface).dll
 C:\Users\EMIN\Desktop\task1\task10\obj\Debug\netcoreapp3.1\area calculation(interface).pdb
 C:\Users\EMIN\Desktop\task1\task10\obj\Debug\netcoreapp3.1\area calculation(interface).genruntimeconfig.cache
+C:\Users\EMIN\Desktop\task1\task10\obj\Debug\netcoreapp3.1\area calculation(interface).csproj.AssemblyReference.cache

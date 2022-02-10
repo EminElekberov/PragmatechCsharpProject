@@ -24,5 +24,10 @@ namespace winformders15
             listBox1.SelectedIndex = chooseItem;
             MessageBox.Show("the select name : " + listBox1.SelectedItem.ToString());
         }
+
+        private void random_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -66,6 +66,7 @@ namespace winformders15
             this.Controls.Add(this.listBox1);
             this.Name = "random";
             this.Text = "random";
+            this.Load += new System.EventHandler(this.random_Load);
             this.ResumeLayout(false);
 
         }

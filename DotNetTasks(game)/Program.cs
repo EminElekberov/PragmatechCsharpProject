@@ -29,10 +29,11 @@ namespace DotNetTasks_game_
             int index2 = random.Next(words.Length);
             Console.WriteLine(words[index]);
             Console.WriteLine(words[index2]);
-           
+        START:
+
             double bal;
             int say = 0;
-            for (int hak = 3; hak>0; hak--)
+            for (int hak = 3; hak > 0; hak--)
             {
                 Console.WriteLine("bir wsoz daxil edin: ");
                 string soz = Console.ReadLine();
@@ -46,17 +47,17 @@ namespace DotNetTasks_game_
                             bal = 9.2;
                             Console.WriteLine($"tebriker ikinci sozu {say} texminde  bildiniz ve sizin baliniz {bal}");
                         }
-                        else if (hak==2)
+                        else if (hak == 2)
                         {
                             bal = 6.2;
                             Console.WriteLine($"tebriker ikinci sozu {say} texminde bildiniz ve sizin baliniz {bal}");
                         }
-                        else if (hak==1)
+                        else if (hak == 1)
                         {
                             bal = 4;
                             Console.WriteLine($"tebriker ikinci sozu {say} texminde bildiniz ve sizin baliniz {bal}");
                         }
-                        
+
                         return;
                     }
                     else
@@ -67,9 +68,15 @@ namespace DotNetTasks_game_
                 }
                 else
                 {
-                Console.WriteLine("sizin arti qtexmin haqqiniz qalmadi");
+                    Console.WriteLine("sizin arti qtexmin haqqiniz qalmadi");
 
                 }
+                
+            }
+            Console.WriteLine("helede soz daxil edilsinmi? (y/n)");
+            if (Console.ReadKey().Key == ConsoleKey.Y)
+            {
+                goto START;
             }
             #region
             //string content = "This is really fun. I am learning to code.  ";

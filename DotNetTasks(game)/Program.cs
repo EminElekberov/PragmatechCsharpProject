@@ -29,25 +29,48 @@ namespace DotNetTasks_game_
             int index2 = random.Next(words.Length);
             Console.WriteLine(words[index]);
             Console.WriteLine(words[index2]);
-            Console.WriteLine("bir wsoz daxil edin: ");
-            string soz = Console.ReadLine();
-            int hak = 3;
+           
             double bal;
-            while (hak > 0)
+            int say = 0;
+            for (int hak = 3; hak>0; hak--)
             {
-                hak--;
-                if (soz == index2.ToString() && hak==2)
+                Console.WriteLine("bir wsoz daxil edin: ");
+                string soz = Console.ReadLine();
+                say++;
+                if (hak != 0)
                 {
-                    bal = 6.2;
-                    Console.WriteLine($"tebriker ikinci sozu {hak} da bildiniz ve sizin baliniz {bal}");
+                    if (soz == words[index2].ToString())
+                    {
+                        if (hak == 3)
+                        {
+                            bal = 9.2;
+                            Console.WriteLine($"tebriker ikinci sozu {say} texminde  bildiniz ve sizin baliniz {bal}");
+                        }
+                        else if (hak==2)
+                        {
+                            bal = 6.2;
+                            Console.WriteLine($"tebriker ikinci sozu {say} texminde bildiniz ve sizin baliniz {bal}");
+                        }
+                        else if (hak==1)
+                        {
+                            bal = 4;
+                            Console.WriteLine($"tebriker ikinci sozu {say} texminde bildiniz ve sizin baliniz {bal}");
+                        }
+                        
+                        return;
+                    }
+                    else
+                    {
+                        Console.WriteLine("dogru tapa bilmediniz");
+                    }
+
                 }
                 else
                 {
-                    Console.WriteLine("dogru tapa bilmediniz");
-                }
                 Console.WriteLine("sizin arti qtexmin haqqiniz qalmadi");
-            }
 
+                }
+            }
             #region
             //string content = "This is really fun. I am learning to code.  ";
             //char[] list = new char[] { ' ', '.' };

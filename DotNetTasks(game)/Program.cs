@@ -20,19 +20,21 @@ namespace DotNetTasks_game_
 
             //}
             #endregion
-
+            int dogru = 0;
+            double Sum = 0;
+            double bal = 0;
+            int say = 0;
+        START:
 
             Random random = new Random();
-            string[] words = { "man", "rat", "cow", "chicken", "asdf", "frfrt" };
-
+            string[] words = { "You can", "gain experience", "if you", "are careful", "to avoid", "empty redundancy" };
             int index = random.Next(words.Length);
             int index2 = random.Next(words.Length);
             Console.WriteLine(words[index]);
             Console.WriteLine(words[index2]);
-        START:
+            List<string> newWords = new List<string>();
+            
 
-            double bal;
-            int say = 0;
             for (int hak = 3; hak > 0; hak--)
             {
                 Console.WriteLine("bir wsoz daxil edin: ");
@@ -44,26 +46,27 @@ namespace DotNetTasks_game_
                     {
                         if (hak == 3)
                         {
-                            bal = 9.2;
+                            bal = 6.2;
                             Console.WriteLine($"tebriker ikinci sozu {say} texminde  bildiniz ve sizin baliniz {bal}");
                         }
                         else if (hak == 2)
                         {
-                            bal = 6.2;
+                            bal = 4;
                             Console.WriteLine($"tebriker ikinci sozu {say} texminde bildiniz ve sizin baliniz {bal}");
                         }
                         else if (hak == 1)
                         {
-                            bal = 4;
+                            bal = 2;
                             Console.WriteLine($"tebriker ikinci sozu {say} texminde bildiniz ve sizin baliniz {bal}");
                         }
-
-                        return;
+                        dogru++;
+                        Sum += bal;
                     }
                     else
                     {
                         Console.WriteLine("dogru tapa bilmediniz");
                     }
+                    newWords.Add(soz);
 
                 }
                 else
@@ -71,27 +74,38 @@ namespace DotNetTasks_game_
                     Console.WriteLine("sizin arti qtexmin haqqiniz qalmadi");
 
                 }
-                
+
             }
             Console.WriteLine("helede soz daxil edilsinmi? (y/n)");
             if (Console.ReadKey().Key == ConsoleKey.Y)
             {
                 goto START;
             }
-            #region
-            //string content = "This is really fun. I am learning to code.  ";
-            //char[] list = new char[] { ' ', '.' };
+            else
+            {
+                Console.WriteLine("sizin statistikalariniz: ");
+                Console.WriteLine("soz ctluyunuz sayi: " + newWords.Count);
+                Console.WriteLine("dogru " + dogru);
+                int wrongWords=newWords.Count - dogru;
+                Console.WriteLine("yanlis tapilan soz cutluklerinin sayi: "+ wrongWords);
+                Console.WriteLine("qazanilan xal: "+Sum);
+            }
+            
+        #region
+        //string content = "This is really fun. I am learning to code.  ";
+        //char[] list = new char[] { ' ', '.' };
 
-            //var split = content.Split(list, StringSplitOptions.RemoveEmptyEntries);
+        //var split = content.Split(list, StringSplitOptions.RemoveEmptyEntries);
 
 
-            //Random random = new Random();
-            //for (int i = 0; i < 2; i++)
-            //{
-            //    string randomString = split[random.Next(1, split.Length)];
-            //    Console.WriteLine(randomString);
-            //}
-            #endregion
+        //Random random = new Random(split.Length);
+        //for (int i = 0; i < 2; i++)
+        //{
+        //    int index = random.Next(list.Length);
+        //    Console.WriteLine(index[i]);
+        //}
+        #endregion
+
         }
     }
 }

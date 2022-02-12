@@ -174,14 +174,21 @@ namespace DotNetTasks_game_
                 dates = dt,
                 Name = nm
             };
+            Atm atm1 = new Atm(newCreateCardAmount, dt, nm);
             Cards cards = new Cards();
             cards.Add(atm);
+            List<Atm> atms = new List<Atm>();
+            foreach (var item in atms)
+            {
+                atms.Add(atm1);
+            }
             while (true)
             {
                 Console.WriteLine("hansi emeliyyati secmek isdeyirsen \n" +
                     "a)Karti gosder" +
                     "b)Karti sil" +
-                    "c)Cixis");
+                    "c)Cixis" +
+                    "1)gosder");
                 string menu = Console.ReadLine();
                 switch (menu)
                 {
@@ -197,6 +204,9 @@ namespace DotNetTasks_game_
                         break;
                     case "c":
                         Environment.Exit(0);
+                        break;
+                    case "1":
+                        cards.ShowAllCards();
                         break;
                     default:
                         Console.WriteLine("dogru emeliiyyat secmediniz");

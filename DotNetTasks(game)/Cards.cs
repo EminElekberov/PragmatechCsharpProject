@@ -13,6 +13,13 @@ namespace DotNetTasks_game_
         {
             this.atms = new List<Atm>();
         }
+        public  void ShowAllCards()
+        {
+            foreach (var item in atms)
+            {
+                Console.WriteLine(item.Name + " " + item.NewCreateCarAmount);
+            }
+        }
         public void Add(Atm atm)
         {
             bool existName = false;
@@ -35,8 +42,6 @@ namespace DotNetTasks_game_
         }
         public void ShowInfo(string cartName)
         {
-            foreach (var item in atms)
-            {
                 Atm info = atms.Find(n => n.Name.Trim().ToLower() == cartName.Trim().ToLower());
                 if (info != null)
                 {
@@ -47,12 +52,16 @@ namespace DotNetTasks_game_
                 {
                     Console.WriteLine("this card is not found");
                 }
-            }
+            
             
         }
         public void Remove(string crdName)
         {
             string removeCards = crdName.Trim().ToLower();
+            if (removeCards==null)
+            {
+                Console.WriteLine("kart adini girin");
+            }
             Atm remove = atms.Find(r => r.Name.Trim().ToLower().Contains(removeCards));
             if (remove != null)
             {
@@ -64,5 +73,6 @@ namespace DotNetTasks_game_
                 Console.WriteLine("card is not found");
             }
         }
+       
     }
 }

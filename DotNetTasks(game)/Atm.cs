@@ -13,6 +13,15 @@ namespace DotNetTasks_game_
         public int NewCreateCarAmount;
         public DateTime dates;
         public string Name;
-    
+        public Atm()
+        {
+                
+        }
+        public Atm(int newcreate,DateTime dateTime,string nm)
+        {
+            NewCreateCarAmount = newcreate;
+            dates = dateTime;
+            Name = nm;
+        }
     }
 }

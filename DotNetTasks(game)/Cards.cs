@@ -8,57 +8,116 @@ namespace DotNetTasks_game_
 {
     public class Cards
     {
-        public List<Atm> atms { get; set; }
+        public static List<Atm> atms = new List<Atm>();
         public Cards()
         {
-            this.atms = new List<Atm>();
+
         }
-        public  void ShowAllCards()
+        public static void CreateStudents()
         {
-            foreach (var item in atms)
+            int amount = 2000;
+            int count = 0;
+
+        newCart:
+            Console.WriteLine("\n sizin mebleginiz: " + amount);
+        START:
+            if (amount == 0)
             {
-                Console.WriteLine(item.Name + " " + item.NewCreateCarAmount);
+                Console.WriteLine("kartda pul yoxdur ona gorede yeni kart elave etmek mumkun olmadi");
+                return;
             }
-        }
-        public void Add(Atm atm)
-        {
-            bool existName = false;
-            foreach (var item in atms)
+            Console.WriteLine("\n kartin adini daxil edin ");
+            string nm = Console.ReadLine();
+            Console.WriteLine("karti nece gunluk isdeyirsiniz: ");
+            int date = Convert.ToInt32(Console.ReadLine());
+            DateTime dt = DateTime.Now.AddDays(date);
+
+            Console.WriteLine("sizin kartin son isdifade muddeti: " + dt);
+            Console.WriteLine("yeni kart yaratmaq ucun meblegi girin: ");
+            int newCreateCardAmount = Convert.ToInt32(Console.ReadLine());
+            if (newCreateCardAmount > amount)
             {
-                if (item.NewCreateCarAmount== atm.NewCreateCarAmount)
-                {
-                    existName = true;
-                }
-            }
-            if (!existName)
-            {
-                atms.Add(atm);
+                Console.WriteLine("bu qeder kartinizda pul yoxdur xais edililr dogru girin meblegi");
             }
             else
             {
-                Console.WriteLine("this book exist");
-            }
+                amount -= newCreateCardAmount;
 
-        }
-        public void ShowInfo(string cartName)
-        {
-                Atm info = atms.Find(n => n.Name.Trim().ToLower() == cartName.Trim().ToLower());
-                if (info != null)
+                Console.WriteLine("sizn balansinizda qalan pul: " + amount);
+                Console.WriteLine("Zehmet olmasa 5 reqemli kod girin ");
+                string pass = Console.ReadLine();
+                bool a = false;
+                int change;
+                if (pass.Length == 5)
                 {
-                    Console.WriteLine($"name {info.Name} \n amount{info.NewCreateCarAmount} \n " +
-                        $"pagecount {info.dates}");
+                    for (int i = 0; i < pass.Length; i++)
+                    {
+                        change = Convert.ToInt32(pass[i]);
+                        if (change >= 48 && change <= 57)
+                        {
+                            a = true;
+                        }
+                        else
+                        {
+                            a = false;
+                        }
+                    }
+                    if (a)
+                    {
+                        Console.WriteLine("Siz sifreni dogru girdiz ");
+                    }
+                    else
+                    {
+                        Console.WriteLine("sifre sadece reqemlerden ibaret olalidir");
+                        return;
+                    }
                 }
                 else
                 {
-                    Console.WriteLine("this card is not found");
+                    Console.WriteLine("sifre dogru deyil");
+                    Console.WriteLine("yeniden cehd edilsinmi? y/n)");
+                    if (Console.ReadKey().Key == ConsoleKey.Y)
+                    {
+                        goto START;
+                    }
+
                 }
-            
-            
+                count++;
+            }
+            atms.Add(new Atm(newCreateCardAmount, dt, nm));
+            Console.WriteLine("kart elave edilsinmi \n y/n \n");
+            if (Console.ReadKey().Key == ConsoleKey.Y)
+            {
+                goto newCart;
+            }
+        }
+        public static void ShowAllCards()
+        {
+            foreach (var item in atms)
+            {
+                Console.WriteLine("kartin adi: " + item.Name + " " + "kartdaki pul: " + item.NewCreateCarAmount + "" +
+                    "kartinn son isdifade tarixi: " + item.dates);
+            }
+        }
+        public void ShowInfo(string cartName)
+        {
+            Atm info = atms.Find(n => n.Name.Trim().ToLower() == cartName.Trim().ToLower());
+            if (info != null)
+            {
+                Console.WriteLine($"name {info.Name} \n amount{info.NewCreateCarAmount} \n " +
+                    $"end date {info.dates}");
+            }
+            else
+            {
+                Console.WriteLine("this card is not found");
+            }
+
+
         }
         public void Remove(string crdName)
         {
             string removeCards = crdName.Trim().ToLower();
-            if (removeCards==null)
+            if (removeCards == null)
             {
                 Console.WriteLine("kart adini girin");
             }
@@ -66,13 +125,13 @@ namespace DotNetTasks_game_
             if (remove != null)
             {
                 atms.Remove(remove);
-                Console.WriteLine("silindi");
+                Console.WriteLine("This card removed");
             }
             else
             {
                 Console.WriteLine("card is not found");
             }
         }
-       
+
     }
 }

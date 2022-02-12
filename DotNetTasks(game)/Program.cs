@@ -99,114 +99,37 @@ namespace DotNetTasks_game_
             //        Console.WriteLine("qazanilan xal: " + Sum);
             //    }
             #endregion
-
-
-
             #region
-            int amount = 2000;
-        newCart:
-            Console.WriteLine("sizin mebleginiz: " + amount);
-        START:
-            Console.WriteLine("kartin adini daxil edin ");
-            string nm = Console.ReadLine();
-            Console.WriteLine("karti nece gunluk isdeyirsiniz: ");
-            int date = Convert.ToInt32(Console.ReadLine());
-            DateTime dt = DateTime.Now.AddDays(date);
-
-            Console.WriteLine("sizin kartin son isdifade muddeti: " + dt);
-            Console.WriteLine("yeni kart yaratmaq ucun meblegi girin: ");
-            int newCreateCardAmount = Convert.ToInt32(Console.ReadLine());
-            if (newCreateCardAmount > amount)
-            {
-                Console.WriteLine("bu qeder kartinizda pul yoxdur xais edililr dogru girin meblegi");
-            }
-            else
-            {
-                amount -= newCreateCardAmount;
-                Console.WriteLine("sizn balansinizda qalan pul: " + amount);
-                Console.WriteLine("Zehmet olmasa 5 reqemli kod girin ");
-                string pass = Console.ReadLine();
-                bool a = false;
-                int change;
-                if (pass.Length == 5)
-                {
-                    for (int i = 0; i < pass.Length; i++)
-                    {
-                        change = Convert.ToInt32(pass[i]);
-                        if (change >= 48 && change <= 57)
-                        {
-                            a = true;
-                        }
-                        else
-                        {
-                            a = false;
-                        }
-                    }
-                    if (a)
-                    {
-                        Console.WriteLine("Siz sifreni dogru girdiz ");
-                    }
-                    else
-                    {
-                        Console.WriteLine("sifre sadece reqemlerden ibaret olalidir");
-                        return;
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("sifre dogru deyil");
-                    Console.WriteLine("yeniden cehd edilsinmi? y/n)");
-                    if (Console.ReadKey().Key == ConsoleKey.Y)
-                    {
-                        goto START;
-                    }
-
-                }
-            }
-            Console.WriteLine("kart elave edilsinmi y/n");
-            if (Console.ReadKey().Key == ConsoleKey.Y)
-            {
-                goto newCart;
-            }
-            Atm atm = new Atm
-            {
-                NewCreateCarAmount = newCreateCardAmount,
-                dates = dt,
-                Name = nm
-            };
-            Atm atm1 = new Atm(newCreateCardAmount, dt, nm);
             Cards cards = new Cards();
-            cards.Add(atm);
-            List<Atm> atms = new List<Atm>();
-            foreach (var item in atms)
-            {
-                atms.Add(atm1);
-            }
             while (true)
             {
                 Console.WriteLine("hansi emeliyyati secmek isdeyirsen \n" +
-                    "a)Karti gosder" +
-                    "b)Karti sil" +
-                    "c)Cixis" +
-                    "1)gosder");
+                    "a)kart elave et" +
+                    "b)Karti gosder" +
+                    "c)Karti sil" +
+                    "d)Cixis" +
+                    "e)Butun kartlari gosder");
                 string menu = Console.ReadLine();
                 switch (menu)
                 {
                     case "a":
+                        Cards.CreateStudents();
+                        break;
+                    case "b":
                         Console.WriteLine("kartin adini gir: ");
                         string names = Console.ReadLine();
                         cards.ShowInfo(names);
                         break;
-                    case "b":
+                    case "c":
                         Console.WriteLine("kartin adini gir: ");
                         string remnames = Console.ReadLine();
                         cards.Remove(remnames);
                         break;
-                    case "c":
+                    case "d":
                         Environment.Exit(0);
                         break;
-                    case "1":
-                        cards.ShowAllCards();
+                    case "e":
+                        Cards.ShowAllCards();
                         break;
                     default:
                         Console.WriteLine("dogru emeliiyyat secmediniz");
@@ -215,7 +138,6 @@ namespace DotNetTasks_game_
             }
         }
         #endregion
-
     }
     #region 1 ci sual 
     //private static void ATmr_Elapsed(object sender, ElapsedEventArgs e)

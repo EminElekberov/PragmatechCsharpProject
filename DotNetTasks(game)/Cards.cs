@@ -9,9 +9,10 @@ namespace DotNetTasks_game_
     public class Cards
     {
         public static List<Atm> atms = new List<Atm>();
+        //
+        
         public Cards()
         {
-
         }
         public static void CreateStudents()
         {

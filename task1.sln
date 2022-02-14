@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "repeatTask", "repeatTask\re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetTasks(game)", "DotNetTasks(game)\DotNetTasks(game).csproj", "{47B35149-0FDF-48B2-9114-D64EC4C838EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pf", "Pf\Pf.csproj", "{5D23F367-5806-4A94-ABC6-B270CEA0FAAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +149,10 @@ Global
 		{47B35149-0FDF-48B2-9114-D64EC4C838EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47B35149-0FDF-48B2-9114-D64EC4C838EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47B35149-0FDF-48B2-9114-D64EC4C838EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D23F367-5806-4A94-ABC6-B270CEA0FAAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D23F367-5806-4A94-ABC6-B270CEA0FAAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D23F367-5806-4A94-ABC6-B270CEA0FAAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D23F367-5806-4A94-ABC6-B270CEA0FAAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

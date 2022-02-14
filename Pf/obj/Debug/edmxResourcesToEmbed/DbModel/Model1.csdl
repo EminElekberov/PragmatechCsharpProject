@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ParfumModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Brend">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Parfums" Relationship="Self.FK_Parfums_Brend" FromRole="Brend" ToRole="Parfums" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CategoryParfums" Relationship="Self.FK_CategoryParfum_Category" FromRole="Category" ToRole="CategoryParfum" />
+  </EntityType>
+  <EntityType Name="CategoryParfum">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ParfumId" Type="Int32" />
+    <Property Name="CategoryId" Type="Int32" />
+    <NavigationProperty Name="Category" Relationship="Self.FK_CategoryParfum_Category" FromRole="CategoryParfum" ToRole="Category" />
+    <NavigationProperty Name="Parfum" Relationship="Self.FK_CategoryParfum_Parfums" FromRole="CategoryParfum" ToRole="Parfums" />
+  </EntityType>
+  <EntityType Name="Density">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Parfums" Relationship="Self.FK_Parfums_Density" FromRole="Density" ToRole="Parfums" />
+  </EntityType>
+  <EntityType Name="Gender">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Parfums" Relationship="Self.FK_Parfums_Gender" FromRole="Gender" ToRole="Parfums" />
+  </EntityType>
+  <EntityType Name="Parfum">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Image" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BrendID" Type="Int32" />
+    <Property Name="GenderId" Type="Int32" />
+    <Property Name="New" Type="Boolean" />
+    <Property Name="DensityId" Type="Int32" />
+    <NavigationProperty Name="Brend" Relationship="Self.FK_Parfums_Brend" FromRole="Parfums" ToRole="Brend" />
+    <NavigationProperty Name="CategoryParfums" Relationship="Self.FK_CategoryParfum_Parfums" FromRole="Parfums" ToRole="CategoryParfum" />
+    <NavigationProperty Name="Density" Relationship="Self.FK_Parfums_Density" FromRole="Parfums" ToRole="Density" />
+    <NavigationProperty Name="Gender" Relationship="Self.FK_Parfums_Gender" FromRole="Parfums" ToRole="Gender" />
+    <NavigationProperty Name="Saleprices" Relationship="Self.FK_Saleprice_Parfums" FromRole="Parfums" ToRole="Saleprice" />
+  </EntityType>
+  <EntityType Name="Sale">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="SalePriceId" Type="Int32" />
+    <Property Name="Count" Type="Int32" />
+    <Property Name="Total" Type="Int32" />
+    <Property Name="Date" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Saleprice" Relationship="Self.FK_Sale_Saleprice" FromRole="Sale" ToRole="Saleprice" />
+    <NavigationProperty Name="User" Relationship="Self.FK_Sale_User" FromRole="Sale" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Saleprice">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SizeMlId" Type="Int32" />
+    <Property Name="ParfumID" Type="Int32" />
+    <Property Name="Price" Type="Int32" />
+    <Property Name="Count" Type="Int32" />
+    <NavigationProperty Name="Parfum" Relationship="Self.FK_Saleprice_Parfums" FromRole="Saleprice" ToRole="Parfums" />
+    <NavigationProperty Name="Sales" Relationship="Self.FK_Sale_Saleprice" FromRole="Saleprice" ToRole="Sale" />
+    <NavigationProperty Name="SizeMl" Relationship="Self.FK_Saleprice_SizeMl" FromRole="Saleprice" ToRole="SizeMl" />
+  </EntityType>
+  <EntityType Name="SizeMl">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SizeMl1" Type="Int32" />
+    <NavigationProperty Name="Saleprices" Relationship="Self.FK_Saleprice_SizeMl" FromRole="SizeMl" ToRole="Saleprice" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsAdmin" Type="Boolean" />
+    <Property Name="IsUser" Type="Boolean" />
+    <Property Name="IsEmployee" Type="Boolean" />
+    <Property Name="IsActiv" Type="Boolean" />
+    <NavigationProperty Name="Sales" Relationship="Self.FK_Sale_User" FromRole="User" ToRole="Sale" />
+  </EntityType>
+  <Association Name="FK_Parfums_Brend">
+    <End Role="Brend" Type="Self.Brend" Multiplicity="0..1" />
+    <End Role="Parfums" Type="Self.Parfum" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Brend">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Parfums">
+        <PropertyRef Name="BrendID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CategoryParfum_Category">
+    <End Role="Category" Type="Self.Category" Multiplicity="0..1" />
+    <End Role="CategoryParfum" Type="Self.CategoryParfum" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CategoryParfum">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CategoryParfum_Parfums">
+    <End Role="Parfums" Type="Self.Parfum" Multiplicity="0..1" />
+    <End Role="CategoryParfum" Type="Self.CategoryParfum" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Parfums">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CategoryParfum">
+        <PropertyRef Name="ParfumId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Parfums_Density">
+    <End Role="Density" Type="Self.Density" Multiplicity="0..1" />
+    <End Role="Parfums" Type="Self.Parfum" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Density">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Parfums">
+        <PropertyRef Name="DensityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Parfums_Gender">
+    <End Role="Gender" Type="Self.Gender" Multiplicity="0..1" />
+    <End Role="Parfums" Type="Self.Parfum" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Gender">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Parfums">
+        <PropertyRef Name="GenderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Saleprice_Parfums">
+    <End Role="Parfums" Type="Self.Parfum" Multiplicity="0..1" />
+    <End Role="Saleprice" Type="Self.Saleprice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Parfums">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Saleprice">
+        <PropertyRef Name="ParfumID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sale_Saleprice">
+    <End Role="Saleprice" Type="Self.Saleprice" Multiplicity="0..1" />
+    <End Role="Sale" Type="Self.Sale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Saleprice">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Sale">
+        <PropertyRef Name="SalePriceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sale_User">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Sale" Type="Self.Sale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Sale">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Saleprice_SizeMl">
+    <End Role="SizeMl" Type="Self.SizeMl" Multiplicity="0..1" />
+    <End Role="Saleprice" Type="Self.Saleprice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SizeMl">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Saleprice">
+        <PropertyRef Name="SizeMlId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ParfumEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Brends" EntityType="Self.Brend" />
+    <EntitySet Name="Categories" EntityType="Self.Category" />
+    <EntitySet Name="CategoryParfums" EntityType="Self.CategoryParfum" />
+    <EntitySet Name="Densities" EntityType="Self.Density" />
+    <EntitySet Name="Genders" EntityType="Self.Gender" />
+    <EntitySet Name="Parfums" EntityType="Self.Parfum" />
+    <EntitySet Name="Sales" EntityType="Self.Sale" />
+    <EntitySet Name="Saleprices" EntityType="Self.Saleprice" />
+    <EntitySet Name="SizeMls" EntityType="Self.SizeMl" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <AssociationSet Name="FK_Parfums_Brend" Association="Self.FK_Parfums_Brend">
+      <End Role="Brend" EntitySet="Brends" />
+      <End Role="Parfums" EntitySet="Parfums" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CategoryParfum_Category" Association="Self.FK_CategoryParfum_Category">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="CategoryParfum" EntitySet="CategoryParfums" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CategoryParfum_Parfums" Association="Self.FK_CategoryParfum_Parfums">
+      <End Role="Parfums" EntitySet="Parfums" />
+      <End Role="CategoryParfum" EntitySet="CategoryParfums" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Parfums_Density" Association="Self.FK_Parfums_Density">
+      <End Role="Density" EntitySet="Densities" />
+      <End Role="Parfums" EntitySet="Parfums" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Parfums_Gender" Association="Self.FK_Parfums_Gender">
+      <End Role="Gender" EntitySet="Genders" />
+      <End Role="Parfums" EntitySet="Parfums" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Saleprice_Parfums" Association="Self.FK_Saleprice_Parfums">
+      <End Role="Parfums" EntitySet="Parfums" />
+      <End Role="Saleprice" EntitySet="Saleprices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sale_Saleprice" Association="Self.FK_Sale_Saleprice">
+      <End Role="Saleprice" EntitySet="Saleprices" />
+      <End Role="Sale" EntitySet="Sales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sale_User" Association="Self.FK_Sale_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Sale" EntitySet="Sales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Saleprice_SizeMl" Association="Self.FK_Saleprice_SizeMl">
+      <End Role="SizeMl" EntitySet="SizeMls" />
+      <End Role="Saleprice" EntitySet="Saleprices" />
+    </AssociationSet>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(ParfumModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(ParfumModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+  </EntityContainer>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+</Schema>

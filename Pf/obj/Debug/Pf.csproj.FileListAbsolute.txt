@@ -1,0 +1,16 @@
+C:\Users\EMIN\Desktop\task1\Pf\obj\Debug\Pf.csproj.AssemblyReference.cache
+C:\Users\EMIN\Desktop\task1\Pf\obj\Debug\Pf.Properties.Resources.resources
+C:\Users\EMIN\Desktop\task1\Pf\obj\Debug\Pf.csproj.GenerateResource.cache
+C:\Users\EMIN\Desktop\task1\Pf\obj\Debug\Pf.csproj.CoreCompileInputs.cache
+C:\Users\EMIN\Desktop\task1\Pf\obj\Debug\Pf.UserActivity.resources
+C:\Users\EMIN\Desktop\task1\Pf\bin\Debug\Pf.exe.config
+C:\Users\EMIN\Desktop\task1\Pf\bin\Debug\Pf.exe
+C:\Users\EMIN\Desktop\task1\Pf\bin\Debug\Pf.pdb
+C:\Users\EMIN\Desktop\task1\Pf\bin\Debug\EntityFramework.dll
+C:\Users\EMIN\Desktop\task1\Pf\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\EMIN\Desktop\task1\Pf\bin\Debug\EntityFramework.xml
+C:\Users\EMIN\Desktop\task1\Pf\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\EMIN\Desktop\task1\Pf\obj\Debug\Pf.csproj.CopyComplete
+C:\Users\EMIN\Desktop\task1\Pf\obj\Debug\Pf.exe
+C:\Users\EMIN\Desktop\task1\Pf\obj\Debug\Pf.pdb
+C:\Users\EMIN\Desktop\task1\Pf\obj\Debug\Pf.CategoryCreate.resources

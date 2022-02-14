@@ -7,13 +7,13 @@ namespace task12
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("-----------------");
 
             #region Delegate ile yazilanlar 
             #region IsOdd IsEven
             //Check ch = new Check(IsOdd);
             //ch += IsEven;
             //ch.Invoke(5);
+            //
             #endregion
             #region IsContainsDigit
             //Check1 ch = new Check1(DigitFunctions);

@@ -107,5 +107,10 @@ namespace Pf
                 }
             }
         }
+
+        private void combCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

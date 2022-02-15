@@ -25,5 +25,38 @@ namespace Pf.Helper
             comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox.SelectedIndex = 0;
         }
+        public static void LoadSearchName(ComboBox combSearchName)
+        {
+
+            // ComboBox Index
+            int comboxIndex = 0;
+
+            // Data Clear
+            combSearchName.DataSource = null;
+
+            // Collection Create
+            List<ParfumHeader> parfumHeaders = new List<ParfumHeader>();
+
+            // Collection Clear
+            parfumHeaders.Clear();
+
+
+            var searchHeader = parfumEntities.SearchHeads.OrderBy(dr => dr.Header).ToList();
+
+            foreach (var item in searchHeader)
+            {
+                // Collection add
+                parfumHeaders.Add(new ParfumHeader(item.Id, item.Header, comboxIndex));
+                ++comboxIndex;
+            }
+
+
+            // Data Add
+            combSearchName.DataSource = parfumHeaders;
+            combSearchName.DropDownStyle = ComboBoxStyle.DropDownList;
+            combSearchName.SelectedIndex = 0;
+
+        }
+
     }
 }

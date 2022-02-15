@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Pf.Helper
 {
-   public class Cb_category
+    public class Cb_parfums
     {
-        public int Id { get; set; }
-       
+        public int GenderId { get; set; }
         public string Name { get; set; }
         public override string ToString()
         {

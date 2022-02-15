@@ -18,3 +18,4 @@ C:\Users\EMIN\Desktop\task1\Pf\obj\Debug\Pf.CategoryRemove.resources
 C:\Users\EMIN\Desktop\task1\Pf\obj\Debug\Pf.SalePriceLists.resources
 C:\Users\EMIN\Desktop\task1\Pf\obj\Debug\Pf.CategoryAdd.resources
 C:\Users\EMIN\Desktop\task1\Pf\obj\Debug\Pf.ParfumeUpdate.resources
+C:\Users\EMIN\Desktop\task1\Pf\obj\Debug\Pf.Parfum_Function.resources

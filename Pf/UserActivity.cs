@@ -11,11 +11,11 @@ namespace Pf
         private string oldname = "";
 
         private int UserId = 0;
-        public ParfumEntities parfumEntities;
+        public ParfumEntities1 parfumEntities;
         public UserActivity()
         {
             InitializeComponent();
-            parfumEntities = new ParfumEntities();
+            parfumEntities = new ParfumEntities1();
         }
         private void UserActivity_Load(object sender, EventArgs e)
         {

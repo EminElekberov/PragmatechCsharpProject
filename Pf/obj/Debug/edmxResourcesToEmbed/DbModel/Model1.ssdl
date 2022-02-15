@@ -1,5 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="ParfumModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ActivUsertable">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Fullname" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsAdmin" Type="bit" />
+    <Property Name="IsEmployee" Type="bit" />
+    <Property Name="IsUSer" Type="bit" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
   <EntityType Name="Brend">
     <Key>
       <PropertyRef Name="Id" />
@@ -15,6 +27,13 @@
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nvarchar" MaxLength="50" />
   </EntityType>
+  <EntityType Name="CategoryListparfum">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
   <EntityType Name="CategoryParfum">
     <Key>
       <PropertyRef Name="Id" />
@@ -23,6 +42,38 @@
     <Property Name="ParfumId" Type="int" />
     <Property Name="CategoryId" Type="int" />
   </EntityType>
+  <EntityType Name="DeleteHeader">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Header" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DeleteSalePriceUI">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Size" Type="int" />
+    <Property Name="Price" Type="int" />
+    <Property Name="Number" Type="int" />
+    <Property Name="ParfumId" Type="int" />
+  </EntityType>
+  <EntityType Name="DeleteUpdateHeader">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Header" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DeleteUpdateToParfum">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Header" Type="nvarchar" MaxLength="50" />
+    <Property Name="Category" Type="nvarchar" MaxLength="50" />
+  </EntityType>
   <EntityType Name="Density">
     <Key>
       <PropertyRef Name="Id" />
@@ -30,12 +81,61 @@
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nvarchar" MaxLength="50" />
   </EntityType>
+  <EntityType Name="FullDetailParfum">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="Brend" Type="nvarchar" MaxLength="50" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="50" />
+    <Property Name="Density" Type="nvarchar" MaxLength="50" />
+    <Property Name="Size" Type="int" />
+    <Property Name="Price" Type="int" />
+    <Property Name="Number" Type="int" />
+  </EntityType>
   <EntityType Name="Gender">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="MiddetalParfum">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="Brend" Type="nvarchar" MaxLength="50" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="50" />
+    <Property Name="Density" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="MiddetalParfumForUpdate">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Image" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="Brend" Type="nvarchar" MaxLength="50" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="50" />
+    <Property Name="Density" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ParfumLoginUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsAdmin" Type="bit" />
+    <Property Name="IsEmployee" Type="bit" />
+    <Property Name="IsUser" Type="bit" />
+    <Property Name="IsActive" Type="bit" />
   </EntityType>
   <EntityType Name="Parfums">
     <Key>
@@ -61,6 +161,67 @@
     <Property Name="Total" Type="int" />
     <Property Name="Date" Type="date" />
   </EntityType>
+  <EntityType Name="SaleActivity">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Fullname" Type="nvarchar" MaxLength="50" />
+    <Property Name="Parfum" Type="nvarchar" MaxLength="50" />
+    <Property Name="Size" Type="int" />
+    <Property Name="Price" Type="int" />
+    <Property Name="Count" Type="int" />
+    <Property Name="Total" Type="int" />
+    <Property Name="Date" Type="date" />
+  </EntityType>
+  <EntityType Name="SaleActivity1">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Fullname" Type="nvarchar" MaxLength="50" />
+    <Property Name="SalePriceId" Type="int" />
+  </EntityType>
+  <EntityType Name="SaleActivityIsUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Fullname" Type="nvarchar" MaxLength="50" />
+    <Property Name="SalPriceId" Type="int" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="SaleActivityMonitor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Brend" Type="nvarchar" MaxLength="50" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="50" />
+    <Property Name="Density" Type="nvarchar" MaxLength="50" />
+    <Property Name="Size" Type="int" />
+    <Property Name="Price" Type="int" />
+    <Property Name="Sale_count" Type="int" />
+    <Property Name="Total" Type="int" />
+    <Property Name="Date" Type="date" />
+  </EntityType>
+  <EntityType Name="SaleDetailParfum">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PriceID" Type="int" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="Brend" Type="nvarchar" MaxLength="50" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="50" />
+    <Property Name="Density" Type="nvarchar" MaxLength="50" />
+    <Property Name="Size" Type="int" />
+    <Property Name="Price" Type="int" />
+    <Property Name="Number" Type="int" />
+  </EntityType>
   <EntityType Name="Saleprice">
     <Key>
       <PropertyRef Name="Id" />
@@ -70,6 +231,23 @@
     <Property Name="ParfumID" Type="int" />
     <Property Name="Price" Type="int" />
     <Property Name="Count" Type="int" />
+  </EntityType>
+  <EntityType Name="SalePriceUI">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Size" Type="int" />
+    <Property Name="Price" Type="int" />
+    <Property Name="number" Type="int" />
+    <Property Name="ParfumId" Type="int" />
+  </EntityType>
+  <EntityType Name="SearchHead">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Header" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="SizeMl">
     <Key>
@@ -240,14 +418,31 @@
   </Function>
   <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <EntityContainer Name="ParfumModelStoreContainer">
+    <EntitySet Name="ActivUsertable" EntityType="Self.ActivUsertable" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Brend" EntityType="Self.Brend" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CategoryListparfum" EntityType="Self.CategoryListparfum" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="CategoryParfum" EntityType="Self.CategoryParfum" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DeleteHeader" EntityType="Self.DeleteHeader" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DeleteSalePriceUI" EntityType="Self.DeleteSalePriceUI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DeleteUpdateHeader" EntityType="Self.DeleteUpdateHeader" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DeleteUpdateToParfum" EntityType="Self.DeleteUpdateToParfum" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Density" EntityType="Self.Density" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FullDetailParfum" EntityType="Self.FullDetailParfum" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Gender" EntityType="Self.Gender" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MiddetalParfum" EntityType="Self.MiddetalParfum" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MiddetalParfumForUpdate" EntityType="Self.MiddetalParfumForUpdate" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ParfumLoginUser" EntityType="Self.ParfumLoginUser" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Parfums" EntityType="Self.Parfums" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Sale" EntityType="Self.Sale" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SaleActivity" EntityType="Self.SaleActivity" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SaleActivity1" EntityType="Self.SaleActivity1" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SaleActivityIsUser" EntityType="Self.SaleActivityIsUser" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SaleActivityMonitor" EntityType="Self.SaleActivityMonitor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SaleDetailParfum" EntityType="Self.SaleDetailParfum" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Saleprice" EntityType="Self.Saleprice" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SalePriceUI" EntityType="Self.SalePriceUI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SearchHead" EntityType="Self.SearchHead" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="SizeMl" EntityType="Self.SizeMl" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />

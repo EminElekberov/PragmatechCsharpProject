@@ -5,6 +5,18 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
       <Schema Namespace="ParfumModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ActivUsertable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Fullname" Type="nvarchar" MaxLength="50" />
+          <Property Name="Password" Type="nvarchar" MaxLength="50" />
+          <Property Name="IsAdmin" Type="bit" />
+          <Property Name="IsEmployee" Type="bit" />
+          <Property Name="IsUSer" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+        </EntityType>
         <EntityType Name="Brend">
           <Key>
             <PropertyRef Name="Id" />
@@ -20,6 +32,13 @@
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="nvarchar" MaxLength="50" />
         </EntityType>
+        <EntityType Name="CategoryListparfum">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+        </EntityType>
         <EntityType Name="CategoryParfum">
           <Key>
             <PropertyRef Name="Id" />
@@ -28,6 +47,38 @@
           <Property Name="ParfumId" Type="int" />
           <Property Name="CategoryId" Type="int" />
         </EntityType>
+        <EntityType Name="DeleteHeader">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Header" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="DeleteSalePriceUI">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Size" Type="int" />
+          <Property Name="Price" Type="int" />
+          <Property Name="Number" Type="int" />
+          <Property Name="ParfumId" Type="int" />
+        </EntityType>
+        <EntityType Name="DeleteUpdateHeader">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Header" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="DeleteUpdateToParfum">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Header" Type="nvarchar" MaxLength="50" />
+          <Property Name="Category" Type="nvarchar" MaxLength="50" />
+        </EntityType>
         <EntityType Name="Density">
           <Key>
             <PropertyRef Name="Id" />
@@ -35,12 +86,61 @@
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="nvarchar" MaxLength="50" />
         </EntityType>
+        <EntityType Name="FullDetailParfum">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Description" Type="nvarchar" MaxLength="50" />
+          <Property Name="Brend" Type="nvarchar" MaxLength="50" />
+          <Property Name="Gender" Type="nvarchar" MaxLength="50" />
+          <Property Name="Density" Type="nvarchar" MaxLength="50" />
+          <Property Name="Size" Type="int" />
+          <Property Name="Price" Type="int" />
+          <Property Name="Number" Type="int" />
+        </EntityType>
         <EntityType Name="Gender">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="MiddetalParfum">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Description" Type="nvarchar" MaxLength="50" />
+          <Property Name="Brend" Type="nvarchar" MaxLength="50" />
+          <Property Name="Gender" Type="nvarchar" MaxLength="50" />
+          <Property Name="Density" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="MiddetalParfumForUpdate">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Image" Type="nvarchar" MaxLength="50" />
+          <Property Name="Description" Type="nvarchar" MaxLength="50" />
+          <Property Name="Brend" Type="nvarchar" MaxLength="50" />
+          <Property Name="Gender" Type="nvarchar" MaxLength="50" />
+          <Property Name="Density" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="ParfumLoginUser">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FullName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Password" Type="nvarchar" MaxLength="50" />
+          <Property Name="IsAdmin" Type="bit" />
+          <Property Name="IsEmployee" Type="bit" />
+          <Property Name="IsUser" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
         </EntityType>
         <EntityType Name="Parfums">
           <Key>
@@ -66,6 +166,67 @@
           <Property Name="Total" Type="int" />
           <Property Name="Date" Type="date" />
         </EntityType>
+        <EntityType Name="SaleActivity">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Fullname" Type="nvarchar" MaxLength="50" />
+          <Property Name="Parfum" Type="nvarchar" MaxLength="50" />
+          <Property Name="Size" Type="int" />
+          <Property Name="Price" Type="int" />
+          <Property Name="Count" Type="int" />
+          <Property Name="Total" Type="int" />
+          <Property Name="Date" Type="date" />
+        </EntityType>
+        <EntityType Name="SaleActivity1">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Fullname" Type="nvarchar" MaxLength="50" />
+          <Property Name="SalePriceId" Type="int" />
+        </EntityType>
+        <EntityType Name="SaleActivityIsUser">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Fullname" Type="nvarchar" MaxLength="50" />
+          <Property Name="SalPriceId" Type="int" />
+          <Property Name="IsActive" Type="bit" />
+        </EntityType>
+        <EntityType Name="SaleActivityMonitor">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FullName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Brend" Type="nvarchar" MaxLength="50" />
+          <Property Name="Gender" Type="nvarchar" MaxLength="50" />
+          <Property Name="Density" Type="nvarchar" MaxLength="50" />
+          <Property Name="Size" Type="int" />
+          <Property Name="Price" Type="int" />
+          <Property Name="Sale_count" Type="int" />
+          <Property Name="Total" Type="int" />
+          <Property Name="Date" Type="date" />
+        </EntityType>
+        <EntityType Name="SaleDetailParfum">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PriceID" Type="int" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Description" Type="nvarchar" MaxLength="50" />
+          <Property Name="Brend" Type="nvarchar" MaxLength="50" />
+          <Property Name="Gender" Type="nvarchar" MaxLength="50" />
+          <Property Name="Density" Type="nvarchar" MaxLength="50" />
+          <Property Name="Size" Type="int" />
+          <Property Name="Price" Type="int" />
+          <Property Name="Number" Type="int" />
+        </EntityType>
         <EntityType Name="Saleprice">
           <Key>
             <PropertyRef Name="Id" />
@@ -75,6 +236,23 @@
           <Property Name="ParfumID" Type="int" />
           <Property Name="Price" Type="int" />
           <Property Name="Count" Type="int" />
+        </EntityType>
+        <EntityType Name="SalePriceUI">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Size" Type="int" />
+          <Property Name="Price" Type="int" />
+          <Property Name="number" Type="int" />
+          <Property Name="ParfumId" Type="int" />
+        </EntityType>
+        <EntityType Name="SearchHead">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Header" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="SizeMl">
           <Key>
@@ -245,14 +423,31 @@
         </Function>
         <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <EntityContainer Name="ParfumModelStoreContainer">
+          <EntitySet Name="ActivUsertable" EntityType="Self.ActivUsertable" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Brend" EntityType="Self.Brend" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CategoryListparfum" EntityType="Self.CategoryListparfum" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="CategoryParfum" EntityType="Self.CategoryParfum" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DeleteHeader" EntityType="Self.DeleteHeader" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DeleteSalePriceUI" EntityType="Self.DeleteSalePriceUI" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DeleteUpdateHeader" EntityType="Self.DeleteUpdateHeader" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DeleteUpdateToParfum" EntityType="Self.DeleteUpdateToParfum" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Density" EntityType="Self.Density" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FullDetailParfum" EntityType="Self.FullDetailParfum" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Gender" EntityType="Self.Gender" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MiddetalParfum" EntityType="Self.MiddetalParfum" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MiddetalParfumForUpdate" EntityType="Self.MiddetalParfumForUpdate" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ParfumLoginUser" EntityType="Self.ParfumLoginUser" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Parfums" EntityType="Self.Parfums" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Sale" EntityType="Self.Sale" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SaleActivity" EntityType="Self.SaleActivity" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SaleActivity1" EntityType="Self.SaleActivity1" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SaleActivityIsUser" EntityType="Self.SaleActivityIsUser" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SaleActivityMonitor" EntityType="Self.SaleActivityMonitor" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SaleDetailParfum" EntityType="Self.SaleDetailParfum" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Saleprice" EntityType="Self.Saleprice" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SalePriceUI" EntityType="Self.SalePriceUI" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SearchHead" EntityType="Self.SearchHead" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="SizeMl" EntityType="Self.SizeMl" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
@@ -298,6 +493,18 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="ParfumModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ActivUsertable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Fullname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IsAdmin" Type="Boolean" />
+          <Property Name="IsEmployee" Type="Boolean" />
+          <Property Name="IsUSer" Type="Boolean" />
+          <Property Name="IsActive" Type="Boolean" />
+        </EntityType>
         <EntityType Name="Brend">
           <Key>
             <PropertyRef Name="Id" />
@@ -315,6 +522,13 @@
           <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="CategoryParfums" Relationship="Self.FK_CategoryParfum_Category" FromRole="Category" ToRole="CategoryParfum" />
         </EntityType>
+        <EntityType Name="CategoryListparfum">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
         <EntityType Name="CategoryParfum">
           <Key>
             <PropertyRef Name="Id" />
@@ -325,6 +539,38 @@
           <NavigationProperty Name="Category" Relationship="Self.FK_CategoryParfum_Category" FromRole="CategoryParfum" ToRole="Category" />
           <NavigationProperty Name="Parfum" Relationship="Self.FK_CategoryParfum_Parfums" FromRole="CategoryParfum" ToRole="Parfums" />
         </EntityType>
+        <EntityType Name="DeleteHeader">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Header" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="DeleteSalePriceUI">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Size" Type="Int32" />
+          <Property Name="Price" Type="Int32" />
+          <Property Name="Number" Type="Int32" />
+          <Property Name="ParfumId" Type="Int32" />
+        </EntityType>
+        <EntityType Name="DeleteUpdateHeader">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Header" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="DeleteUpdateToParfum">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Header" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Category" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
         <EntityType Name="Density">
           <Key>
             <PropertyRef Name="Id" />
@@ -333,6 +579,20 @@
           <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Parfums" Relationship="Self.FK_Parfums_Density" FromRole="Density" ToRole="Parfums" />
         </EntityType>
+        <EntityType Name="FullDetailParfum">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Brend" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Density" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Size" Type="Int32" />
+          <Property Name="Price" Type="Int32" />
+          <Property Name="Number" Type="Int32" />
+        </EntityType>
         <EntityType Name="Gender">
           <Key>
             <PropertyRef Name="Id" />
@@ -340,6 +600,41 @@
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Parfums" Relationship="Self.FK_Parfums_Gender" FromRole="Gender" ToRole="Parfums" />
+        </EntityType>
+        <EntityType Name="MiddetalParfum">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Brend" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Density" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MiddetalParfumForUpdate">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Image" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Brend" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Density" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="ParfumLoginUser">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IsAdmin" Type="Boolean" />
+          <Property Name="IsEmployee" Type="Boolean" />
+          <Property Name="IsUser" Type="Boolean" />
+          <Property Name="IsActive" Type="Boolean" />
         </EntityType>
         <EntityType Name="Parfum">
           <Key>
@@ -372,6 +667,67 @@
           <NavigationProperty Name="Saleprice" Relationship="Self.FK_Sale_Saleprice" FromRole="Sale" ToRole="Saleprice" />
           <NavigationProperty Name="User" Relationship="Self.FK_Sale_User" FromRole="Sale" ToRole="User" />
         </EntityType>
+        <EntityType Name="SaleActivity">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Fullname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Parfum" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Size" Type="Int32" />
+          <Property Name="Price" Type="Int32" />
+          <Property Name="Count" Type="Int32" />
+          <Property Name="Total" Type="Int32" />
+          <Property Name="Date" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="SaleActivity1">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Fullname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SalePriceId" Type="Int32" />
+        </EntityType>
+        <EntityType Name="SaleActivityIsUser">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Fullname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SalPriceId" Type="Int32" />
+          <Property Name="IsActive" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="SaleActivityMonitor">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Brend" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Density" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Size" Type="Int32" />
+          <Property Name="Price" Type="Int32" />
+          <Property Name="Sale_count" Type="Int32" />
+          <Property Name="Total" Type="Int32" />
+          <Property Name="Date" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="SaleDetailParfum">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PriceID" Type="Int32" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Brend" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Density" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Size" Type="Int32" />
+          <Property Name="Price" Type="Int32" />
+          <Property Name="Number" Type="Int32" />
+        </EntityType>
         <EntityType Name="Saleprice">
           <Key>
             <PropertyRef Name="Id" />
@@ -384,6 +740,23 @@
           <NavigationProperty Name="Parfum" Relationship="Self.FK_Saleprice_Parfums" FromRole="Saleprice" ToRole="Parfums" />
           <NavigationProperty Name="Sales" Relationship="Self.FK_Sale_Saleprice" FromRole="Saleprice" ToRole="Sale" />
           <NavigationProperty Name="SizeMl" Relationship="Self.FK_Saleprice_SizeMl" FromRole="Saleprice" ToRole="SizeMl" />
+        </EntityType>
+        <EntityType Name="SalePriceUI">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Size" Type="Int32" />
+          <Property Name="Price" Type="Int32" />
+          <Property Name="number" Type="Int32" />
+          <Property Name="ParfumId" Type="Int32" />
+        </EntityType>
+        <EntityType Name="SearchHead">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Header" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="SizeMl">
           <Key>
@@ -524,15 +897,32 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="ParfumEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="ParfumEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ActivUsertables" EntityType="Self.ActivUsertable" />
           <EntitySet Name="Brends" EntityType="Self.Brend" />
           <EntitySet Name="Categories" EntityType="Self.Category" />
+          <EntitySet Name="CategoryListparfums" EntityType="Self.CategoryListparfum" />
           <EntitySet Name="CategoryParfums" EntityType="Self.CategoryParfum" />
+          <EntitySet Name="DeleteHeaders" EntityType="Self.DeleteHeader" />
+          <EntitySet Name="DeleteSalePriceUIs" EntityType="Self.DeleteSalePriceUI" />
+          <EntitySet Name="DeleteUpdateHeaders" EntityType="Self.DeleteUpdateHeader" />
+          <EntitySet Name="DeleteUpdateToParfums" EntityType="Self.DeleteUpdateToParfum" />
           <EntitySet Name="Densities" EntityType="Self.Density" />
+          <EntitySet Name="FullDetailParfums" EntityType="Self.FullDetailParfum" />
           <EntitySet Name="Genders" EntityType="Self.Gender" />
+          <EntitySet Name="MiddetalParfums" EntityType="Self.MiddetalParfum" />
+          <EntitySet Name="MiddetalParfumForUpdates" EntityType="Self.MiddetalParfumForUpdate" />
+          <EntitySet Name="ParfumLoginUsers" EntityType="Self.ParfumLoginUser" />
           <EntitySet Name="Parfums" EntityType="Self.Parfum" />
           <EntitySet Name="Sales" EntityType="Self.Sale" />
+          <EntitySet Name="SaleActivities" EntityType="Self.SaleActivity" />
+          <EntitySet Name="SaleActivity1" EntityType="Self.SaleActivity1" />
+          <EntitySet Name="SaleActivityIsUsers" EntityType="Self.SaleActivityIsUser" />
+          <EntitySet Name="SaleActivityMonitors" EntityType="Self.SaleActivityMonitor" />
+          <EntitySet Name="SaleDetailParfums" EntityType="Self.SaleDetailParfum" />
           <EntitySet Name="Saleprices" EntityType="Self.Saleprice" />
+          <EntitySet Name="SalePriceUIs" EntityType="Self.SalePriceUI" />
+          <EntitySet Name="SearchHeads" EntityType="Self.SearchHead" />
           <EntitySet Name="SizeMls" EntityType="Self.SizeMl" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
           <EntitySet Name="Users" EntityType="Self.User" />
@@ -619,7 +1009,20 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="ParfumModelStoreContainer" CdmEntityContainer="ParfumEntities">
+        <EntityContainerMapping StorageEntityContainer="ParfumModelStoreContainer" CdmEntityContainer="ParfumEntities1">
+          <EntitySetMapping Name="ActivUsertables">
+            <EntityTypeMapping TypeName="ParfumModel.ActivUsertable">
+              <MappingFragment StoreEntitySet="ActivUsertable">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Fullname" ColumnName="Fullname" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="IsAdmin" ColumnName="IsAdmin" />
+                <ScalarProperty Name="IsEmployee" ColumnName="IsEmployee" />
+                <ScalarProperty Name="IsUSer" ColumnName="IsUSer" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="Brends">
             <EntityTypeMapping TypeName="ParfumModel.Brend">
               <MappingFragment StoreEntitySet="Brend">
@@ -637,12 +1040,56 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="CategoryListparfums">
+            <EntityTypeMapping TypeName="ParfumModel.CategoryListparfum">
+              <MappingFragment StoreEntitySet="CategoryListparfum">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="CategoryParfums">
             <EntityTypeMapping TypeName="ParfumModel.CategoryParfum">
               <MappingFragment StoreEntitySet="CategoryParfum">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="ParfumId" ColumnName="ParfumId" />
                 <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DeleteHeaders">
+            <EntityTypeMapping TypeName="ParfumModel.DeleteHeader">
+              <MappingFragment StoreEntitySet="DeleteHeader">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Header" ColumnName="Header" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DeleteSalePriceUIs">
+            <EntityTypeMapping TypeName="ParfumModel.DeleteSalePriceUI">
+              <MappingFragment StoreEntitySet="DeleteSalePriceUI">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Size" ColumnName="Size" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Number" ColumnName="Number" />
+                <ScalarProperty Name="ParfumId" ColumnName="ParfumId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DeleteUpdateHeaders">
+            <EntityTypeMapping TypeName="ParfumModel.DeleteUpdateHeader">
+              <MappingFragment StoreEntitySet="DeleteUpdateHeader">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Header" ColumnName="Header" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DeleteUpdateToParfums">
+            <EntityTypeMapping TypeName="ParfumModel.DeleteUpdateToParfum">
+              <MappingFragment StoreEntitySet="DeleteUpdateToParfum">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Header" ColumnName="Header" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -654,11 +1101,64 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="FullDetailParfums">
+            <EntityTypeMapping TypeName="ParfumModel.FullDetailParfum">
+              <MappingFragment StoreEntitySet="FullDetailParfum">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Brend" ColumnName="Brend" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Density" ColumnName="Density" />
+                <ScalarProperty Name="Size" ColumnName="Size" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Number" ColumnName="Number" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="Genders">
             <EntityTypeMapping TypeName="ParfumModel.Gender">
               <MappingFragment StoreEntitySet="Gender">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MiddetalParfums">
+            <EntityTypeMapping TypeName="ParfumModel.MiddetalParfum">
+              <MappingFragment StoreEntitySet="MiddetalParfum">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Brend" ColumnName="Brend" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Density" ColumnName="Density" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MiddetalParfumForUpdates">
+            <EntityTypeMapping TypeName="ParfumModel.MiddetalParfumForUpdate">
+              <MappingFragment StoreEntitySet="MiddetalParfumForUpdate">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Brend" ColumnName="Brend" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Density" ColumnName="Density" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ParfumLoginUsers">
+            <EntityTypeMapping TypeName="ParfumModel.ParfumLoginUser">
+              <MappingFragment StoreEntitySet="ParfumLoginUser">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="IsAdmin" ColumnName="IsAdmin" />
+                <ScalarProperty Name="IsEmployee" ColumnName="IsEmployee" />
+                <ScalarProperty Name="IsUser" ColumnName="IsUser" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -688,6 +1188,72 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="SaleActivities">
+            <EntityTypeMapping TypeName="ParfumModel.SaleActivity">
+              <MappingFragment StoreEntitySet="SaleActivity">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Fullname" ColumnName="Fullname" />
+                <ScalarProperty Name="Parfum" ColumnName="Parfum" />
+                <ScalarProperty Name="Size" ColumnName="Size" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Count" ColumnName="Count" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SaleActivity1">
+            <EntityTypeMapping TypeName="ParfumModel.SaleActivity1">
+              <MappingFragment StoreEntitySet="SaleActivity1">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Fullname" ColumnName="Fullname" />
+                <ScalarProperty Name="SalePriceId" ColumnName="SalePriceId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SaleActivityIsUsers">
+            <EntityTypeMapping TypeName="ParfumModel.SaleActivityIsUser">
+              <MappingFragment StoreEntitySet="SaleActivityIsUser">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Fullname" ColumnName="Fullname" />
+                <ScalarProperty Name="SalPriceId" ColumnName="SalPriceId" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SaleActivityMonitors">
+            <EntityTypeMapping TypeName="ParfumModel.SaleActivityMonitor">
+              <MappingFragment StoreEntitySet="SaleActivityMonitor">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Brend" ColumnName="Brend" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Density" ColumnName="Density" />
+                <ScalarProperty Name="Size" ColumnName="Size" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Sale_count" ColumnName="Sale_count" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SaleDetailParfums">
+            <EntityTypeMapping TypeName="ParfumModel.SaleDetailParfum">
+              <MappingFragment StoreEntitySet="SaleDetailParfum">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="PriceID" ColumnName="PriceID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Brend" ColumnName="Brend" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Density" ColumnName="Density" />
+                <ScalarProperty Name="Size" ColumnName="Size" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Number" ColumnName="Number" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="Saleprices">
             <EntityTypeMapping TypeName="ParfumModel.Saleprice">
               <MappingFragment StoreEntitySet="Saleprice">
@@ -696,6 +1262,25 @@
                 <ScalarProperty Name="ParfumID" ColumnName="ParfumID" />
                 <ScalarProperty Name="Price" ColumnName="Price" />
                 <ScalarProperty Name="Count" ColumnName="Count" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SalePriceUIs">
+            <EntityTypeMapping TypeName="ParfumModel.SalePriceUI">
+              <MappingFragment StoreEntitySet="SalePriceUI">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Size" ColumnName="Size" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="number" ColumnName="number" />
+                <ScalarProperty Name="ParfumId" ColumnName="ParfumId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SearchHeads">
+            <EntityTypeMapping TypeName="ParfumModel.SearchHead">
+              <MappingFragment StoreEntitySet="SearchHead">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Header" ColumnName="Header" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

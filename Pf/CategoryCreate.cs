@@ -7,11 +7,13 @@ namespace Pf
 {
     public partial class CategoryCreate : Form
     {
-        private ParfumEntities parfumEntities; 
+        private ParfumEntities1 parfumEntities;
+        public static int Caegoryid;
+
         public CategoryCreate()
         {
             InitializeComponent();
-            parfumEntities = new ParfumEntities();
+            parfumEntities = new ParfumEntities1();
         }
 
         private void CategoryCreate_Load(object sender, EventArgs e)
@@ -56,7 +58,29 @@ namespace Pf
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            string name=textNewCategrory
+            int CTID = ((Cb_category)combCategory.SelectedItem).Id;
+            string name = textNewCategrory.Text.Trim();
+            if (string.IsNullOrEmpty(name))
+            {
+                MessageBox.Show("Please write name");
+            }
+            else
+            {
+                DbModel.Category category = parfumEntities.Categories.FirstOrDefault(x => x.Id == CTID);
+                if (category==null)
+                {
+                    MessageBox.Show("this doesn't already parfum");
+                }
+                else
+                {
+                    category.Id = CTID;
+                    category.Name = name;
+                    parfumEntities.SaveChanges();
+                    MessageBox.Show("success updated");
+                    textNewCategrory.Clear();
+                    CategoryChange();
+                }
+            }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)

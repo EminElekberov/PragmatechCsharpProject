@@ -14,3 +14,4 @@ C:\Users\EMIN\Desktop\task1\Pf\obj\Debug\Pf.csproj.CopyComplete
 C:\Users\EMIN\Desktop\task1\Pf\obj\Debug\Pf.exe
 C:\Users\EMIN\Desktop\task1\Pf\obj\Debug\Pf.pdb
 C:\Users\EMIN\Desktop\task1\Pf\obj\Debug\Pf.CategoryCreate.resources
+C:\Users\EMIN\Desktop\task1\Pf\obj\Debug\Pf.CategoryRemove.resources

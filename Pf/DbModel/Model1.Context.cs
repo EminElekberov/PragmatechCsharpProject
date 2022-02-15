@@ -15,10 +15,10 @@ namespace Pf.DbModel
     using System.Data.Entity.Core.Objects;
     using System.Linq;
     
-    public partial class ParfumEntities : DbContext
+    public partial class ParfumEntities1 : DbContext
     {
-        public ParfumEntities()
-            : base("name=ParfumEntities")
+        public ParfumEntities1()
+            : base("name=ParfumEntities1")
         {
         }
     
@@ -27,14 +27,31 @@ namespace Pf.DbModel
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<ActivUsertable> ActivUsertables { get; set; }
         public virtual DbSet<Brend> Brends { get; set; }
         public virtual DbSet<Category> Categories { get; set; }
+        public virtual DbSet<CategoryListparfum> CategoryListparfums { get; set; }
         public virtual DbSet<CategoryParfum> CategoryParfums { get; set; }
+        public virtual DbSet<DeleteHeader> DeleteHeaders { get; set; }
+        public virtual DbSet<DeleteSalePriceUI> DeleteSalePriceUIs { get; set; }
+        public virtual DbSet<DeleteUpdateHeader> DeleteUpdateHeaders { get; set; }
+        public virtual DbSet<DeleteUpdateToParfum> DeleteUpdateToParfums { get; set; }
         public virtual DbSet<Density> Densities { get; set; }
+        public virtual DbSet<FullDetailParfum> FullDetailParfums { get; set; }
         public virtual DbSet<Gender> Genders { get; set; }
+        public virtual DbSet<MiddetalParfum> MiddetalParfums { get; set; }
+        public virtual DbSet<MiddetalParfumForUpdate> MiddetalParfumForUpdates { get; set; }
+        public virtual DbSet<ParfumLoginUser> ParfumLoginUsers { get; set; }
         public virtual DbSet<Parfum> Parfums { get; set; }
         public virtual DbSet<Sale> Sales { get; set; }
+        public virtual DbSet<SaleActivity> SaleActivities { get; set; }
+        public virtual DbSet<SaleActivity1> SaleActivity1 { get; set; }
+        public virtual DbSet<SaleActivityIsUser> SaleActivityIsUsers { get; set; }
+        public virtual DbSet<SaleActivityMonitor> SaleActivityMonitors { get; set; }
+        public virtual DbSet<SaleDetailParfum> SaleDetailParfums { get; set; }
         public virtual DbSet<Saleprice> Saleprices { get; set; }
+        public virtual DbSet<SalePriceUI> SalePriceUIs { get; set; }
+        public virtual DbSet<SearchHead> SearchHeads { get; set; }
         public virtual DbSet<SizeMl> SizeMls { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<User> Users { get; set; }

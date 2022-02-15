@@ -1,5 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="ParfumModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ActivUsertable">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fullname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsAdmin" Type="Boolean" />
+    <Property Name="IsEmployee" Type="Boolean" />
+    <Property Name="IsUSer" Type="Boolean" />
+    <Property Name="IsActive" Type="Boolean" />
+  </EntityType>
   <EntityType Name="Brend">
     <Key>
       <PropertyRef Name="Id" />
@@ -17,6 +29,13 @@
     <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="CategoryParfums" Relationship="Self.FK_CategoryParfum_Category" FromRole="Category" ToRole="CategoryParfum" />
   </EntityType>
+  <EntityType Name="CategoryListparfum">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
   <EntityType Name="CategoryParfum">
     <Key>
       <PropertyRef Name="Id" />
@@ -27,6 +46,38 @@
     <NavigationProperty Name="Category" Relationship="Self.FK_CategoryParfum_Category" FromRole="CategoryParfum" ToRole="Category" />
     <NavigationProperty Name="Parfum" Relationship="Self.FK_CategoryParfum_Parfums" FromRole="CategoryParfum" ToRole="Parfums" />
   </EntityType>
+  <EntityType Name="DeleteHeader">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Header" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DeleteSalePriceUI">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Size" Type="Int32" />
+    <Property Name="Price" Type="Int32" />
+    <Property Name="Number" Type="Int32" />
+    <Property Name="ParfumId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="DeleteUpdateHeader">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Header" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DeleteUpdateToParfum">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Header" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Category" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
   <EntityType Name="Density">
     <Key>
       <PropertyRef Name="Id" />
@@ -35,6 +86,20 @@
     <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Parfums" Relationship="Self.FK_Parfums_Density" FromRole="Density" ToRole="Parfums" />
   </EntityType>
+  <EntityType Name="FullDetailParfum">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Brend" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Density" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Size" Type="Int32" />
+    <Property Name="Price" Type="Int32" />
+    <Property Name="Number" Type="Int32" />
+  </EntityType>
   <EntityType Name="Gender">
     <Key>
       <PropertyRef Name="Id" />
@@ -42,6 +107,41 @@
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Parfums" Relationship="Self.FK_Parfums_Gender" FromRole="Gender" ToRole="Parfums" />
+  </EntityType>
+  <EntityType Name="MiddetalParfum">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Brend" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Density" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="MiddetalParfumForUpdate">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Image" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Brend" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Density" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ParfumLoginUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsAdmin" Type="Boolean" />
+    <Property Name="IsEmployee" Type="Boolean" />
+    <Property Name="IsUser" Type="Boolean" />
+    <Property Name="IsActive" Type="Boolean" />
   </EntityType>
   <EntityType Name="Parfum">
     <Key>
@@ -74,6 +174,67 @@
     <NavigationProperty Name="Saleprice" Relationship="Self.FK_Sale_Saleprice" FromRole="Sale" ToRole="Saleprice" />
     <NavigationProperty Name="User" Relationship="Self.FK_Sale_User" FromRole="Sale" ToRole="User" />
   </EntityType>
+  <EntityType Name="SaleActivity">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fullname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Parfum" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Size" Type="Int32" />
+    <Property Name="Price" Type="Int32" />
+    <Property Name="Count" Type="Int32" />
+    <Property Name="Total" Type="Int32" />
+    <Property Name="Date" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="SaleActivity1">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fullname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SalePriceId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="SaleActivityIsUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fullname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SalPriceId" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="SaleActivityMonitor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Brend" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Density" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Size" Type="Int32" />
+    <Property Name="Price" Type="Int32" />
+    <Property Name="Sale_count" Type="Int32" />
+    <Property Name="Total" Type="Int32" />
+    <Property Name="Date" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="SaleDetailParfum">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PriceID" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Brend" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Density" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Size" Type="Int32" />
+    <Property Name="Price" Type="Int32" />
+    <Property Name="Number" Type="Int32" />
+  </EntityType>
   <EntityType Name="Saleprice">
     <Key>
       <PropertyRef Name="Id" />
@@ -86,6 +247,23 @@
     <NavigationProperty Name="Parfum" Relationship="Self.FK_Saleprice_Parfums" FromRole="Saleprice" ToRole="Parfums" />
     <NavigationProperty Name="Sales" Relationship="Self.FK_Sale_Saleprice" FromRole="Saleprice" ToRole="Sale" />
     <NavigationProperty Name="SizeMl" Relationship="Self.FK_Saleprice_SizeMl" FromRole="Saleprice" ToRole="SizeMl" />
+  </EntityType>
+  <EntityType Name="SalePriceUI">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Size" Type="Int32" />
+    <Property Name="Price" Type="Int32" />
+    <Property Name="number" Type="Int32" />
+    <Property Name="ParfumId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="SearchHead">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Header" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="SizeMl">
     <Key>
@@ -226,15 +404,32 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="ParfumEntities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="ParfumEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ActivUsertables" EntityType="Self.ActivUsertable" />
     <EntitySet Name="Brends" EntityType="Self.Brend" />
     <EntitySet Name="Categories" EntityType="Self.Category" />
+    <EntitySet Name="CategoryListparfums" EntityType="Self.CategoryListparfum" />
     <EntitySet Name="CategoryParfums" EntityType="Self.CategoryParfum" />
+    <EntitySet Name="DeleteHeaders" EntityType="Self.DeleteHeader" />
+    <EntitySet Name="DeleteSalePriceUIs" EntityType="Self.DeleteSalePriceUI" />
+    <EntitySet Name="DeleteUpdateHeaders" EntityType="Self.DeleteUpdateHeader" />
+    <EntitySet Name="DeleteUpdateToParfums" EntityType="Self.DeleteUpdateToParfum" />
     <EntitySet Name="Densities" EntityType="Self.Density" />
+    <EntitySet Name="FullDetailParfums" EntityType="Self.FullDetailParfum" />
     <EntitySet Name="Genders" EntityType="Self.Gender" />
+    <EntitySet Name="MiddetalParfums" EntityType="Self.MiddetalParfum" />
+    <EntitySet Name="MiddetalParfumForUpdates" EntityType="Self.MiddetalParfumForUpdate" />
+    <EntitySet Name="ParfumLoginUsers" EntityType="Self.ParfumLoginUser" />
     <EntitySet Name="Parfums" EntityType="Self.Parfum" />
     <EntitySet Name="Sales" EntityType="Self.Sale" />
+    <EntitySet Name="SaleActivities" EntityType="Self.SaleActivity" />
+    <EntitySet Name="SaleActivity1" EntityType="Self.SaleActivity1" />
+    <EntitySet Name="SaleActivityIsUsers" EntityType="Self.SaleActivityIsUser" />
+    <EntitySet Name="SaleActivityMonitors" EntityType="Self.SaleActivityMonitor" />
+    <EntitySet Name="SaleDetailParfums" EntityType="Self.SaleDetailParfum" />
     <EntitySet Name="Saleprices" EntityType="Self.Saleprice" />
+    <EntitySet Name="SalePriceUIs" EntityType="Self.SalePriceUI" />
+    <EntitySet Name="SearchHeads" EntityType="Self.SearchHead" />
     <EntitySet Name="SizeMls" EntityType="Self.SizeMl" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
     <EntitySet Name="Users" EntityType="Self.User" />

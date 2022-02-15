@@ -1,6 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="ParfumModelStoreContainer" CdmEntityContainer="ParfumEntities">
+  <EntityContainerMapping StorageEntityContainer="ParfumModelStoreContainer" CdmEntityContainer="ParfumEntities1">
+    <EntitySetMapping Name="ActivUsertables">
+      <EntityTypeMapping TypeName="ParfumModel.ActivUsertable">
+        <MappingFragment StoreEntitySet="ActivUsertable">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Fullname" ColumnName="Fullname" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="IsAdmin" ColumnName="IsAdmin" />
+          <ScalarProperty Name="IsEmployee" ColumnName="IsEmployee" />
+          <ScalarProperty Name="IsUSer" ColumnName="IsUSer" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Brends">
       <EntityTypeMapping TypeName="ParfumModel.Brend">
         <MappingFragment StoreEntitySet="Brend">
@@ -18,12 +31,56 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="CategoryListparfums">
+      <EntityTypeMapping TypeName="ParfumModel.CategoryListparfum">
+        <MappingFragment StoreEntitySet="CategoryListparfum">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="CategoryParfums">
       <EntityTypeMapping TypeName="ParfumModel.CategoryParfum">
         <MappingFragment StoreEntitySet="CategoryParfum">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="ParfumId" ColumnName="ParfumId" />
           <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DeleteHeaders">
+      <EntityTypeMapping TypeName="ParfumModel.DeleteHeader">
+        <MappingFragment StoreEntitySet="DeleteHeader">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Header" ColumnName="Header" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DeleteSalePriceUIs">
+      <EntityTypeMapping TypeName="ParfumModel.DeleteSalePriceUI">
+        <MappingFragment StoreEntitySet="DeleteSalePriceUI">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="ParfumId" ColumnName="ParfumId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DeleteUpdateHeaders">
+      <EntityTypeMapping TypeName="ParfumModel.DeleteUpdateHeader">
+        <MappingFragment StoreEntitySet="DeleteUpdateHeader">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Header" ColumnName="Header" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DeleteUpdateToParfums">
+      <EntityTypeMapping TypeName="ParfumModel.DeleteUpdateToParfum">
+        <MappingFragment StoreEntitySet="DeleteUpdateToParfum">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Header" ColumnName="Header" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -35,11 +92,64 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="FullDetailParfums">
+      <EntityTypeMapping TypeName="ParfumModel.FullDetailParfum">
+        <MappingFragment StoreEntitySet="FullDetailParfum">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Brend" ColumnName="Brend" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Density" ColumnName="Density" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Genders">
       <EntityTypeMapping TypeName="ParfumModel.Gender">
         <MappingFragment StoreEntitySet="Gender">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MiddetalParfums">
+      <EntityTypeMapping TypeName="ParfumModel.MiddetalParfum">
+        <MappingFragment StoreEntitySet="MiddetalParfum">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Brend" ColumnName="Brend" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Density" ColumnName="Density" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MiddetalParfumForUpdates">
+      <EntityTypeMapping TypeName="ParfumModel.MiddetalParfumForUpdate">
+        <MappingFragment StoreEntitySet="MiddetalParfumForUpdate">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Brend" ColumnName="Brend" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Density" ColumnName="Density" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ParfumLoginUsers">
+      <EntityTypeMapping TypeName="ParfumModel.ParfumLoginUser">
+        <MappingFragment StoreEntitySet="ParfumLoginUser">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="IsAdmin" ColumnName="IsAdmin" />
+          <ScalarProperty Name="IsEmployee" ColumnName="IsEmployee" />
+          <ScalarProperty Name="IsUser" ColumnName="IsUser" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -69,6 +179,72 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="SaleActivities">
+      <EntityTypeMapping TypeName="ParfumModel.SaleActivity">
+        <MappingFragment StoreEntitySet="SaleActivity">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Fullname" ColumnName="Fullname" />
+          <ScalarProperty Name="Parfum" ColumnName="Parfum" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SaleActivity1">
+      <EntityTypeMapping TypeName="ParfumModel.SaleActivity1">
+        <MappingFragment StoreEntitySet="SaleActivity1">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Fullname" ColumnName="Fullname" />
+          <ScalarProperty Name="SalePriceId" ColumnName="SalePriceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SaleActivityIsUsers">
+      <EntityTypeMapping TypeName="ParfumModel.SaleActivityIsUser">
+        <MappingFragment StoreEntitySet="SaleActivityIsUser">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Fullname" ColumnName="Fullname" />
+          <ScalarProperty Name="SalPriceId" ColumnName="SalPriceId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SaleActivityMonitors">
+      <EntityTypeMapping TypeName="ParfumModel.SaleActivityMonitor">
+        <MappingFragment StoreEntitySet="SaleActivityMonitor">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Brend" ColumnName="Brend" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Density" ColumnName="Density" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Sale_count" ColumnName="Sale_count" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SaleDetailParfums">
+      <EntityTypeMapping TypeName="ParfumModel.SaleDetailParfum">
+        <MappingFragment StoreEntitySet="SaleDetailParfum">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PriceID" ColumnName="PriceID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Brend" ColumnName="Brend" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Density" ColumnName="Density" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Saleprices">
       <EntityTypeMapping TypeName="ParfumModel.Saleprice">
         <MappingFragment StoreEntitySet="Saleprice">
@@ -77,6 +253,25 @@
           <ScalarProperty Name="ParfumID" ColumnName="ParfumID" />
           <ScalarProperty Name="Price" ColumnName="Price" />
           <ScalarProperty Name="Count" ColumnName="Count" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalePriceUIs">
+      <EntityTypeMapping TypeName="ParfumModel.SalePriceUI">
+        <MappingFragment StoreEntitySet="SalePriceUI">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="number" ColumnName="number" />
+          <ScalarProperty Name="ParfumId" ColumnName="ParfumId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SearchHeads">
+      <EntityTypeMapping TypeName="ParfumModel.SearchHead">
+        <MappingFragment StoreEntitySet="SearchHead">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Header" ColumnName="Header" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

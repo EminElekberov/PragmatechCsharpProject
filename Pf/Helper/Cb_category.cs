@@ -11,7 +11,9 @@ namespace Pf.Helper
         public int Id { get; set; }
        
         public string Name { get; set; }
-        public int SizeMl { get; set; }
+        public string SizeMl { get; set; }
+        public int Price { get; set; }
+        public int Count { get; set; }
         public override string ToString()
         {
             return Name;

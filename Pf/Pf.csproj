@@ -215,6 +215,12 @@
     <Compile Include="UserActivity.designer.cs">
       <DependentUpon>UserActivity.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserActivityMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserActivityMonitor.designer.cs">
+      <DependentUpon>UserActivityMonitor.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CategoryAdd.resx">
       <DependentUpon>CategoryAdd.cs</DependentUpon>
     </EmbeddedResource>
@@ -247,6 +253,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserActivity.resx">
       <DependentUpon>UserActivity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserActivityMonitor.resx">
+      <DependentUpon>UserActivityMonitor.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="DbModel\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

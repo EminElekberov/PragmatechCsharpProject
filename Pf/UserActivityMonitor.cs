@@ -14,18 +14,12 @@ namespace Pf
         {
         }
 
-        private void ChangeDate()
-        {
-        }
-
-
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            
 
+            //
+            MessageBox.Show("");
         }
-
-
 
         private void dataGridShearch_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {

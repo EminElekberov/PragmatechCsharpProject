@@ -12,13 +12,11 @@ namespace Pf
 
         private void UserActivityMonitor_Load(object sender, EventArgs e)
         {
+            //
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-
-            //
-            MessageBox.Show("");
         }
 
         private void dataGridShearch_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

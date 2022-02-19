@@ -178,6 +178,12 @@
     <Compile Include="DbModel\User.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Employee\CategoryAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\CategoryAdd.designer.cs">
+      <DependentUpon>CategoryAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Helper\Cb_category.cs" />
     <Compile Include="Helper\Cb_parfums.cs" />
     <Compile Include="Helper\LoadCommonData.cs" />
@@ -229,6 +235,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CategoryRemove.resx">
       <DependentUpon>CategoryRemove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\CategoryAdd.resx">
+      <DependentUpon>CategoryAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Parfum Function.resx">
       <DependentUpon>Parfum Function.cs</DependentUpon>

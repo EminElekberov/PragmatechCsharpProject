@@ -13,12 +13,12 @@ namespace DotNetTasks_game_
         
         public Cards()
         {
-            Console.WriteLine(  );
         }
         public static void CreateStudents()
         {
             int amount = 2000;
             int count = 0;
+            Console.WriteLine();
 
         newCart:
             Console.WriteLine("\n sizin mebleginiz: " + amount);

@@ -13,9 +13,7 @@ namespace DotNetTasks_game_
         
         public Cards()
         {
-            //
-            //
-
+            Console.WriteLine(  );
         }
         public static void CreateStudents()
         {

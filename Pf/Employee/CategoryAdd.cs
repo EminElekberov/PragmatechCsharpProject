@@ -14,7 +14,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ParfumUI.CatogoryView
+namespace Pf.CatogoryView
 {
     public partial class CategoryAdd : Form
     {

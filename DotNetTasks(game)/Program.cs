@@ -109,11 +109,13 @@ namespace DotNetTasks_game_
                     "c)Karti sil" +
                     "d)Cixis" +
                     "e)Butun kartlari gosder");
+
                 string menu = Console.ReadLine();
                 switch (menu)
                 {
                     case "a":
                         Cards.CreateStudents();
+                        //
                         break;
                     case "b":
                         Console.WriteLine("kartin adini gir: ");

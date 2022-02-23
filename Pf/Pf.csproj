@@ -178,17 +178,23 @@
     <Compile Include="DbModel\User.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Employee\CategoryAdd.cs">
+    <Compile Include="SinginParfum.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Employee\CategoryAdd.designer.cs">
-      <DependentUpon>CategoryAdd.cs</DependentUpon>
+    <Compile Include="SinginParfum.designer.cs">
+      <DependentUpon>SinginParfum.cs</DependentUpon>
     </Compile>
-    <Compile Include="Employee\CategoryRemove.cs">
+    <Compile Include="SingUpParfum.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Employee\CategoryRemove.designer.cs">
-      <DependentUpon>CategoryRemove.cs</DependentUpon>
+    <Compile Include="SingUpParfum.designer.cs">
+      <DependentUpon>SingUpParfum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\UserSaleMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\UserSaleMonitor.designer.cs">
+      <DependentUpon>UserSaleMonitor.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper\Cb_category.cs" />
     <Compile Include="Helper\Cb_parfums.cs" />
@@ -242,11 +248,14 @@
     <EmbeddedResource Include="CategoryRemove.resx">
       <DependentUpon>CategoryRemove.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Employee\CategoryAdd.resx">
-      <DependentUpon>CategoryAdd.cs</DependentUpon>
+    <EmbeddedResource Include="SinginParfum.resx">
+      <DependentUpon>SinginParfum.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Employee\CategoryRemove.resx">
-      <DependentUpon>CategoryRemove.cs</DependentUpon>
+    <EmbeddedResource Include="SingUpParfum.resx">
+      <DependentUpon>SingUpParfum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\UserSaleMonitor.resx">
+      <DependentUpon>UserSaleMonitor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Parfum Function.resx">
       <DependentUpon>Parfum Function.cs</DependentUpon>
@@ -311,5 +320,6 @@
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

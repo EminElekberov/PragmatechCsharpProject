@@ -16,7 +16,7 @@ namespace Pf
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SalePrice());
+            Application.Run(new SinginParfum());
         }
     }
 }

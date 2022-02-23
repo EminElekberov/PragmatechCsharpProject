@@ -129,7 +129,6 @@ namespace Pf
                     saleprice.Price += price;
                     saleprice.Count += count;
 
-                    parfumEntities1.Saleprices.Add(saleprice);
                     parfumEntities1.SaveChanges();
                     MessageBox.Show("success updated");
                 }

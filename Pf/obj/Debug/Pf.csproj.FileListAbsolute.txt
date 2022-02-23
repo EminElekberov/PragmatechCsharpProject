@@ -20,5 +20,6 @@ C:\Users\EMIN\Desktop\task1\Pf\obj\Debug\Pf.CategoryAdd.resources
 C:\Users\EMIN\Desktop\task1\Pf\obj\Debug\Pf.ParfumeUpdate.resources
 C:\Users\EMIN\Desktop\task1\Pf\obj\Debug\Pf.Parfum_Function.resources
 C:\Users\EMIN\Desktop\task1\Pf\obj\Debug\Pf.SalePrice.resources
-C:\Users\EMIN\Desktop\task1\Pf\obj\Debug\ParfumUI.CatogoryView.CategoryAdd.resources
 C:\Users\EMIN\Desktop\task1\Pf\obj\Debug\Pf.UserActivityMonitor.resources
+C:\Users\EMIN\Desktop\task1\Pf\obj\Debug\Pf.SinginParfum.resources
+C:\Users\EMIN\Desktop\task1\Pf\obj\Debug\Pf.SingUpParfum.resources

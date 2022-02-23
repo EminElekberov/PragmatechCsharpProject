@@ -20,6 +20,7 @@ namespace Pf
 
         private void SalePrice_Load(object sender, EventArgs e)
         {
+            //
             WhenWiewLoad();
             WhenWiewSizeLoad();
             WhenWiewDatagrid();

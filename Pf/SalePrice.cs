@@ -24,10 +24,10 @@ namespace Pf
             WhenWiewSizeLoad();
             WhenWiewDatagrid();
             //
-
         }
         public void WhenWiewLoad()
         {
+            //
             combSearchName.DropDownStyle = ComboBoxStyle.DropDownList;
             combSearchName.DataSource = parfumEntities1.Parfums.Select(x => new Cb_category
             {

@@ -16,7 +16,7 @@ namespace Pf
             InitializeComponent();
             parfumEntities1 = new ParfumEntities1();
         }
-
+        //
 
         private void SalePrice_Load(object sender, EventArgs e)
         {
@@ -27,7 +27,6 @@ namespace Pf
         }
         public void WhenWiewLoad()
         {
-            //
             combSearchName.DropDownStyle = ComboBoxStyle.DropDownList;
             combSearchName.DataSource = parfumEntities1.Parfums.Select(x => new Cb_category
             {

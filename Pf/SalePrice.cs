@@ -16,14 +16,12 @@ namespace Pf
             InitializeComponent();
             parfumEntities1 = new ParfumEntities1();
         }
-        //
 
         private void SalePrice_Load(object sender, EventArgs e)
         {
             WhenWiewLoad();
             WhenWiewSizeLoad();
             WhenWiewDatagrid();
-            //
         }
         public void WhenWiewLoad()
         {
@@ -32,6 +30,7 @@ namespace Pf
             {
                 Id = x.Id,
                 Name = x.Name
+         
             }).ToArray();
         }
         public void WhenWiewSizeLoad()

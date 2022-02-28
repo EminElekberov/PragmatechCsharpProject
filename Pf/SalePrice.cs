@@ -22,6 +22,7 @@ namespace Pf
             WhenWiewLoad();
             WhenWiewSizeLoad();
             WhenWiewDatagrid();
+            //
         }
         public void WhenWiewLoad()
         {
@@ -30,7 +31,7 @@ namespace Pf
             {
                 Id = x.Id,
                 Name = x.Name
-         
+         //
             }).ToArray();
         }
         public void WhenWiewSizeLoad()

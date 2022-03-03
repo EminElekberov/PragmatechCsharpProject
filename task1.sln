@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{3AFBFED3-CE19-4B98-A5A5-2655A92A2EB4}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "String methods", "task2\String methods.csproj", "{C4308967-FF18-4F70-BD01-67AA18AAF082}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentClassRegister(ConsoleApp)", "task3\StudentClassRegister(ConsoleApp).csproj", "{A2AF8C95-E0A4-43F4-80F6-24550F59D5CD}"
@@ -12,8 +10,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountCreate(ConsoleApp)", "task4\AccountCreate(ConsoleApp).csproj", "{2A96E6F1-504C-4251-959F-CDD32F3FFAD6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegisterCountry(ConsoleApp)", "task5\RegisterCountry(ConsoleApp).csproj", "{D1E77D91-A759-4E79-BBB6-6F231DCF52ED}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "example", "example\example.csproj", "{98345CBC-D706-48DE-BA4D-4D211F94785D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreateClassAndRegisterStudent", "task6\CreateClassAndRegisterStudent.csproj", "{D1BD3159-02A2-490B-9442-1547AAD0FB08}"
 EndProject
@@ -34,8 +30,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuStudent(WinformApi)", "winformTask18\MenuStudent(WinformApi).csproj", "{B5F7083A-524F-4BCF-B7AE-6AA6B2253EB0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Student(winformAPi)", "winform16\Student(winformAPi).csproj", "{13E3E770-0802-411E-9781-4CBCDCE11FBF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{FF7AE08B-5318-440D-BFAE-4F0F97830D7B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Register(task24)", "Register(task24)\Register(task24).csproj", "{9B6BBE91-1012-498F-902C-D226ADB3B6AD}"
 EndProject
@@ -59,10 +53,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3AFBFED3-CE19-4B98-A5A5-2655A92A2EB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3AFBFED3-CE19-4B98-A5A5-2655A92A2EB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3AFBFED3-CE19-4B98-A5A5-2655A92A2EB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3AFBFED3-CE19-4B98-A5A5-2655A92A2EB4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C4308967-FF18-4F70-BD01-67AA18AAF082}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C4308967-FF18-4F70-BD01-67AA18AAF082}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4308967-FF18-4F70-BD01-67AA18AAF082}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -79,10 +69,6 @@ Global
 		{D1E77D91-A759-4E79-BBB6-6F231DCF52ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1E77D91-A759-4E79-BBB6-6F231DCF52ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1E77D91-A759-4E79-BBB6-6F231DCF52ED}.Release|Any CPU.Build.0 = Release|Any CPU
-		{98345CBC-D706-48DE-BA4D-4D211F94785D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{98345CBC-D706-48DE-BA4D-4D211F94785D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{98345CBC-D706-48DE-BA4D-4D211F94785D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{98345CBC-D706-48DE-BA4D-4D211F94785D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D1BD3159-02A2-490B-9442-1547AAD0FB08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D1BD3159-02A2-490B-9442-1547AAD0FB08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1BD3159-02A2-490B-9442-1547AAD0FB08}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -123,10 +109,6 @@ Global
 		{13E3E770-0802-411E-9781-4CBCDCE11FBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13E3E770-0802-411E-9781-4CBCDCE11FBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13E3E770-0802-411E-9781-4CBCDCE11FBF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FF7AE08B-5318-440D-BFAE-4F0F97830D7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FF7AE08B-5318-440D-BFAE-4F0F97830D7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FF7AE08B-5318-440D-BFAE-4F0F97830D7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FF7AE08B-5318-440D-BFAE-4F0F97830D7B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9B6BBE91-1012-498F-902C-D226ADB3B6AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9B6BBE91-1012-498F-902C-D226ADB3B6AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B6BBE91-1012-498F-902C-D226ADB3B6AD}.Release|Any CPU.ActiveCfg = Release|Any CPU

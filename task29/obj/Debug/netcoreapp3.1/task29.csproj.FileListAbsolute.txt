@@ -8,7 +8,6 @@ C:\Users\EMIN\Desktop\task1\task29\bin\Debug\netcoreapp3.1\task29.dll
 C:\Users\EMIN\Desktop\task1\task29\bin\Debug\netcoreapp3.1\task29.pdb
 C:\Users\EMIN\Desktop\task1\task29\bin\Debug\netcoreapp3.1\task29.Views.dll
 C:\Users\EMIN\Desktop\task1\task29\bin\Debug\netcoreapp3.1\task29.Views.pdb
-C:\Users\EMIN\Desktop\task1\task29\obj\Debug\netcoreapp3.1\task29.csproj.AssemblyReference.cache
 C:\Users\EMIN\Desktop\task1\task29\obj\Debug\netcoreapp3.1\task29.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\EMIN\Desktop\task1\task29\obj\Debug\netcoreapp3.1\task29.AssemblyInfoInputs.cache
 C:\Users\EMIN\Desktop\task1\task29\obj\Debug\netcoreapp3.1\task29.AssemblyInfo.cs
@@ -38,3 +37,4 @@ C:\Users\EMIN\Desktop\task1\task29\obj\Debug\netcoreapp3.1\task29.pdb
 C:\Users\EMIN\Desktop\task1\task29\obj\Debug\netcoreapp3.1\task29.genruntimeconfig.cache
 C:\Users\EMIN\Desktop\task1\task29\obj\Debug\netcoreapp3.1\task29.csproj.CopyComplete
 C:\Users\EMIN\Desktop\task1\task29\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contact.cshtml.g.cs
+C:\Users\EMIN\Desktop\task1\task29\obj\Debug\netcoreapp3.1\task29.csproj.AssemblyReference.cache

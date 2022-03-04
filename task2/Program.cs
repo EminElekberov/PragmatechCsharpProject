@@ -11,7 +11,7 @@ namespace task2
             string name = Console.ReadLine();
             string reverse = string.Empty;
             Console.WriteLine("-----------------");
-
+            //
             for (int i = name.Length - 1; i >= 0; i--)
             {
                 reverse += name[i];

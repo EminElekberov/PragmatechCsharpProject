@@ -22,6 +22,7 @@ namespace task7_OOP_
             //int dt=Convert.ToInt32(DateTime.Now.Day+date);
             // Console.WriteLine("sizin kartiniz son isdiafde muddeti"+dt);
             Console.WriteLine(DateTime.Now.AddDays(date));
+            //
         }
         public static void Check(string pass)
         {

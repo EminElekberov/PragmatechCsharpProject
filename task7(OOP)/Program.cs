@@ -19,7 +19,6 @@ namespace task7_OOP_
             //Console.WriteLine("-----------------");
             #endregion
             int date = Convert.ToInt32(Console.ReadLine());
-            //
             //int dt=Convert.ToInt32(DateTime.Now.Day+date);
             // Console.WriteLine("sizin kartiniz son isdiafde muddeti"+dt);
             Console.WriteLine(DateTime.Now.AddDays(date));

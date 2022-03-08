@@ -52,7 +52,7 @@ namespace winform16
 
         private void Delete_Load(object sender, EventArgs e)
         {
-
+            //
         }
 
         private void cmbStuDelete_SelectedIndexChanged(object sender, EventArgs e)

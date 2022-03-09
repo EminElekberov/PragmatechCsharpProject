@@ -49,10 +49,9 @@ namespace winform16
             cmbStuDelete.Items.AddRange(selected_group.GetAlLStudent().ToArray());
 
         }
-
+        //
         private void Delete_Load(object sender, EventArgs e)
         {
-            //
         }
 
         private void cmbStuDelete_SelectedIndexChanged(object sender, EventArgs e)

@@ -15,6 +15,7 @@ namespace Register_task24_
         public frmMain()
         {
             InitializeComponent();
+            //
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -24,7 +25,6 @@ namespace Register_task24_
         private void frmMain_Load(object sender, EventArgs e)
         {
             label1.Text = "Xos gelmissiniz";
-            //
         }
     }
 }

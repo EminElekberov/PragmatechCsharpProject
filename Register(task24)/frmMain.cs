@@ -22,8 +22,6 @@ namespace Register_task24_
         {
         }
         
-        //
-
         private void frmMain_Load(object sender, EventArgs e)
         {
             label1.Text = "Xos gelmissiniz";

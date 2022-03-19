@@ -13,7 +13,7 @@ namespace task12
             //Check ch = new Check(IsOdd);
             //ch += IsEven;
             //ch.Invoke(5);
-            
+            //
 
 
             //

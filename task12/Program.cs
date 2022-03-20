@@ -5,6 +5,7 @@ namespace task12
 {
     public  class Program
     {
+        //
         static void Main(string[] args)
         {
 
@@ -13,7 +14,7 @@ namespace task12
             //Check ch = new Check(IsOdd);
             //ch += IsEven;
             //ch.Invoke(5);
-            //
+            
 
 
             //

@@ -22,7 +22,8 @@ namespace StudenRegister_task25_
         private void Form1_Load(object sender, EventArgs e)
         {
             
-            //
+
+            
             Refresh();
             studentsRegisterBindingSource.DataSource = lb.StudentsRegisters.ToList();
         }

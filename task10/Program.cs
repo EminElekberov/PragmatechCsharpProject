@@ -13,6 +13,8 @@ namespace task10
             //st2.Counter();
 
 
+
+
             #endregion
 
             Console.WriteLine("------------");

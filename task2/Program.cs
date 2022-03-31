@@ -6,6 +6,8 @@ namespace task2
     {
         static void Main(string[] args)
         {
+
+
             /*
             Console.Write("sozu daxil edin ");
             string name = Console.ReadLine();

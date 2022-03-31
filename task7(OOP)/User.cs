@@ -12,6 +12,7 @@ namespace task7_OOP_
         public int Id { get; set; }
         
 
+
         public User(string email,string password)
         {
             Email = email;

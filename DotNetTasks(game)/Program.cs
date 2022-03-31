@@ -15,6 +15,7 @@ namespace DotNetTasks_game_
         public static double SumCorrect = 0;
         static void Main(string[] args)
         {
+
             #region 1ci sual
 
             //    Console.WriteLine("Axtarilan sozu bu metnden sececksiniz: \n" +

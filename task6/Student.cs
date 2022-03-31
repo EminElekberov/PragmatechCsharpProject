@@ -16,6 +16,8 @@ namespace task6
             Surname = surname;
             No++;
         }
+
+
        
         //public  void CreateNewStudents(string name, string surname)
         //{

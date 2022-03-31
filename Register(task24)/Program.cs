@@ -15,6 +15,7 @@ namespace Register_task24_
         static void Main()
         {
             Application.EnableVisualStyles();
+
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
         }

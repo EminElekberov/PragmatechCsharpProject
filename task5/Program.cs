@@ -18,6 +18,7 @@ namespace task5
             //    string village = Console.ReadLine();
 
 
+
             //    dictionary.Add(country, village);
             //    foreach (var item in dictionary)
             //    {

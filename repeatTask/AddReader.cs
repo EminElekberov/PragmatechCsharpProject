@@ -44,6 +44,7 @@ namespace repeatTask
 
         private void AddReader_Load(object sender, EventArgs e)
         {
+
             DgvRrefresh();
         }
         private void DgvRrefresh()

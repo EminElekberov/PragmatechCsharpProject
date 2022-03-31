@@ -12,6 +12,7 @@ namespace task11_aptek_
         public Pharmacy()
         {
             this.Books = new List<Medicine>();
+
         }
         List<Medicine> IPharmacy.Books { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 

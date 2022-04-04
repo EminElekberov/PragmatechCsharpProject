@@ -4,6 +4,7 @@ using System.Text;
 
 namespace taskquiz
 {
+
     class Student:Person
     {
         public void Study()
@@ -12,8 +13,6 @@ namespace taskquiz
         }
         public void ShowAge(int age)
         {
-
-
             Console.WriteLine($"my age is{age}");
         }
     }

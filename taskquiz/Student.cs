@@ -9,6 +9,7 @@ namespace taskquiz
     {
         public void Study()
         {
+
             Console.WriteLine("I am studing");
         }
         public void ShowAge(int age)

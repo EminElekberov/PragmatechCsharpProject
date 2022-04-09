@@ -12,6 +12,7 @@ namespace winformders15
         ///  The main entry point for the application.
         /// </summary>
         [STAThread]
+
         static void Main()
         {
             Application.SetHighDpiMode(HighDpiMode.SystemAware);

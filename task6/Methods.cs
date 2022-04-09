@@ -8,7 +8,6 @@ namespace task6
     {
         public static List<Student> list = new List<Student>();
         public static List<Group> group = new List<Group>();
-
         public static void CreateStudents()
         {
             Console.WriteLine("adini daxil ed");

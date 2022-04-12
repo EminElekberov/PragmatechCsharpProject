@@ -6,6 +6,33 @@ namespace task2
     {
         static void Main(string[] args)
         {
+            int count = 0,i;
+            bool a=false, b=false;
+            Console.WriteLine("soz daxil edin zehmet olmasa: ");
+            string word =Console.ReadLine();
+            char[] chars = word.ToCharArray();
+            for ( i = 0; i < chars.Length; i++)
+            {
+                // Console.WriteLine(chars[i]);
+                if (chars[i].ToString().ToLower()=="x")
+                {
+                    count++;
+                    a = true;
+                }
+                else
+                {
+                    b = false;
+                }
+
+            }
+            if (a==true)
+            {
+                Console.WriteLine("daxile edilen ifadede  x var ve sayi ise: " + count);
+            }
+            else if (b==false)
+            {
+                Console.WriteLine("burda x herfi yoxdur");
+            }
 
 
             /*
@@ -96,7 +123,7 @@ namespace task2
             return count;
         }
         */
-            cs
+            // cs
             /*
             Console.WriteLine(SubString(2,"salam"));
         }
@@ -114,4 +141,4 @@ namespace task2
 
         }
     }
-    }
+}

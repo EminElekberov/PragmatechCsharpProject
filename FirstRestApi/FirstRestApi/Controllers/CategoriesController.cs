@@ -37,5 +37,29 @@ namespace FirstRestApi.Controllers
 
             return Ok(category.Products.Take(take));
         }
+        [HttpPost]
+        public async Task<IActionResult> Post([FromBody] Category category)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest("category is not valid");
+            }
+
+            await _context.Categories.AddAsync(category);
+            await _context.SaveChangesAsync();
+            return Created($"/api/categories/{category.Id}", category);
+        }
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var category = await _context.Categories.Include(x => x.Products).FirstOrDefaultAsync(x => x.Id == id);
+            if (category == null)
+            {
+                return NotFound();
+            }
+            _context.Categories.Remove(category);
+            await _context.SaveChangesAsync();
+            return Ok("Deleted Succesfully");
+        }
     }
 }

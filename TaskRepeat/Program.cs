@@ -128,7 +128,7 @@ namespace TaskRepeat
             //sm.Getvalue(8);
             //Check check = new Check(isodd);
             //check.Invoke(20);
-            CashRegister cashRegister = new CashRegister();
+            //CashRegister cashRegister = new CashRegister();
             //Console.WriteLine("daxil edeceyiniz valyutalar \n " +
             //    "USD \n" +
             //    "EUR \n" +
@@ -196,7 +196,6 @@ namespace TaskRepeat
         //    }
         //}
         #endregion
-        public struct voi asdf()
         #region
         //public delegate bool Check(int n);
         //public static bool isodd(int n)

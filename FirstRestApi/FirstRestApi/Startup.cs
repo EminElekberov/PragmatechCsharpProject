@@ -33,7 +33,7 @@ namespace FirstRestApi
 );
             services.AddDbContext<AppDbContext>(options =>
             {
-                options.UseSqlServer(Configuration.GetConnectionString("Default"));
+                options.UseSqlServer(Configuration.GetConnectionString("Defaults"));
             });
         }
 

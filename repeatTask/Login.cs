@@ -1,4 +1,5 @@
-﻿using LibraryApi.Model;
+﻿using repeatTask;
+using repeatTask.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,17 +11,17 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LibraryApi
-    sen bunu cixar solutiondan ayrica yerde yaz
-    muellime bu ayri proyekdi tekrar edende yazirdim bilirem e ama burda error kimi fgoruur
+   // sen bunu cixar solutiondan ayrica yerde yaz
+    //muellime bu ayri proyekdi tekrar edende yazirdim bilirem e ama burda error kimi fgoruur
 {
     public partial class Login : Form
     {
-        private readonly LibraryEntities3 _db;
+        private readonly LibraryEntities _db;
 
         public Login()
         {
             InitializeComponent();
-            _db = new LibraryEntities3();
+            _db = new LibraryEntities();
         }
 
         private void BtnRegister_Click(object sender, EventArgs e)
@@ -59,8 +60,8 @@ namespace LibraryApi
 
         private void BtnRegister_Click_1(object sender, EventArgs e)
         {
-            Regsiter regsiter = new Regsiter();
-            regsiter.ShowDialog();
+            //Register regsiter = new Regsiter();
+            //regsiter.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)

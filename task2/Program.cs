@@ -7,33 +7,33 @@ namespace task2
         static void Main(string[] args)
         {
             #region Qadir
-            //int count = 0, i;
-            //bool a = false, b = false;
-            //Console.WriteLine("soz daxil edin zehmet olmasa: ");
-            //string word = Console.ReadLine();
-            //char[] chars = word.ToCharArray();
-            //for (i = 0; i < chars.Length; i++)
-            //{
-            //    // Console.WriteLine(chars[i]);
-            //    if (chars[i].ToString().ToLower() == "x")
-            //    {
-            //        count++;
-            //        a = true;
-            //    }
-            //    else
-            //    {
-            //        b = false;
-            //    }
+            int count = 0, i;
+            bool a = false, b = false;
+            Console.WriteLine("soz daxil edin zehmet olmasa: ");
+            string word = Console.ReadLine();
+            char[] chars = word.ToCharArray();
+            for (i = 0; i < chars.Length; i++)
+            {
+                // Console.WriteLine(chars[i]);
+                if (chars[i].ToString().ToLower() == "x")
+                {
+                    count++;
+                    a = true;
+                }
+                else
+                {
+                    b = false;
+                }
 
-            //}
-            //if (a == true)
-            //{
-            //    Console.WriteLine("daxile edilen ifadede  x var ve sayi ise: " + count);
-            //}
-            //else if (b == false)
-            //{
-            //    Console.WriteLine("burda x herfi yoxdur");
-            //}
+            }
+            if (a == true)
+            {
+                Console.WriteLine("daxile edilen ifadede  x var ve sayi ise: " + count);
+            }
+            else if (b == false)
+            {
+                Console.WriteLine("burda x herfi yoxdur");
+            }
             #endregion
 
             #region
@@ -48,33 +48,33 @@ namespace task2
             #endregion
 
             #region Vicay
-            int count = 0, i;
-            bool a = false, b = false;
-            Console.WriteLine("soz daxil edin zehmet olmasa: ");
-            string word = Console.ReadLine();
-            char[] chars = word.ToCharArray();
-            for (i = 0; i < chars.Length; i++)
-            {
-                // Console.WriteLine(chars[i]);
-                if (chars[i].ToString() == " ")
-                {
-                    count++;
-                    a = true;
-                }
-                else
-                {
-                    b = false;
-                }
+            //int count = 0, i;
+            //bool a = false, b = false;
+            //Console.WriteLine("soz daxil edin zehmet olmasa: ");
+            //string word = Console.ReadLine();
+            //char[] chars = word.ToCharArray();
+            //for (i = 0; i < chars.Length; i++)
+            //{
+            //    Console.WriteLine(chars[i]);
+            //    if (chars[i].ToString() == " ")
+            //    {
+            //        count++;
+            //        a = true;
+            //    }
+            //    else
+            //    {
+            //        b = false;
+            //    }
 
-            }
-            if (a == true)
-            {
-                Console.WriteLine("daxile edilen ifadede  bosluq var ve sayi ise: " + count);
-            }
-            else if (b == false)
-            {
-                Console.WriteLine("burda bosluq yoxdur");
-            }
+            //}
+            //if (a == true)
+            //{
+            //    Console.WriteLine("daxile edilen ifadede  bosluq var ve sayi ise: " + count);
+            //}
+            //else if (b == false)
+            //{
+            //    Console.WriteLine("burda bosluq yoxdur");
+            //}
             #endregion
             /*
             Console.Write("sozu daxil edin ");

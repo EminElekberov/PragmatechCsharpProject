@@ -17,4 +17,3 @@ C:\Users\EMIN\Desktop\task1\repeatTask\obj\Debug\repeatTask.AddReader.resources
 C:\Users\EMIN\Desktop\task1\repeatTask\obj\Debug\repeatTask.AdminPage.resources
 C:\Users\EMIN\Desktop\task1\repeatTask\obj\Debug\repeatTask.BookList.resources
 C:\Users\EMIN\Desktop\task1\repeatTask\obj\Debug\LibraryApi.Login.resources
-C:\Users\EMIN\Desktop\task1\repeatTask\obj\Debug\LibraryApisenbunucixarsolutiondanayricayerdeyazmuellimebuayriproyekditekraredendeyazirdimbiliremeamaburdaerrorkimifgoruur.Login.resources

@@ -61,5 +61,19 @@ namespace FirstRestApi.Controllers
             await _context.SaveChangesAsync();
             return Ok("Deleted Succesfully");
         }
+
+        [HttpPut]
+        public async Task<IActionResult> Edit([FromBody] Category category)
+        {
+            var categorydb = await _context.Categories.Include(x => x.Products).FirstOrDefaultAsync(x => x.Id == category.Id);
+            if (categorydb == null)
+            {
+                return NotFound();
+            }
+            categorydb.Name = category.Name;
+            _context.Update(categorydb);
+            await _context.SaveChangesAsync();
+            return Ok($"Edit Succesfully {category.Name}");
+        }
     }
 }

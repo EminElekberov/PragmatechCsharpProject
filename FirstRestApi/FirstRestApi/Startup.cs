@@ -1,4 +1,6 @@
 using FirstRestApi.Model;
+using FirstRestApi.Repository;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -8,9 +10,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace FirstRestApi
@@ -35,6 +39,29 @@ namespace FirstRestApi
             {
                 options.UseSqlServer(Configuration.GetConnectionString("Default"));
             });
+            services.AddAuthentication(x =>
+            {
+                x.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(o =>
+            {
+                //cookies ucun yqaziriq bu kodlari
+                var key = Encoding.UTF8.GetBytes(Configuration["JWTSettings:SecretKey"]);
+                o.SaveToken = true;
+                o.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ClockSkew = TimeSpan.Zero,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(Configuration["JWTSettings:SecretKey"])),
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidAudience = "true",
+                    ValidIssuer = "true",
+                    ValidateIssuerSigningKey = true,
+                    RequireExpirationTime = true,
+                    ValidateLifetime = true
+                };
+            });
+            services.AddSingleton<IJWTManagerRepository, JWTManagerRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,6 +75,7 @@ namespace FirstRestApi
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

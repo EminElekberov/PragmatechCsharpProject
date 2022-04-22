@@ -44,10 +44,8 @@ namespace FirstRestApi.Repository
                  }),
                 Expires = DateTime.UtcNow.AddMinutes(10),//10 deq sonra atsin
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(tokenKey), SecurityAlgorithms.HmacSha256Signature)
-
             };
             var token = tokenHandler.CreateToken(tokenDescriptor);
-
             return new Token { Tokens = tokenHandler.WriteToken(token) };
         }
     }

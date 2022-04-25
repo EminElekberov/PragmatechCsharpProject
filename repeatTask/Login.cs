@@ -17,9 +17,6 @@ namespace LibraryApi
     public partial class Login : Form
     {
         private readonly LibraryEntities _db;
-
-
-
         public Login()
         {
             InitializeComponent();

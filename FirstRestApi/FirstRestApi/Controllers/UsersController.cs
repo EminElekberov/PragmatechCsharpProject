@@ -48,5 +48,4 @@ namespace FirstRestApi.Controllers
             return Ok(token);
         }
     }
-
 }

@@ -22,7 +22,6 @@ namespace LibraryApi
             InitializeComponent();
             _db = new LibraryEntities();
         }
-
         private void BtnRegister_Click(object sender, EventArgs e)
         {
         }

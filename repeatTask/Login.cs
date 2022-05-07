@@ -30,7 +30,6 @@ namespace LibraryApi
         }
         private void tabPage2_Click(object sender, EventArgs e)
         {
-
         }
 
         private void BtnLogin_Click_1(object sender, EventArgs e)

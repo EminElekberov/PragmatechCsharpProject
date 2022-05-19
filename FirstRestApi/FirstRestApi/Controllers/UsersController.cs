@@ -29,7 +29,7 @@ namespace FirstRestApi.Controllers
             {
                 "Mina FARZALI",
                 "Xeyal XXXX",
-                "Fuad XXXX",
+                "Fuad XXXX"
             };
             return users;
 

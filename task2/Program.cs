@@ -19,6 +19,7 @@ namespace task2
                 {
                     count++;
                     a = true;
+
                 }
                 else
                 {
